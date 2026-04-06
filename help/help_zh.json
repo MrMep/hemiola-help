@@ -1,0 +1,1135 @@
+{
+  "version": 1,
+  "language": "zh",
+  "sections": [
+    {
+      "id": "Introduction",
+      "title": "简介",
+      "icon": "info_outline",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Hemiola 是一款跨平台音乐应用，让你可以：演奏钢琴键盘、连接 MIDI 设备、使用 SoundFont 合成器和 Analog 合成器生成音色、应用音频效果并配置 USB/BT MIDI 设备——所有功能集于一个界面。"
+        },
+        {
+          "type": "para",
+          "text": "Hemiola 在移动端免费使用。免费版每个分区最多允许 3 个预设。Pro 版（一次性应用内购买）取消此限制。云功能需要免费或付费的 Cloud 账户。"
+        },
+        {
+          "type": "item",
+          "text": "首次启动时会显示简短教程。你可以跳过，之后可通过主窗口的 Info 按钮再次访问。"
+        },
+        {
+          "type": "item",
+          "text": "对于已登录的 staff 或 admin 用户，偏好设置中会显示一个 Debug 分区，其中包含 Prod/Dev 端点切换和用于 QA/测试的重置教程操作。所有用户都可以使用恢复出厂设置选项来清除所有已保存的偏好设置和预设，并从头开始重新启动应用。"
+        },
+        {
+          "type": "subtitle",
+          "text": "预设 & 场景"
+        },
+        {
+          "type": "para",
+          "text": "预设图标（资料库/音符）始终显示在顶部栏。没有未保存更改时显示为灰色（干净），有更改时显示为橙色（脏）。"
+        },
+        {
+          "type": "item",
+          "text": "预设窗口（干净）：点击预设立即应用。点击编辑图标重命名，点击垃圾桶图标删除。长按添加按钮以当前状态添加新预设。"
+        },
+        {
+          "type": "item",
+          "text": "预设窗口（脏）：点击用户预设用当前值覆盖，或使用添加按钮保存为新预设。"
+        },
+        {
+          "type": "item",
+          "text": "支持预设的分区：钢琴键盘（音阶、滚动位置、压力灵敏度、触觉反馈）、Sound（模拟合成器 + 效果）、Config Tool 设备页面和 MIDI Mapper（含启用/停用状态的完整映射列表）。"
+        },
+        {
+          "type": "note",
+          "text": "SCENE 预设（在 Sound Generator 中）一次保存 Sound 预设、限制器、SoundFont、MIDI Mapper 和设备插件参数——独立于各个分区预设。"
+        },
+        {
+          "type": "subtitle",
+          "text": "顶部栏"
+        },
+        {
+          "type": "para",
+          "text": "顶部栏包含在每个界面都可用的持久操作。"
+        },
+        {
+          "type": "item",
+          "text": "Hemiola 徽标 → 主屏幕；在子屏幕中也作为返回按钮。"
+        },
+        {
+          "type": "item",
+          "text": "剧院面具图标（场景）→ 一键保存和恢复所有 Sound Generator 和 MIDI 参数的完整快照。"
+        },
+        {
+          "type": "item",
+          "text": "预设图标（资料库/音符）→ 始终可见；当前分区没有未保存更改时为灰色，有时为橙色。"
+        },
+        {
+          "type": "item",
+          "text": "铃铛图标（推送通知）→ 对登录用户和访客可见；用红色徽章显示未读数量。"
+        },
+        {
+          "type": "item",
+          "text": "电池图标 → 仅在 Config Tool 为活动标签时显示，用于报告电池电量的兼容设备。"
+        },
+        {
+          "type": "subtitle",
+          "text": "底部标签栏"
+        },
+        {
+          "type": "para",
+          "text": "底部栏提供对四个主要分区的快速访问。活动标签会高亮显示。"
+        },
+        {
+          "type": "item",
+          "text": "钢琴图标 → 钢琴键盘"
+        },
+        {
+          "type": "item",
+          "text": "链接图标（Config Tool）→ 连接支持的设备后着色；长按打开设备选择菜单。"
+        },
+        {
+          "type": "item",
+          "text": "MIDI 图标 → MIDI 设备管理器；设备连接时着色；长按打开 MIDI 控制台。"
+        },
+        {
+          "type": "item",
+          "text": "均衡器图标（Sound Generator）→ 生成器播放时着色；长按直接打开 MAIN 标签页。"
+        },
+        {
+          "type": "subtitle",
+          "text": "旋转旋钮"
+        },
+        {
+          "type": "item",
+          "text": "向上或向右滑动增加值，向下或向左减小值"
+        },
+        {
+          "type": "item",
+          "text": "点击弧形部分直接跳到该位置"
+        },
+        {
+          "type": "item",
+          "text": "双击旋钮重置为默认值"
+        },
+        {
+          "type": "item",
+          "text": "长按数值标签打开精确数值输入的模态编辑器。输入值将根据参数范围进行验证。"
+        },
+        {
+          "type": "item",
+          "text": "长按旋钮本体（不移动）启用细调模式：滑动灵敏度降低以便精确调节。"
+        },
+        {
+          "type": "subtitle",
+          "text": "应用更新"
+        },
+        {
+          "type": "item",
+          "text": "商店更新（App Store / Play Store）：新功能和错误修复"
+        },
+        {
+          "type": "item",
+          "text": "应用内更新：内置 SoundFont 文件、新的 Config Tool 插件页面、本地化帮助内容及其他资源。通过 Hemiola 云服务器分发，无需商店更新。"
+        },
+        {
+          "type": "item",
+          "text": "当应用内更新安装了新的受支持设备插件时，设备目录会在同一会话中自动重新加载。"
+        },
+        {
+          "type": "note",
+          "text": "有可用更新时，启动时会显示提醒。也可通过偏好设置中的检查更新手动检查。"
+        },
+        {
+          "type": "item",
+          "text": "更新检查窗口会在下载文件时显示进度条。下载期间可以关闭窗口，过程在后台继续。"
+        }
+      ]
+    },
+    {
+      "id": "Cloud Account",
+      "title": "云账户",
+      "icon": "account_circle",
+      "entries": [
+        {
+          "type": "para",
+          "text": "在 hemiola.app 登录或创建账户，或直接从主屏幕点击 Cloud Account 按钮访问。付费套餐通过平台商店（App Store、Google Play、Microsoft Store）管理。"
+        },
+        {
+          "type": "subtitle",
+          "text": "订阅套餐"
+        },
+        {
+          "type": "table",
+          "text": "功能|免费版|Pro版|Cloud免费|Cloud Pro\n钢琴 & Sound Generator|✓|✓|✓|✓\n每分区预设数|最多3个|无限制|无限制|无限制\n下载共享预设|✓|✓|✓|✓\n分享你的预设|-|-|-|✓\nConfig Tool & MIDI（移动端）|✓|✓|✓|✓\nConfig Tool & MIDI（桌面端）|—|—|-|✓\n设置备份|—|—|-|✓\n备份快照|—|—|-|✓\n多设备同步|—|—|-|✓"
+        },
+        {
+          "type": "note",
+          "text": "App Pro = 一次性应用内购买（iOS/Android）。Cloud Pro 是持续订阅（月付或年付）。所有套餐均包含完整钢琴和 Sound Generator。"
+        },
+        {
+          "type": "subtitle",
+          "text": "账户管理"
+        },
+        {
+          "type": "item",
+          "text": "个人资料标签：编辑显示名称、头像和公开资料设置——启用后已发布的预设对社区可见。"
+        },
+        {
+          "type": "item",
+          "text": "订阅标签：查看当前套餐，通过平台商店管理订阅。"
+        },
+        {
+          "type": "item",
+          "text": "我的设备标签：列出账户中注册的所有设备及其最后活动时间戳。点击设备打开设备设置。"
+        },
+        {
+          "type": "item",
+          "text": "备份标签：查看当前备份状态，配置自动备份间隔，执行手动备份或从快照恢复。"
+        },
+        {
+          "type": "item",
+          "text": "共享预设标签：管理已发布的预设（编辑、隐藏或删除）。需要 Cloud Pro。"
+        },
+        {
+          "type": "item",
+          "text": "登录标签：选择将凭据安全存储在设备上以便快速登录；注销时保存的凭据会被清除。"
+        },
+        {
+          "type": "item",
+          "text": "有保存的凭据时，启动时会预填用户名和密码以便快速登录——只需点击登录即可。"
+        },
+        {
+          "type": "item",
+          "text": "密码重置和账户删除可从账户页面进行"
+        },
+        {
+          "type": "subtitle",
+          "text": "共享预设"
+        },
+        {
+          "type": "para",
+          "text": "将你当前的 Sound 或设备设置发布为社区预设。需要 Cloud Pro。"
+        },
+        {
+          "type": "item",
+          "text": "启用公开资料（个人资料标签）让已发布的预设对社区可见——标记为公开但资料不公开的预设会显示警告图标"
+        },
+        {
+          "type": "item",
+          "text": "每个已发布的预设可以从共享预设标签页隐藏（不删除）或永久删除"
+        },
+        {
+          "type": "item",
+          "text": "可以随时编辑已发布预设的名称、描述和标签"
+        },
+        {
+          "type": "note",
+          "text": "在 Cloud Account 窗口中切换标签时个人资料会自动刷新，因此在其他设备上所做的更改始终会体现。"
+        },
+        {
+          "type": "subtitle",
+          "text": "设置备份"
+        },
+        {
+          "type": "para",
+          "text": "自动将设置和预设备份到云端，可从 Cloud Account 窗口 → 备份标签进行配置。需要 Cloud Pro。"
+        },
+        {
+          "type": "item",
+          "text": "自动备份间隔（备份标签）：选择禁用、尽快（30秒）、5/15/30 分钟不活动后、或 1 小时不活动后。备份在最后一次更改后的选定静默期后触发——不按固定时间表"
+        },
+        {
+          "type": "item",
+          "text": "仅传输自上次备份以来的差异（增量备份），保持上传快速和带宽高效。基线在重启之间保留，因此如果没有任何更改，启动时不会进行冗余上传"
+        },
+        {
+          "type": "item",
+          "text": "每次备份都会创建一个命名快照。从备份标签浏览完整历史记录并恢复到任何以前的状态"
+        },
+        {
+          "type": "item",
+          "text": "备份是按设备进行的：每个注册设备有其独立的备份历史记录"
+        },
+        {
+          "type": "note",
+          "text": "手动备份也可随时从备份标签页执行。恢复后，下一次自动备份始终是完整上传，以反映恢复的状态。"
+        },
+        {
+          "type": "subtitle",
+          "text": "设备注册"
+        },
+        {
+          "type": "para",
+          "text": "运行 Hemiola 的每台设备在使用活跃 Cloud 订阅登录时会自动注册到你的账户。注册可实现按设备备份，并可从云端管理你的设备。"
+        },
+        {
+          "type": "item",
+          "text": "设备通过在设备上本地生成和存储的唯一 UUID 进行识别"
+        },
+        {
+          "type": "item",
+          "text": "设备名称根据平台（iOS、Android、macOS 等）自动设置"
+        },
+        {
+          "type": "item",
+          "text": "点击我的设备列表中的任何设备打开设备设置，在那里你可以重命名设备或访问高级管理功能"
+        },
+        {
+          "type": "item",
+          "text": "如果你卸载并重新安装应用，或在新设备上安装，将生成新的 UUID，该设备将作为新条目出现在你的账户中"
+        },
+        {
+          "type": "item",
+          "text": "每个账户最多可在所有平台注册5台设备。达到上限后，请先在\"我的设备\"中删除一台现有设备，再在新设备上登录"
+        },
+        {
+          "type": "subtitle",
+          "text": "设备管理（Cloud Pro）"
+        },
+        {
+          "type": "para",
+          "text": "Cloud Pro 订阅者可以直接从设备设置管理其设备。这些功能对所有用户可见，但非 Pro 订阅者会看到灰色状态；点击灰色操作会显示描述和升级选项。"
+        },
+        {
+          "type": "item",
+          "text": "删除设备：从账户中永久删除一台设备及其所有云备份。此操作无法撤销"
+        },
+        {
+          "type": "item",
+          "text": "转移预设：在两台设备之间有选择地复制预设。选择方向（从该设备或到该设备），然后选择要转移的预设组和各个预设。名称冲突通过在括号中附加源设备名称自动解决"
+        },
+        {
+          "type": "item",
+          "text": "克隆：将一台设备的完整配置复制到另一台设备。选择方向，然后选择完整克隆（设置+所有预设）或仅预设。两种模式都会覆盖目标——需要双重确认"
+        },
+        {
+          "type": "note",
+          "text": "重新安装后或在新设备上：登录后，打开旧设备的设备设置，使用克隆恢复你之前的设置和预设。"
+        }
+      ]
+    },
+    {
+      "id": "Scenes",
+      "title": "场景",
+      "icon": "theaters",
+      "entries": [
+        {
+          "type": "para",
+          "text": "场景是一个快照，将你的 Sound 预设（模拟合成器 + 效果）、限制器、SoundFont 配置、MIDI Mapper 和设备插件参数捕获到单个预设中。这是在完全不同的音色设置之间快速切换的最快方式。"
+        },
+        {
+          "type": "subtitle",
+          "text": "使用方法"
+        },
+        {
+          "type": "item",
+          "text": "点击顶部栏的剧院面具图标打开场景列表"
+        },
+        {
+          "type": "item",
+          "text": "点击场景名称立即应用——所有涵盖的参数同时更新"
+        },
+        {
+          "type": "item",
+          "text": "当前状态与已保存场景不同时（脏），图标变为橙色；点击覆盖现有场景或添加新场景"
+        },
+        {
+          "type": "item",
+          "text": "添加新场景：将当前状态保存为新的命名场景"
+        },
+        {
+          "type": "item",
+          "text": "点击场景旁的编辑图标重命名；点击垃圾桶图标删除"
+        },
+        {
+          "type": "note",
+          "text": "场景不与云社区共享——它们保存在设备本地，并通过常规设置备份（Cloud Pro）进行备份。"
+        },
+        {
+          "type": "subtitle",
+          "text": "场景包含的内容"
+        },
+        {
+          "type": "item",
+          "text": "Sound 预设：模拟合成器参数（振荡器、LFO、LPF、ADSR、噪声）加效果（Chorus、Delay、Reverb）"
+        },
+        {
+          "type": "item",
+          "text": "限制器设置"
+        },
+        {
+          "type": "item",
+          "text": "SoundFont Synth：开/关、音量、声像、活动 SoundFont 文件、活动音色"
+        },
+        {
+          "type": "item",
+          "text": "MIDI Mapper：含启用/停用状态的完整映射列表"
+        },
+        {
+          "type": "item",
+          "text": "设备插件参数（如果通过 Config Tool 连接了设备）"
+        },
+        {
+          "type": "note",
+          "text": "钢琴键盘设置（缩放、滚动位置、压力、触觉）存储在单独的 Piano 预设中，不包含在场景中。"
+        }
+      ]
+    },
+    {
+      "id": "Piano Keyboard",
+      "title": "钢琴键盘",
+      "icon": "piano_outlined",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Hemiola 的键盘横跨 7 个八度，具有压力灵敏度（在 iOS 和兼容的 Android 设备上）和多点触控和弦支持。"
+        },
+        {
+          "type": "para",
+          "text": "键盘在手机上垂直显示（竖屏），在横屏、平板和桌面上水平显示。"
+        },
+        {
+          "type": "subtitle",
+          "text": "导航"
+        },
+        {
+          "type": "item",
+          "text": "在手机上，当键盘布局过于紧凑时（包括竖屏和紧凑横屏），底部标签栏会隐藏以最大化演奏区域。"
+        },
+        {
+          "type": "item",
+          "text": "当有足够空间时（平板、桌面或较宽的手机布局），标签栏和分区名称/帮助链接会显示在键盘下方。"
+        },
+        {
+          "type": "subtitle",
+          "text": "顶部栏控件"
+        },
+        {
+          "type": "item",
+          "text": "滚动箭头：点击移动一个键，长按移动整个八度"
+        },
+        {
+          "type": "item",
+          "text": "压力切换：启用或禁用触摸压力灵敏度（力度）"
+        },
+        {
+          "type": "item",
+          "text": "触觉切换：启用或禁用按键时的振动反馈"
+        },
+        {
+          "type": "item",
+          "text": "主音量滑块：快速访问总体音量"
+        },
+        {
+          "type": "item",
+          "text": "放大/缩小：调整琴键宽度；长按放大镜跳到最小或最大缩放"
+        },
+        {
+          "type": "item",
+          "text": "居中图标：重置为默认缩放；长按将活动八度居中"
+        },
+        {
+          "type": "item",
+          "text": "预设图标：保存和调用钢琴键盘配置（音阶、滚动位置、压力灵敏度、触觉反馈）。应用预设后，键盘立即以保存的缩放级别和滚动位置重新绘制。"
+        }
+      ]
+    },
+    {
+      "id": "Configuration Tool",
+      "title": "配置工具",
+      "icon": "settings_outlined",
+      "entries": [
+        {
+          "type": "para",
+          "text": "配置工具标签页显示所连接 MIDI 设备的原生界面。连接支持的设备并点击 Config 标签页进行配置。"
+        },
+        {
+          "type": "subtitle",
+          "text": "工作原理"
+        },
+        {
+          "type": "item",
+          "text": "每个支持的设备都有自己的插件，直接在 Hemiola 中呈现。"
+        },
+        {
+          "type": "item",
+          "text": "所有参数更改实时发送到设备。"
+        },
+        {
+          "type": "item",
+          "text": "使用顶部栏的预设图标保存和调用设备配置。图标干净时着色，有未保存更改时为橙色。"
+        },
+        {
+          "type": "item",
+          "text": "插件处于活动状态时，配置工具标题旁边会显示橙色警告图标。点击查看制造商免责声明。"
+        },
+        {
+          "type": "note",
+          "text": "如果没有设备连接，标签页会显示'没有连接支持的设备'的占位符。设备处于活动状态时，此帮助页面底部会显示设备专属的帮助部分。"
+        },
+        {
+          "type": "subtitle",
+          "text": "多设备"
+        },
+        {
+          "type": "para",
+          "text": "当两个或更多支持的设备同时连接时，顶部栏的预设图标旁边会出现设备选择按钮。"
+        },
+        {
+          "type": "item",
+          "text": "（在已激活状态下）再次点击 Config 标签页图标打开设备选择菜单，选择要配置的设备"
+        },
+        {
+          "type": "item",
+          "text": "菜单显示所有当前识别的设备；活动设备高亮显示"
+        },
+        {
+          "type": "item",
+          "text": "每个设备维护自己独立的预设列表"
+        },
+        {
+          "type": "subtitle",
+          "text": "支持的设备"
+        },
+        {
+          "type": "item",
+          "text": "Tahorng Windkey — 口琴风格的数字管乐器"
+        },
+        {
+          "type": "item",
+          "text": "Akai EWI USB — 数字风控制器"
+        },
+        {
+          "type": "item",
+          "text": "Roland AE-01 Aerophone — 数字管乐器"
+        },
+        {
+          "type": "item",
+          "text": "ClariiMini — 数字管乐器"
+        },
+        {
+          "type": "item",
+          "text": "Moog Theremini — 数字特雷门琴"
+        }
+      ]
+    },
+    {
+      "id": "MIDI Devices",
+      "title": "MIDI设备",
+      "icon": "device_hub",
+      "entries": [
+        {
+          "type": "para",
+          "text": "MIDI 设备管理器列出所有可用的 MIDI 设备。点击设备进行连接或断开。"
+        },
+        {
+          "type": "item",
+          "text": "蓝牙设备：BT 扫描默认禁用；点击 BT 图标并授予权限以进行扫描"
+        },
+        {
+          "type": "item",
+          "text": "网络开关（iOS/macOS）：启用 MIDI 网络会话"
+        },
+        {
+          "type": "item",
+          "text": "虚拟开关：启用虚拟 MIDI 端口（可用性取决于平台）"
+        },
+        {
+          "type": "item",
+          "text": "重新加载按钮：完全关闭并重启 MIDI 子系统——在设备未被检测到或 MIDI 栈似乎卡住时很有用。上次已知的设备会自动重新连接。"
+        },
+        {
+          "type": "para",
+          "text": "使用底部栏的按钮访问 MIDI Mapper。部分通用 MIDI 设置也可在主设置窗口中找到。"
+        },
+        {
+          "type": "subtitle",
+          "text": "通用 MIDI 设置"
+        },
+        {
+          "type": "item",
+          "text": "SF 通道：SoundFont 合成器的 MIDI 通道（默认：OMNI）"
+        },
+        {
+          "type": "item",
+          "text": "Analog 通道：Analog 合成器的 MIDI 通道（默认：OMNI）"
+        },
+        {
+          "type": "item",
+          "text": "MIDI Thru：将接收到的 MIDI 消息转发到已连接的输出设备"
+        },
+        {
+          "type": "item",
+          "text": "弯音范围：以半音为单位的接收弯音灵敏度"
+        },
+        {
+          "type": "subtitle",
+          "text": "MIDI Mapper"
+        },
+        {
+          "type": "para",
+          "text": "允许通过 MIDI 控制 Hemiola 参数（UI 模式）或转发和转换 MIDI 消息（Custom 模式）。"
+        },
+        {
+          "type": "item",
+          "text": "点击条目启用或禁用"
+        },
+        {
+          "type": "item",
+          "text": "按消息类型过滤列表；'启用所有可见'适用于过滤后的集合"
+        },
+        {
+          "type": "item",
+          "text": "添加自定义映射：定义名称、输入/输出通道、命令和数据；点击设置图标编辑或删除"
+        },
+        {
+          "type": "note",
+          "text": "长按添加按钮将所有映射重置为默认值并删除所有自定义条目。"
+        },
+        {
+          "type": "subtitle",
+          "text": "MIDI 控制台"
+        },
+        {
+          "type": "para",
+          "text": "显示最近收到的 MIDI 消息的实时列表。用于测试和诊断 MIDI 连接，以及在创建 MIDI Mapper 条目时识别正确的通道/命令值。"
+        },
+        {
+          "type": "item",
+          "text": "访问：长按底部标签栏的 MIDI 图标，或长按 MIDI 设备管理器屏幕中的 MIDI 图标"
+        },
+        {
+          "type": "item",
+          "text": "点击底部的清除按钮清除当前消息列表"
+        }
+      ]
+    },
+    {
+      "id": "Sound Generator",
+      "title": "声音发生器",
+      "icon": "graphic_eq",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Sound Generator 包含两个独立的合成器：SoundFont 和 Analog。它响应钢琴键盘、USB/BT MIDI 设备、虚拟接口和 MIDI Network（iOS/macOS）。音频缓冲区大小可配置以实现最低延迟。"
+        },
+        {
+          "type": "subtitle",
+          "text": "MAIN"
+        },
+        {
+          "type": "item",
+          "text": "主音量：总体输出电平"
+        },
+        {
+          "type": "item",
+          "text": "通道音量：通过 MIDI CC 7 发送的音量"
+        },
+        {
+          "type": "item",
+          "text": "声像：立体声全景（左 ↔ 右）"
+        },
+        {
+          "type": "item",
+          "text": "立体声模式：选择单声道或立体声输出"
+        },
+        {
+          "type": "note",
+          "text": "检测到削波时，顶部栏会出现红色圆点。降低音量或启用 Limiter（Sound Effects）来解决。"
+        },
+        {
+          "type": "subtitle",
+          "text": "音高"
+        },
+        {
+          "type": "item",
+          "text": "主调音：以音分为单位的微调（−100 到 +100）；A4 参考频率以 Hz 显示"
+        },
+        {
+          "type": "item",
+          "text": "移调：将音高移动 −12 到 +12 个半音"
+        },
+        {
+          "type": "item",
+          "text": "A4 开关：发出 A4 参考音，受移调和主调音影响"
+        },
+        {
+          "type": "subtitle",
+          "text": "音频输出"
+        },
+        {
+          "type": "item",
+          "text": "缓冲区大小：较大值减少欠播但增加延迟"
+        },
+        {
+          "type": "item",
+          "text": "AUTO：自动缓冲区大小管理（大多数情况下推荐）"
+        },
+        {
+          "type": "note",
+          "text": "如果声音引擎图标变红，说明发生了音频缓冲区欠播——增加缓冲区大小或启用 AUTO。该部分还显示当前音频延迟的近似估算和采样率（由音频引擎自动设置）。"
+        },
+        {
+          "type": "subtitle",
+          "text": "SoundFont Synth"
+        },
+        {
+          "type": "para",
+          "text": "使用 sf2 文件格式的基于采样的合成器。网上有许多免费的 SoundFont 合辑可下载并上传到 Hemiola。"
+        },
+        {
+          "type": "item",
+          "text": "音量：SoundFont 模块的输出电平"
+        },
+        {
+          "type": "item",
+          "text": "声像：SoundFont 模块的立体声全景"
+        },
+        {
+          "type": "item",
+          "text": "当前：选择活动 SoundFont 文件（加载多个时）"
+        },
+        {
+          "type": "item",
+          "text": "音色：从当前 SoundFont 中选择乐器预设"
+        },
+        {
+          "type": "item",
+          "text": "自定义：将本地的 .sf2 文件上传到 Hemiola"
+        },
+        {
+          "type": "subtitle",
+          "text": "Analog Synth"
+        },
+        {
+          "type": "para",
+          "text": "经典模拟合成器的数字仿真，灵感自由来源于 Minimoog Model D。"
+        },
+        {
+          "type": "item",
+          "text": "音量：Analog 模块的输出电平"
+        },
+        {
+          "type": "item",
+          "text": "声像：Analog 模块的立体声全景"
+        },
+        {
+          "type": "subtitle",
+          "text": "Analog 振荡器"
+        },
+        {
+          "type": "para",
+          "text": "三个振荡器共享相同的参数集："
+        },
+        {
+          "type": "item",
+          "text": "波形：波形 — 正弦、方波、锯齿波（×2）、三角波（×2）"
+        },
+        {
+          "type": "item",
+          "text": "范围：基础八度 — 32'、16'、8'、4' 或 2'"
+        },
+        {
+          "type": "item",
+          "text": "失谐：以音分为单位的微调偏移（−100 到 +100）"
+        },
+        {
+          "type": "item",
+          "text": "移调：半音偏移（−12 到 +12）"
+        },
+        {
+          "type": "item",
+          "text": "音量：单个振荡器的输出电平"
+        },
+        {
+          "type": "subtitle",
+          "text": "低频振荡器（LFO）"
+        },
+        {
+          "type": "item",
+          "text": "路由：颤音、频率（音高）、LPF 截止或立体声宽度"
+        },
+        {
+          "type": "item",
+          "text": "波形：LFO 波形（与振荡器相同类型）"
+        },
+        {
+          "type": "item",
+          "text": "BPM：振荡频率"
+        },
+        {
+          "type": "item",
+          "text": "深度：调制幅度范围"
+        },
+        {
+          "type": "subtitle",
+          "text": "低通滤波器（LPF）"
+        },
+        {
+          "type": "item",
+          "text": "截止：高于此阈值的频率被衰减"
+        },
+        {
+          "type": "item",
+          "text": "强调：放大截止频率附近的频率（共振）"
+        },
+        {
+          "type": "note",
+          "text": "LPF 截止可以通过 LFO（路由：LPF 截止）或 MIDI CC 调制。"
+        },
+        {
+          "type": "subtitle",
+          "text": "噪声发生器"
+        },
+        {
+          "type": "item",
+          "text": "白噪声振荡器——用于为音色添加气息或空气感"
+        },
+        {
+          "type": "item",
+          "text": "音量：噪声的输出电平"
+        },
+        {
+          "type": "subtitle",
+          "text": "音量包络（ADSR）"
+        },
+        {
+          "type": "para",
+          "text": "控制 Analog 合成器的幅度包络："
+        },
+        {
+          "type": "item",
+          "text": "起音：音符触发后达到最大幅度的时间（ms）"
+        },
+        {
+          "type": "item",
+          "text": "衰减：降至延音电平的时间（ms）"
+        },
+        {
+          "type": "item",
+          "text": "延音：按住键时的幅度电平（千分比，0–1000）"
+        },
+        {
+          "type": "item",
+          "text": "释音：音符释放后淡出至无声的时间（ms）"
+        }
+      ]
+    },
+    {
+      "id": "Sound Effects",
+      "title": "音效",
+      "icon": "blur_on",
+      "entries": [
+        {
+          "type": "para",
+          "text": "音频效果串联应用：SoundFont + Analog → Chorus → Delay → Reverb → Limiter。"
+        },
+        {
+          "type": "subtitle",
+          "text": "Chorus"
+        },
+        {
+          "type": "item",
+          "text": "发送：效果混合电平（0–127；响应 MIDI CC 93）"
+        },
+        {
+          "type": "item",
+          "text": "延迟：以毫秒为单位的延迟时间"
+        },
+        {
+          "type": "item",
+          "text": "深度：调制频率范围"
+        },
+        {
+          "type": "item",
+          "text": "频率：合唱调制的 LFO 速度"
+        },
+        {
+          "type": "subtitle",
+          "text": "Delay"
+        },
+        {
+          "type": "item",
+          "text": "BPM：重复频率"
+        },
+        {
+          "type": "item",
+          "text": "衰减：每次重复的衰减——0% = 无限循环，100% = 停止"
+        },
+        {
+          "type": "item",
+          "text": "幅度：延迟效果的输出电平（%）"
+        },
+        {
+          "type": "subtitle",
+          "text": "Reverb"
+        },
+        {
+          "type": "para",
+          "text": "8种预设：Vocal I、Vocal II、Bathroom、Small Room、Medium Room、Large Room、Church Hall、Cathedral。"
+        },
+        {
+          "type": "item",
+          "text": "发送：混响的输入电平（响应 MIDI CC 91）"
+        },
+        {
+          "type": "item",
+          "text": "湿信号：混响信号的输出混合（%）"
+        },
+        {
+          "type": "item",
+          "text": "房间大小：模拟的房间尺寸（%）"
+        },
+        {
+          "type": "item",
+          "text": "阻尼：高频吸收（%）"
+        },
+        {
+          "type": "item",
+          "text": "扩散/宽度：混响尾巴的立体声宽度（%）"
+        },
+        {
+          "type": "note",
+          "text": "基于 Jezar 的 Freeverb 算法，通过 Dart Melty Sounds 实现。"
+        },
+        {
+          "type": "subtitle",
+          "text": "Limiter"
+        },
+        {
+          "type": "para",
+          "text": "通过压缩超过阈值的音频来防止削波。顶部栏的浅蓝色圆点表示限制器处于活动状态；水平计数器显示当前增益减少量。"
+        },
+        {
+          "type": "item",
+          "text": "阈值：开始压缩的幅度电平（%）"
+        },
+        {
+          "type": "item",
+          "text": "上限：压缩后的最大输出幅度（%）"
+        },
+        {
+          "type": "item",
+          "text": "起音：超过阈值后开始压缩的时间（ms）"
+        },
+        {
+          "type": "item",
+          "text": "释音：信号降至阈值以下后解除压缩的时间（ms）"
+        }
+      ]
+    },
+    {
+      "id": "Community Library",
+      "title": "社区资源库",
+      "icon": "cloud_queue",
+      "entries": [
+        {
+          "type": "para",
+          "text": "社区资源库是 Hemiola 用户发布的共享预设集合。从顶部栏的云图标打开。所有人均可访问——浏览和应用预设无需任何订阅。"
+        },
+        {
+          "type": "subtitle",
+          "text": "浏览"
+        },
+        {
+          "type": "item",
+          "text": "在搜索栏中输入，实时按名称或标签筛选预设"
+        },
+        {
+          "type": "item",
+          "text": "向下滚动自动加载更多预设（无限滚动）；下拉刷新列表"
+        },
+        {
+          "type": "item",
+          "text": "每张卡片显示预设名称、标签、作者名、投票计数和下载次数。点击卡片展开查看完整描述、分区标签和操作按钮"
+        },
+        {
+          "type": "item",
+          "text": "点击作者名查看其个人资料（头像、显示名称、用户名、简介）"
+        },
+        {
+          "type": "subtitle",
+          "text": "应用预设"
+        },
+        {
+          "type": "para",
+          "text": "应用是免费的，所有用户均可使用。实时加载预设值，不会保存到本地——非常适合快速试听。"
+        },
+        {
+          "type": "item",
+          "text": "点击任意卡片上的应用立即应用预设。如果有未保存的本地更改，会弹出对话框询问是否先保存或直接应用"
+        },
+        {
+          "type": "item",
+          "text": "预设中嵌入的设备设置在此版本中不会被应用；当预设包含设备设置时会显示提示"
+        },
+        {
+          "type": "subtitle",
+          "text": "导入预设"
+        },
+        {
+          "type": "para",
+          "text": "导入会将预设作为命名的本地条目保存到你的资源库中，以便随时回用——就像本地创建的预设一样。需要 Cloud Pro 订阅，或 Hemiola Pro 应用内购买。"
+        },
+        {
+          "type": "item",
+          "text": "点击导入，选择名称（预填为预设名称）并确认"
+        },
+        {
+          "type": "item",
+          "text": "导入的预设会添加到它包含的每个相关分区（Analog、FX 级别、MIDI Mapper）"
+        },
+        {
+          "type": "subtitle",
+          "text": "最近使用面板"
+        },
+        {
+          "type": "para",
+          "text": "最后应用或导入的预设固定在屏幕底部，方便快速重新应用和投票。"
+        },
+        {
+          "type": "item",
+          "text": "点击播放按钮重新应用预设，无需向上滚动"
+        },
+        {
+          "type": "item",
+          "text": "点击下载按钮导入（需要订阅）"
+        },
+        {
+          "type": "item",
+          "text": "使用拇指向上/拇指向下按钮投票。再次点击同一投票取消投票。投票需要云账户，但不需要付费订阅"
+        },
+        {
+          "type": "subtitle",
+          "text": "发布你的预设"
+        },
+        {
+          "type": "para",
+          "text": "与社区分享你的音色。需要 Cloud Pro 订阅。"
+        },
+        {
+          "type": "item",
+          "text": "打开任何支持分区的预设对话框，点击发布…"
+        },
+        {
+          "type": "item",
+          "text": "选择要包含的分区（Analog、FX 级别、MIDI Mapper、设备），为预设命名并添加可选描述，以及添加标签帮助其他人找到它"
+        },
+        {
+          "type": "item",
+          "text": "你发布的预设会出现在 Cloud Account 窗口的共享预设标签页中，在那里你可以编辑、隐藏或删除它们"
+        },
+        {
+          "type": "note",
+          "text": "启用公开资料（Cloud Account 中的个人资料标签）让你的预设对社区可见。标记为公开但作者资料不公开的预设会显示警告图标。"
+        }
+      ]
+    },
+    {
+      "id": "PushNotifications",
+      "title": "推送通知",
+      "icon": "notifications_none",
+      "entries": [
+        {
+          "type": "para",
+          "text": "推送通知允许 Hemiola 向你发送公告、优惠、更新和系统消息。当应用处于打开状态时，通知实时推送。重新连接时，错过的通知会自动从服务器获取。"
+        },
+        {
+          "type": "subtitle",
+          "text": "铃铛图标"
+        },
+        {
+          "type": "para",
+          "text": "顶部栏的铃铛图标对登录用户和访客均可见。红色徽章显示未读通知数量。点击图标打开通知面板，面板直接在图标下方展开。"
+        },
+        {
+          "type": "item",
+          "text": "未读通知显示为实心圆，已读通知显示为空心圆"
+        },
+        {
+          "type": "item",
+          "text": "点击通知展开并阅读完整内容"
+        },
+        {
+          "type": "item",
+          "text": "点击弹出窗口右上角的设置图标打开 Cloud Account 管理通知偏好设置"
+        },
+        {
+          "type": "item",
+          "text": "点击通知上的忽略按钮（×）将其从列表中隐藏"
+        },
+        {
+          "type": "item",
+          "text": "点击全部标为已读一次性将所有可见通知标记为已读"
+        },
+        {
+          "type": "item",
+          "text": "点击查看全部打开包含完整历史记录的通知页面"
+        },
+        {
+          "type": "subtitle",
+          "text": "跨设备同步"
+        },
+        {
+          "type": "para",
+          "text": "登录后，通知的已读和忽略状态会在你的所有设备上同步。访客模式下，通知状态仅按设备跟踪，不与其他设备同步。"
+        },
+        {
+          "type": "note",
+          "text": "你已忽略的通知不会再次出现，即使服务器重新发送同一通知也是如此。"
+        }
+      ]
+    },
+    {
+      "id": "Privacy",
+      "title": "隐私",
+      "icon": "privacy_tip_outlined",
+      "entries": [
+        {
+          "type": "para",
+          "text": "云账户中的隐私标签页控制 Hemiola 如何处理匿名设备使用数据。不会收集或传输任何个人数据。"
+        },
+        {
+          "type": "subtitle",
+          "text": "匿名设备数据"
+        },
+        {
+          "type": "para",
+          "text": "启用后，Hemiola 会上报您连接的 MIDI 设备的匿名统计信息。这些数据用于确定插件开发的优先级。"
+        },
+        {
+          "type": "item",
+          "text": "数据始终经过哈希处理和匿名化"
+        },
+        {
+          "type": "item",
+          "text": "不会包含任何个人信息"
+        },
+        {
+          "type": "item",
+          "text": "您可以随时在隐私标签页中更改此设置"
+        },
+        {
+          "type": "subtitle",
+          "text": "已知设备"
+        },
+        {
+          "type": "para",
+          "text": "已知设备列表显示已向服务器上报匿名数据的设备。"
+        },
+        {
+          "type": "item",
+          "text": "点击“全部删除”可永久删除所有设备数据"
+        },
+        {
+          "type": "note",
+          "text": "首次登录时会显示同意对话框。"
+        }
+      ]
+    }
+  ]
+}

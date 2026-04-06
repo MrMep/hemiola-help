@@ -1,0 +1,1135 @@
+{
+  "version": 1,
+  "language": "fr",
+  "sections": [
+    {
+      "id": "Introduction",
+      "title": "Introduction",
+      "icon": "info_outline",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Hemiola est une application musicale multiplateforme qui vous permet de : jouer sur un clavier piano, connecter des appareils MIDI, générer des sons avec un synthétiseur SoundFont et un Analog, appliquer des effets audio et configurer des appareils MIDI USB/BT, le tout depuis une seule interface."
+        },
+        {
+          "type": "para",
+          "text": "Hemiola est gratuit sur mobile. La version gratuite autorise jusqu'à 3 préréglages par section. La version Pro (achat intégré unique) supprime cette limite. Les fonctionnalités cloud nécessitent un compte Cloud gratuit ou payant."
+        },
+        {
+          "type": "item",
+          "text": "Au premier démarrage, un court tutoriel est affiché. Vous pouvez le passer et, après l'avoir ignoré, y accéder à nouveau via le bouton Info dans la fenêtre principale."
+        },
+        {
+          "type": "item",
+          "text": "Pour les utilisateurs staff ou admin connectés, les Préférences incluent une section Debug avec un sélecteur d'endpoints Prod/Dev et une action Réinitialiser le tutoriel pour la QA/les tests. Tous les utilisateurs peuvent accéder à l'option Réinitialisation d'Usine pour effacer toutes les préférences et préréglages enregistrés et redémarrer l'application à zéro."
+        },
+        {
+          "type": "subtitle",
+          "text": "Préréglages & Scènes"
+        },
+        {
+          "type": "para",
+          "text": "Une icône de préréglage (bibliothèque/musique) est toujours visible dans la barre supérieure. Elle est grise et discrète lorsqu'il n'y a pas de modifications non enregistrées (propre), et orange lorsqu'il y en a (sale)."
+        },
+        {
+          "type": "item",
+          "text": "Fenêtre de préréglage (propre) : appuyez sur un préréglage pour l'appliquer immédiatement. Appuyez sur l'icône de modification pour le renommer, sur l'icône de corbeille pour le supprimer. Appui long sur le bouton Ajouter pour ajouter un nouveau préréglage avec l'état actuel."
+        },
+        {
+          "type": "item",
+          "text": "Fenêtre de préréglage (sale) : appuyez sur un préréglage utilisateur pour l'écraser avec les valeurs actuelles, ou utilisez le bouton Ajouter pour l'enregistrer comme nouveau préréglage."
+        },
+        {
+          "type": "item",
+          "text": "Sections avec prise en charge des préréglages : Clavier Piano (gamme, position de défilement, sensibilité à la pression, retour haptique), Sound (synthé analogique + effets), pages d'appareils du Config Tool et MIDI Mapper (liste complète de mappage avec état actif/inactif)."
+        },
+        {
+          "type": "note",
+          "text": "Le préréglage SCENE (dans le Sound Generator) enregistre le préréglage Sound, le limiteur, SoundFont, MIDI Mapper et les paramètres du plugin d'appareil à la fois — indépendamment des préréglages de sections individuelles."
+        },
+        {
+          "type": "subtitle",
+          "text": "Barre Supérieure"
+        },
+        {
+          "type": "para",
+          "text": "La barre supérieure contient des actions persistantes disponibles sur chaque écran."
+        },
+        {
+          "type": "item",
+          "text": "Logo Hemiola → Écran d'accueil ; sert également de bouton Retour dans les sous-écrans."
+        },
+        {
+          "type": "item",
+          "text": "Icône de masques de théâtre (Scènes) → enregistre et restaure un instantané complet de tous les paramètres Sound Generator et MIDI en un seul geste."
+        },
+        {
+          "type": "item",
+          "text": "Icône de préréglage (bibliothèque/musique) → toujours visible ; grise lorsque la section actuelle n'a pas de modifications non enregistrées, orange dans le cas contraire."
+        },
+        {
+          "type": "item",
+          "text": "Icône de cloche (Notifications Push) → affichée pour les utilisateurs connectés et les invités ; indique le nombre de non-lus avec un badge rouge."
+        },
+        {
+          "type": "item",
+          "text": "Icône de batterie → affichée uniquement lorsque Config Tool est l'onglet actif, pour les appareils compatibles signalant le niveau de batterie."
+        },
+        {
+          "type": "subtitle",
+          "text": "Barre d'Onglets Inférieure"
+        },
+        {
+          "type": "para",
+          "text": "La barre inférieure donne un accès rapide aux quatre sections principales. L'onglet actif est mis en évidence."
+        },
+        {
+          "type": "item",
+          "text": "Icône piano → Clavier Piano"
+        },
+        {
+          "type": "item",
+          "text": "Icône lien (Config Tool) → colorée lorsqu'un appareil pris en charge est connecté ; appui long pour ouvrir le menu de sélection d'appareil."
+        },
+        {
+          "type": "item",
+          "text": "Icône MIDI → Gestionnaire d'appareils MIDI ; colorée lorsqu'un appareil est connecté ; appui long pour ouvrir la Console MIDI."
+        },
+        {
+          "type": "item",
+          "text": "Icône égaliseur (Sound Generator) → colorée lorsque le générateur est en lecture ; appui long pour ouvrir directement l'onglet MAIN."
+        },
+        {
+          "type": "subtitle",
+          "text": "Boutons Rotatifs"
+        },
+        {
+          "type": "item",
+          "text": "Glissez vers le haut ou à droite pour augmenter la valeur ; vers le bas ou à gauche pour diminuer"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur l'arc pour sauter directement à cette position"
+        },
+        {
+          "type": "item",
+          "text": "Double appui sur le bouton pour réinitialiser à la valeur par défaut"
+        },
+        {
+          "type": "item",
+          "text": "Appui long sur l'étiquette de valeur pour ouvrir un éditeur modal pour la saisie numérique précise. La valeur saisie est validée selon la plage du paramètre."
+        },
+        {
+          "type": "item",
+          "text": "Appui long sur le corps du bouton (sans bouger) pour activer le mode Fin : la sensibilité du glissement est réduite pour des réglages précis."
+        },
+        {
+          "type": "subtitle",
+          "text": "Mises à Jour de l'Application"
+        },
+        {
+          "type": "item",
+          "text": "Mises à jour Store (App Store / Play Store) : nouvelles fonctionnalités et correctifs"
+        },
+        {
+          "type": "item",
+          "text": "Mises à jour intégrées : fichiers SoundFont embarqués, nouvelles pages de plugin Config Tool, aide localisée et autres ressources. Elles sont livrées via le serveur cloud Hemiola sans nécessiter de mise à jour du Store."
+        },
+        {
+          "type": "item",
+          "text": "Lorsqu'une mise à jour intégrée installe un nouveau plugin d'appareil pris en charge, le catalogue d'appareils est rechargé automatiquement dans la même session."
+        },
+        {
+          "type": "note",
+          "text": "Une alerte s'affiche au démarrage lorsque des mises à jour sont disponibles. Vous pouvez également vérifier manuellement via Vérifier les Mises à Jour dans les Préférences."
+        },
+        {
+          "type": "item",
+          "text": "La fenêtre de vérification des mises à jour affiche une barre de progression pendant le téléchargement. Vous pouvez la fermer pendant le téléchargement ; le processus continue en arrière-plan."
+        }
+      ]
+    },
+    {
+      "id": "Cloud Account",
+      "title": "Compte Cloud",
+      "icon": "account_circle",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Connectez-vous ou créez un compte sur hemiola.app, ou directement depuis l'écran d'accueil en appuyant sur le bouton Compte Cloud. Les niveaux payants sont gérés via le Store de la plateforme (App Store, Google Play, Microsoft Store)."
+        },
+        {
+          "type": "subtitle",
+          "text": "Niveaux d'Abonnement"
+        },
+        {
+          "type": "table",
+          "text": "Fonctionnalité|App Gratuite|App Pro|Cloud Gratuit|Cloud Pro\nPiano & Sound Generator|✓|✓|✓|✓\nPréréglages par section|3 max|Illimités|Illimités|Illimités\nTélécharger des préréglages partagés|✓|✓|✓|✓\nPartager vos préréglages|-|-|-|✓\nConfig Tool & MIDI (mobile)|✓|✓|✓|✓\nConfig Tool & MIDI (bureau)|—|—|-|✓\nSauvegarde des réglages|—|—|-|✓\nInstantanés de sauvegarde|—|—|-|✓\nSynchronisation multi-appareils|—|—|-|✓"
+        },
+        {
+          "type": "note",
+          "text": "App Pro = achat unique intégré (iOS/Android). Cloud Pro est un abonnement récurrent (mensuel ou annuel). Tous les niveaux incluent le piano et le synthétiseur complets."
+        },
+        {
+          "type": "subtitle",
+          "text": "Gestion du Compte"
+        },
+        {
+          "type": "item",
+          "text": "Onglet Profil : modifiez votre nom d'affichage, votre photo de profil et les paramètres du profil public — l'activation rend visibles à la communauté les préréglages publiés."
+        },
+        {
+          "type": "item",
+          "text": "Onglet Abonnement : consultez votre niveau actuel, gérez votre abonnement via le Store de la plateforme."
+        },
+        {
+          "type": "item",
+          "text": "Onglet Mes Appareils : liste tous les appareils enregistrés sur votre compte avec leurs horodatages de dernière connexion. Appuyez sur un appareil pour ouvrir Paramètres de l'Appareil."
+        },
+        {
+          "type": "item",
+          "text": "Onglet Sauvegarde : consultez l'état de sauvegarde actuel, configurez l'intervalle de sauvegarde automatique, effectuez une sauvegarde manuelle ou restaurez depuis un instantané."
+        },
+        {
+          "type": "item",
+          "text": "Onglet Préréglages Partagés : gérez vos préréglages publiés (modifier, masquer ou supprimer). Nécessite Cloud Pro."
+        },
+        {
+          "type": "item",
+          "text": "Onglet Connexion : enregistrez optionnellement les identifiants de manière sécurisée sur l'appareil pour des connexions plus rapides ; les identifiants enregistrés sont effacés si vous vous déconnectez."
+        },
+        {
+          "type": "item",
+          "text": "Lorsque des identifiants enregistrés sont présents, le nom d'utilisateur et le mot de passe sont préremplis au démarrage pour une connexion rapide — appuyez simplement sur Se connecter."
+        },
+        {
+          "type": "item",
+          "text": "La réinitialisation du mot de passe et la suppression du compte sont disponibles depuis la page du compte"
+        },
+        {
+          "type": "subtitle",
+          "text": "Préréglages Partagés"
+        },
+        {
+          "type": "para",
+          "text": "Publiez vos paramètres actuels de Sound ou d'appareil comme préréglage communautaire. Nécessite Cloud Pro."
+        },
+        {
+          "type": "item",
+          "text": "Activez le Profil Public (onglet Profil) pour rendre visibles à la communauté les préréglages publiés — les préréglages marqués publics mais avec un profil non public affichent une icône d'avertissement"
+        },
+        {
+          "type": "item",
+          "text": "Chaque préréglage publié peut être masqué (sans le supprimer) ou supprimé définitivement depuis l'onglet Préréglages Partagés"
+        },
+        {
+          "type": "item",
+          "text": "Vous pouvez modifier le nom, la description et les hashtags d'un préréglage publié à tout moment"
+        },
+        {
+          "type": "note",
+          "text": "Le profil est actualisé automatiquement chaque fois que vous changez d'onglet dans la fenêtre Compte Cloud, donc les modifications effectuées sur un autre appareil sont toujours reflétées."
+        },
+        {
+          "type": "subtitle",
+          "text": "Sauvegarde des Réglages"
+        },
+        {
+          "type": "para",
+          "text": "Sauvegarde cloud automatique de vos réglages et préréglages, configurable depuis la fenêtre Compte Cloud → onglet Sauvegarde. Nécessite Cloud Pro."
+        },
+        {
+          "type": "item",
+          "text": "Intervalle de Sauvegarde Automatique (onglet Sauvegarde) : choisissez Désactivé, Dès que Possible (30 s), Après 5/15/30 min d'inactivité, ou Après 1 heure d'inactivité. La sauvegarde se déclenche après la période de silence sélectionnée suivant la dernière modification — pas selon un calendrier fixe"
+        },
+        {
+          "type": "item",
+          "text": "Seules les différences depuis la dernière sauvegarde sont transmises (sauvegarde delta), ce qui maintient les téléchargements rapides et efficaces en bande passante. La base de référence persiste entre les redémarrages, donc aucun téléchargement redondant n'est effectué au lancement si rien n'a changé"
+        },
+        {
+          "type": "item",
+          "text": "Chaque sauvegarde crée un instantané nommé. Parcourez l'historique complet et restaurez n'importe quel état précédent depuis l'onglet Sauvegarde"
+        },
+        {
+          "type": "item",
+          "text": "Les sauvegardes sont par appareil : chaque appareil enregistré possède son propre historique de sauvegarde indépendant"
+        },
+        {
+          "type": "note",
+          "text": "La sauvegarde manuelle est également disponible depuis l'onglet Sauvegarde à tout moment. Après une restauration, la prochaine sauvegarde automatique est toujours un téléchargement complet pour refléter l'état restauré."
+        },
+        {
+          "type": "subtitle",
+          "text": "Enregistrement de l'Appareil"
+        },
+        {
+          "type": "para",
+          "text": "Chaque appareil exécutant Hemiola est automatiquement enregistré sur votre compte lorsque vous vous connectez avec un abonnement Cloud actif. L'enregistrement permet la sauvegarde par appareil et vous permet de gérer vos appareils depuis le cloud."
+        },
+        {
+          "type": "item",
+          "text": "Les appareils sont identifiés par un UUID unique généré et stocké localement sur l'appareil"
+        },
+        {
+          "type": "item",
+          "text": "Le nom de l'appareil est défini automatiquement en fonction de la plateforme (iOS, Android, macOS, etc.)"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur n'importe quel appareil dans la liste Mes Appareils pour ouvrir Paramètres de l'Appareil, où vous pouvez renommer l'appareil ou accéder aux fonctionnalités de gestion premium"
+        },
+        {
+          "type": "item",
+          "text": "Si vous désinstallez et réinstallez l'application, ou l'installez sur un nouvel appareil, un nouveau UUID est généré et l'appareil apparaît comme une nouvelle entrée dans votre compte"
+        },
+        {
+          "type": "item",
+          "text": "Chaque compte peut enregistrer jusqu'à 5 appareils sur toutes les plateformes. Si vous atteignez la limite, supprimez un appareil existant dans Mes appareils avant de vous connecter sur un nouvel appareil"
+        },
+        {
+          "type": "subtitle",
+          "text": "Gestion des Appareils (Cloud Pro)"
+        },
+        {
+          "type": "para",
+          "text": "Les abonnés Cloud Pro peuvent gérer leurs appareils directement depuis Paramètres de l'Appareil. Ces fonctionnalités sont visibles par tous les utilisateurs mais grisées pour les non-abonnés Pro ; appuyer sur une action grisée affiche une description et une option de mise à niveau."
+        },
+        {
+          "type": "item",
+          "text": "Supprimer l'Appareil : supprimez définitivement un appareil et toutes ses sauvegardes cloud de votre compte. Cette action ne peut pas être annulée"
+        },
+        {
+          "type": "item",
+          "text": "Transférer des Préréglages : copiez sélectivement des préréglages entre deux appareils. Choisissez la direction (depuis ou vers cet appareil), puis sélectionnez les groupes de préréglages et les préréglages individuels à transférer. Les conflits de noms sont résolus automatiquement en ajoutant le nom de l'appareil source entre parenthèses"
+        },
+        {
+          "type": "item",
+          "text": "Cloner : répliquez complètement la configuration d'un appareil sur un autre. Choisissez la direction, puis sélectionnez Clonage Complet (réglages + tous les préréglages) ou Préréglages seulement. Les deux modes écrasent la cible — une double confirmation est requise"
+        },
+        {
+          "type": "note",
+          "text": "Après une réinstallation ou sur un nouvel appareil : connectez-vous, puis ouvrez Paramètres de l'Appareil pour l'ancien appareil et utilisez Cloner pour restaurer vos réglages et préréglages précédents."
+        }
+      ]
+    },
+    {
+      "id": "Scenes",
+      "title": "Scènes",
+      "icon": "theaters",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Une Scène est un instantané qui capture votre préréglage Sound (synthé analogique + effets), le limiteur, la configuration SoundFont, le MIDI Mapper et les paramètres du plugin d'appareil dans un seul préréglage. C'est le moyen le plus rapide de basculer entre des configurations sonores complètement différentes."
+        },
+        {
+          "type": "subtitle",
+          "text": "Comment utiliser"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur l'icône de masques de théâtre dans la barre supérieure pour ouvrir la liste des scènes"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur un nom de scène pour l'appliquer immédiatement — tous les paramètres couverts sont mis à jour simultanément"
+        },
+        {
+          "type": "item",
+          "text": "L'icône devient orange lorsque l'état actuel diffère de la scène enregistrée (sale) ; appuyez dessus pour enregistrer sur une scène existante ou en ajouter une nouvelle"
+        },
+        {
+          "type": "item",
+          "text": "Ajouter Nouveau : enregistre l'état actuel comme nouvelle scène nommée"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur l'icône de modification à côté d'une scène pour la renommer ; appuyez sur l'icône de corbeille pour la supprimer"
+        },
+        {
+          "type": "note",
+          "text": "Les Scènes ne sont pas partagées à la communauté cloud — elles sont locales à votre appareil et sauvegardées avec votre sauvegarde de réglages régulière (Cloud Pro)."
+        },
+        {
+          "type": "subtitle",
+          "text": "Ce que contient une Scène"
+        },
+        {
+          "type": "item",
+          "text": "Préréglage Sound : paramètres du synthé analogique (oscillateurs, LFO, LPF, ADSR, bruit) plus effets (chorus, delay, reverb)"
+        },
+        {
+          "type": "item",
+          "text": "Réglages du limiteur"
+        },
+        {
+          "type": "item",
+          "text": "SoundFont Synth : on/off, volume, pan, fichier SoundFont actif, patch actif"
+        },
+        {
+          "type": "item",
+          "text": "MIDI Mapper : liste de mappage complète avec état actif/inactif"
+        },
+        {
+          "type": "item",
+          "text": "Paramètres du plugin d'appareil (si un appareil est connecté via le Config Tool)"
+        },
+        {
+          "type": "note",
+          "text": "Les réglages du Clavier Piano (zoom, position de défilement, pression, haptique) sont stockés dans des préréglages Piano séparés et ne sont PAS inclus dans une Scène."
+        }
+      ]
+    },
+    {
+      "id": "Piano Keyboard",
+      "title": "Clavier Piano",
+      "icon": "piano_outlined",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Le clavier Hemiola s'étend sur 7 octaves avec sensibilité à la pression (sur iOS et les appareils Android compatibles) et prise en charge des accords multi-touch."
+        },
+        {
+          "type": "para",
+          "text": "Le clavier est affiché verticalement sur les téléphones (portrait), et horizontalement en mode paysage, sur tablette et sur bureau."
+        },
+        {
+          "type": "subtitle",
+          "text": "Navigation"
+        },
+        {
+          "type": "item",
+          "text": "Sur les téléphones, la barre d'onglets inférieure est masquée lorsque la disposition du clavier est trop compacte (y compris portrait et paysage compact) pour maximiser la zone de jeu."
+        },
+        {
+          "type": "item",
+          "text": "Lorsqu'il y a suffisamment d'espace (tablette, bureau ou dispositions téléphone plus larges), la barre d'onglets et le nom de la section / lien d'aide sont affichés sous le clavier."
+        },
+        {
+          "type": "subtitle",
+          "text": "Contrôles de la Barre Supérieure"
+        },
+        {
+          "type": "item",
+          "text": "Flèches de défilement : appuyez pour déplacer d'une touche, appui long pour déplacer d'une octave complète"
+        },
+        {
+          "type": "item",
+          "text": "Bascule pression : activer ou désactiver la sensibilité à la pression tactile (vélocité)"
+        },
+        {
+          "type": "item",
+          "text": "Bascule haptique : activer ou désactiver le retour vibratoire à l'appui sur une touche"
+        },
+        {
+          "type": "item",
+          "text": "Curseur de volume master : accès rapide au volume général"
+        },
+        {
+          "type": "item",
+          "text": "Zoom avant/arrière : ajuster la largeur des touches ; appui long sur la loupe pour passer au zoom minimal ou maximal"
+        },
+        {
+          "type": "item",
+          "text": "Icône centre : réinitialiser le zoom par défaut ; appui long pour centrer l'octave active"
+        },
+        {
+          "type": "item",
+          "text": "Icône préréglage : enregistrer et rappeler les configurations du Clavier Piano (gamme, position de défilement, sensibilité à la pression, retour haptique). L'application d'un préréglage redessine immédiatement le clavier avec le niveau de zoom et la position de défilement enregistrés."
+        }
+      ]
+    },
+    {
+      "id": "Configuration Tool",
+      "title": "Outil Configuration",
+      "icon": "settings_outlined",
+      "entries": [
+        {
+          "type": "para",
+          "text": "L'onglet Outil Configuration affiche une interface native pour l'appareil MIDI connecté. Connectez un appareil pris en charge et appuyez sur l'onglet Config pour le configurer."
+        },
+        {
+          "type": "subtitle",
+          "text": "Comment ça fonctionne"
+        },
+        {
+          "type": "item",
+          "text": "Chaque appareil pris en charge possède son propre plugin qui s'affiche directement dans Hemiola."
+        },
+        {
+          "type": "item",
+          "text": "Toutes les modifications de paramètres sont envoyées à l'appareil en temps réel."
+        },
+        {
+          "type": "item",
+          "text": "Utilisez l'icône Préréglage dans la barre supérieure pour enregistrer et rappeler la configuration de votre appareil. L'icône est colorée lorsqu'elle est propre et orange lorsqu'il y a des modifications non enregistrées."
+        },
+        {
+          "type": "item",
+          "text": "Lorsqu'un plugin est actif, une icône d'avertissement orange apparaît à côté du titre Outil Configuration en bas. Appuyez dessus pour afficher l'avertissement du fabricant."
+        },
+        {
+          "type": "note",
+          "text": "Si aucun appareil n'est connecté, l'onglet affiche un espace réservé « Aucun appareil compatible connecté ». Lorsqu'un appareil est actif, une section d'aide spécifique à l'appareil apparaît en bas de cet écran d'aide."
+        },
+        {
+          "type": "subtitle",
+          "text": "Appareils Multiples"
+        },
+        {
+          "type": "para",
+          "text": "Lorsque deux appareils pris en charge ou plus sont connectés simultanément, un bouton de sélection d'appareil apparaît à côté de l'icône de préréglage dans la barre supérieure."
+        },
+        {
+          "type": "item",
+          "text": "Appuyez à nouveau sur l'icône de l'onglet Config (pendant qu'il est déjà actif) pour ouvrir le menu de sélection d'appareil et choisir quel appareil configurer"
+        },
+        {
+          "type": "item",
+          "text": "Le menu affiche tous les appareils actuellement reconnus ; celui actif est mis en évidence"
+        },
+        {
+          "type": "item",
+          "text": "Chaque appareil maintient sa propre liste de préréglages indépendante"
+        },
+        {
+          "type": "subtitle",
+          "text": "Appareils Pris en Charge"
+        },
+        {
+          "type": "item",
+          "text": "Tahorng Windkey — instrument à vent numérique style mélodica"
+        },
+        {
+          "type": "item",
+          "text": "Akai EWI USB — contrôleur à vent numérique"
+        },
+        {
+          "type": "item",
+          "text": "Roland AE-01 Aerophone — instrument à vent numérique"
+        },
+        {
+          "type": "item",
+          "text": "ClariiMini — instrument à vent numérique"
+        },
+        {
+          "type": "item",
+          "text": "Moog Theremini — thérémine numérique"
+        }
+      ]
+    },
+    {
+      "id": "MIDI Devices",
+      "title": "Périphériques MIDI",
+      "icon": "device_hub",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Le Gestionnaire d'Appareils MIDI liste tous les appareils MIDI disponibles. Appuyez sur un appareil pour le connecter ou le déconnecter."
+        },
+        {
+          "type": "item",
+          "text": "Appareils Bluetooth : la numérisation BT est désactivée par défaut ; appuyez sur l'icône BT et accordez la permission pour numériser"
+        },
+        {
+          "type": "item",
+          "text": "Interrupteur réseau (iOS/macOS) : active les sessions MIDI réseau"
+        },
+        {
+          "type": "item",
+          "text": "Interrupteur virtuel : active un port MIDI virtuel (la disponibilité dépend de la plateforme)"
+        },
+        {
+          "type": "item",
+          "text": "Bouton recharger : arrête complètement le sous-système MIDI et le redémarre — utile si les appareils ne sont pas détectés ou si la pile MIDI semble bloquée. Les derniers appareils connus sont reconnectés automatiquement."
+        },
+        {
+          "type": "para",
+          "text": "Utilisez les boutons de la barre inférieure pour accéder au MIDI Mapper. Certains réglages MIDI généraux sont également disponibles dans la fenêtre principale Paramètres."
+        },
+        {
+          "type": "subtitle",
+          "text": "Préférences MIDI Générales"
+        },
+        {
+          "type": "item",
+          "text": "Canal SF : canal MIDI pour le synthétiseur SoundFont (par défaut : OMNI)"
+        },
+        {
+          "type": "item",
+          "text": "Canal Analog : canal MIDI pour le synthétiseur Analog (par défaut : OMNI)"
+        },
+        {
+          "type": "item",
+          "text": "MIDI Thru : transmettre les messages MIDI entrants aux appareils de sortie connectés"
+        },
+        {
+          "type": "item",
+          "text": "Plage Pitch Bend : sensibilité du pitch bend entrant en demi-tons"
+        },
+        {
+          "type": "subtitle",
+          "text": "MIDI Mapper"
+        },
+        {
+          "type": "para",
+          "text": "Permet de contrôler les paramètres Hemiola via MIDI (mode UI) ou de transmettre et transformer des messages MIDI (mode Custom)."
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur une entrée pour l'activer ou la désactiver"
+        },
+        {
+          "type": "item",
+          "text": "Filtrez la liste par type de message ; « activer tout le visible » s'applique à l'ensemble filtré"
+        },
+        {
+          "type": "item",
+          "text": "Ajouter un mappage personnalisé : définissez le nom, le canal entrée/sortie, la commande et les données ; appuyez sur l'icône paramètres pour modifier ou supprimer"
+        },
+        {
+          "type": "note",
+          "text": "Appui long sur le bouton Ajouter pour réinitialiser tous les mappages aux valeurs par défaut et supprimer toutes les entrées personnalisées."
+        },
+        {
+          "type": "subtitle",
+          "text": "Console MIDI"
+        },
+        {
+          "type": "para",
+          "text": "Affiche une liste en temps réel des messages MIDI récemment reçus. Utile pour tester et diagnostiquer les connexions MIDI, et pour identifier les bonnes valeurs de canal/commande lors de la création d'entrées MIDI Mapper."
+        },
+        {
+          "type": "item",
+          "text": "Accès : appui long sur l'icône MIDI dans la barre d'onglets inférieure, ou appui long sur l'icône MIDI dans l'écran Gestionnaire d'Appareils MIDI"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur le bouton Effacer en bas pour effacer la liste de messages actuelle"
+        }
+      ]
+    },
+    {
+      "id": "Sound Generator",
+      "title": "Générateur de Son",
+      "icon": "graphic_eq",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Le Sound Generator comprend deux synthétiseurs indépendants : SoundFont et Analog. Il répond au clavier piano, aux appareils MIDI USB/BT, à l'interface virtuelle et au MIDI Network (iOS/macOS). La taille du tampon audio est configurable pour une latence minimale."
+        },
+        {
+          "type": "subtitle",
+          "text": "MAIN"
+        },
+        {
+          "type": "item",
+          "text": "Volume Master : niveau de sortie général"
+        },
+        {
+          "type": "item",
+          "text": "Volume de Canal : volume envoyé via MIDI CC 7"
+        },
+        {
+          "type": "item",
+          "text": "Pan : panoramique stéréo (gauche ↔ droite)"
+        },
+        {
+          "type": "item",
+          "text": "Mode stéréo : sélectionner la sortie mono ou stéréo"
+        },
+        {
+          "type": "note",
+          "text": "Un point rouge apparaît dans la barre supérieure lorsque de l'écrêtage est détecté. Baissez le volume ou activez le Limiter (Sound Effects) pour le résoudre."
+        },
+        {
+          "type": "subtitle",
+          "text": "HAUTEUR"
+        },
+        {
+          "type": "item",
+          "text": "Master Tuning : accordage fin en centièmes (−100 à +100) ; la fréquence de référence A4 est affichée en Hz"
+        },
+        {
+          "type": "item",
+          "text": "Transposition : décaler la hauteur de −12 à +12 demi-tons"
+        },
+        {
+          "type": "item",
+          "text": "Interrupteur A4 : émet un ton de référence A4, affecté par la Transposition et le Master Tuning"
+        },
+        {
+          "type": "subtitle",
+          "text": "SORTIE AUDIO"
+        },
+        {
+          "type": "item",
+          "text": "Taille du Tampon : des valeurs plus grandes réduisent les sous-exécutions mais augmentent la latence"
+        },
+        {
+          "type": "item",
+          "text": "AUTO : gestion automatique de la taille du tampon (recommandée dans la plupart des cas)"
+        },
+        {
+          "type": "note",
+          "text": "Si l'icône Sound Engine devient rouge, une sous-exécution du tampon audio s'est produite — augmentez la taille du tampon ou activez AUTO. La section affiche également une estimation approximative de la latence audio actuelle et de la fréquence d'échantillonnage (définie automatiquement par le moteur audio)."
+        },
+        {
+          "type": "subtitle",
+          "text": "SoundFont Synth"
+        },
+        {
+          "type": "para",
+          "text": "Un synthétiseur basé sur des échantillons utilisant le format de fichier sf2. De nombreuses collections SoundFont gratuites sont disponibles en ligne et peuvent être téléchargées vers Hemiola."
+        },
+        {
+          "type": "item",
+          "text": "Volume : niveau de sortie du module SoundFont"
+        },
+        {
+          "type": "item",
+          "text": "Pan : panoramique stéréo du module SoundFont"
+        },
+        {
+          "type": "item",
+          "text": "Actuel : sélectionner le fichier SoundFont actif (lorsque plusieurs sont chargés)"
+        },
+        {
+          "type": "item",
+          "text": "Patch : sélectionner un préréglage d'instrument dans le SoundFont actuel"
+        },
+        {
+          "type": "item",
+          "text": "Personnalisé : télécharger un fichier .sf2 local vers Hemiola"
+        },
+        {
+          "type": "subtitle",
+          "text": "Analog Synth"
+        },
+        {
+          "type": "para",
+          "text": "Une émulation numérique d'un synthétiseur analogique classique, librement inspiré du Minimoog Model D."
+        },
+        {
+          "type": "item",
+          "text": "Volume : niveau de sortie du module Analog"
+        },
+        {
+          "type": "item",
+          "text": "Pan : panoramique stéréo du module Analog"
+        },
+        {
+          "type": "subtitle",
+          "text": "Oscillateurs Analog"
+        },
+        {
+          "type": "para",
+          "text": "Les trois oscillateurs partagent le même jeu de paramètres :"
+        },
+        {
+          "type": "item",
+          "text": "Onde : forme d'onde — Sinus, Carrée, Dent de scie (×2), Triangle (×2)"
+        },
+        {
+          "type": "item",
+          "text": "Plage : octave de base — 32', 16', 8', 4', ou 2'"
+        },
+        {
+          "type": "item",
+          "text": "Detune : décalage d'accordage fin en centièmes (−100 à +100)"
+        },
+        {
+          "type": "item",
+          "text": "Shift : décalage en demi-tons (−12 à +12)"
+        },
+        {
+          "type": "item",
+          "text": "Volume : niveau de sortie de l'oscillateur individuel"
+        },
+        {
+          "type": "subtitle",
+          "text": "Oscillateur Basse Fréquence (LFO)"
+        },
+        {
+          "type": "item",
+          "text": "Route : Vibrato, Fréquence (hauteur), Coupure LPF, ou étendue Stéréo"
+        },
+        {
+          "type": "item",
+          "text": "Onde : forme d'onde du LFO (mêmes types que les oscillateurs)"
+        },
+        {
+          "type": "item",
+          "text": "BPM : fréquence d'oscillation"
+        },
+        {
+          "type": "item",
+          "text": "Profondeur : amplitude de la modulation"
+        },
+        {
+          "type": "subtitle",
+          "text": "Filtre Passe-Bas (LPF)"
+        },
+        {
+          "type": "item",
+          "text": "Coupure : les fréquences au-dessus de ce seuil sont atténuées"
+        },
+        {
+          "type": "item",
+          "text": "Emphase : amplifie les fréquences autour de la fréquence de coupure (résonance)"
+        },
+        {
+          "type": "note",
+          "text": "La coupure du LPF peut être modulée par le LFO (Route : Coupure LPF) ou par MIDI CC."
+        },
+        {
+          "type": "subtitle",
+          "text": "Générateur de Bruit"
+        },
+        {
+          "type": "item",
+          "text": "Oscillateur de bruit blanc — utile pour ajouter du souffle ou de l'air à un son"
+        },
+        {
+          "type": "item",
+          "text": "Volume : niveau de sortie du bruit"
+        },
+        {
+          "type": "subtitle",
+          "text": "Enveloppe de Volume (ADSR)"
+        },
+        {
+          "type": "para",
+          "text": "Contrôle l'enveloppe d'amplitude du synthétiseur Analog :"
+        },
+        {
+          "type": "item",
+          "text": "Attack : temps (ms) pour atteindre l'amplitude maximale après note-on"
+        },
+        {
+          "type": "item",
+          "text": "Decay : temps (ms) pour descendre au niveau de sustain"
+        },
+        {
+          "type": "item",
+          "text": "Sustain : niveau d'amplitude tant que la touche est maintenue (pour mille, 0–1000)"
+        },
+        {
+          "type": "item",
+          "text": "Release : temps (ms) pour s'atténuer jusqu'au silence après note-off"
+        }
+      ]
+    },
+    {
+      "id": "Sound Effects",
+      "title": "Effets Sonores",
+      "icon": "blur_on",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Les effets audio sont appliqués en série : SoundFont + Analog → Chorus → Delay → Reverb → Limiter."
+        },
+        {
+          "type": "subtitle",
+          "text": "Chorus"
+        },
+        {
+          "type": "item",
+          "text": "Envoi : niveau de mixage de l'effet (0–127 ; répond au MIDI CC 93)"
+        },
+        {
+          "type": "item",
+          "text": "Delay : temps de retard en millisecondes"
+        },
+        {
+          "type": "item",
+          "text": "Profondeur : plage de fréquence de modulation"
+        },
+        {
+          "type": "item",
+          "text": "Fréq : vitesse LFO de la modulation chorus"
+        },
+        {
+          "type": "subtitle",
+          "text": "Delay"
+        },
+        {
+          "type": "item",
+          "text": "BPM : fréquence de répétition"
+        },
+        {
+          "type": "item",
+          "text": "Decay : amortissement par répétition — 0 % = répétition infinie, 100 % = arrêt"
+        },
+        {
+          "type": "item",
+          "text": "Amplitude : niveau de sortie de l'effet delay (%)"
+        },
+        {
+          "type": "subtitle",
+          "text": "Reverb"
+        },
+        {
+          "type": "para",
+          "text": "8 préréglages : Vocal I, Vocal II, Bathroom, Small Room, Medium Room, Large Room, Church Hall, Cathedral."
+        },
+        {
+          "type": "item",
+          "text": "Envoi : niveau d'entrée vers la reverb (répond au MIDI CC 91)"
+        },
+        {
+          "type": "item",
+          "text": "Wet : mixage de sortie du signal reverb (%)"
+        },
+        {
+          "type": "item",
+          "text": "Room Size : dimension simulée de la pièce (%)"
+        },
+        {
+          "type": "item",
+          "text": "Damp : absorption des hautes fréquences (%)"
+        },
+        {
+          "type": "item",
+          "text": "Spread/Width : largeur stéréo de la traîne reverb (%)"
+        },
+        {
+          "type": "note",
+          "text": "Basé sur l'algorithme Freeverb de Jezar, implémenté via Dart Melty Sounds."
+        },
+        {
+          "type": "subtitle",
+          "text": "Limiter"
+        },
+        {
+          "type": "para",
+          "text": "Empêche l'écrêtage en comprimant l'audio qui dépasse le seuil. Un point bleu ciel dans la barre supérieure indique que le limiter est actif ; un compteur horizontal montre la réduction de gain actuelle."
+        },
+        {
+          "type": "item",
+          "text": "Seuil : niveau d'amplitude auquel la compression commence (%)"
+        },
+        {
+          "type": "item",
+          "text": "Plafond : amplitude de sortie maximale après compression (%)"
+        },
+        {
+          "type": "item",
+          "text": "Attack : temps (ms) pour engager la compression après que le seuil est dépassé"
+        },
+        {
+          "type": "item",
+          "text": "Release : temps (ms) pour désengager la compression après que le signal descend sous le seuil"
+        }
+      ]
+    },
+    {
+      "id": "Community Library",
+      "title": "Bibliothèque Community",
+      "icon": "cloud_queue",
+      "entries": [
+        {
+          "type": "para",
+          "text": "La Bibliothèque Community est une collection partagée de préréglages publiés par les utilisateurs Hemiola. Ouvrez-la depuis l'icône cloud dans la barre supérieure. Elle est accessible à tous — aucun abonnement n'est nécessaire pour parcourir et appliquer des préréglages."
+        },
+        {
+          "type": "subtitle",
+          "text": "Parcourir"
+        },
+        {
+          "type": "item",
+          "text": "Tapez dans la barre de recherche pour filtrer les préréglages par nom ou hashtag en temps réel"
+        },
+        {
+          "type": "item",
+          "text": "Faites défiler vers le bas pour charger automatiquement plus de préréglages (défilement infini) ; tirez pour actualiser la liste"
+        },
+        {
+          "type": "item",
+          "text": "Chaque carte affiche le nom du préréglage, les hashtags, le nom de l'auteur, les compteurs de votes et le nombre de téléchargements. Appuyez sur la carte pour la développer et voir la description complète, les puces de section et les boutons d'action"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur le nom de l'auteur pour afficher son profil (avatar, nom d'affichage, nom d'utilisateur, bio)"
+        },
+        {
+          "type": "subtitle",
+          "text": "Appliquer un préréglage"
+        },
+        {
+          "type": "para",
+          "text": "Appliquer est gratuit et disponible pour tous les utilisateurs. Il charge les valeurs du préréglage en direct sans les enregistrer localement — parfait pour une écoute rapide."
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur Appliquer sur n'importe quelle carte pour appliquer le préréglage immédiatement. Si vous avez des modifications locales non enregistrées, une boîte de dialogue demande si vous souhaitez d'abord enregistrer ou appliquer quand même"
+        },
+        {
+          "type": "item",
+          "text": "Les paramètres d'appareil intégrés dans un préréglage ne sont pas appliqués dans cette version ; un avertissement est affiché lorsqu'un préréglage en contient"
+        },
+        {
+          "type": "subtitle",
+          "text": "Importer un préréglage"
+        },
+        {
+          "type": "para",
+          "text": "L'importation enregistre le préréglage comme entrée locale nommée dans votre bibliothèque, afin que vous puissiez y revenir à tout moment — comme un préréglage créé localement. Nécessite un abonnement Cloud Pro, ou l'achat intégré Hemiola Pro."
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur Importer, choisissez un nom (prérempli avec le nom du préréglage) et confirmez"
+        },
+        {
+          "type": "item",
+          "text": "Le préréglage importé est ajouté à chaque section pertinente (Analog, niveaux FX, MIDI Mapper) qu'il contient"
+        },
+        {
+          "type": "subtitle",
+          "text": "Panneau Dernier Utilisé"
+        },
+        {
+          "type": "para",
+          "text": "Le dernier préréglage appliqué ou importé est épinglé en bas de l'écran pour une ré-application et un vote rapides."
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur le bouton lecture pour ré-appliquer le préréglage sans remonter jusqu'à lui"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur le bouton de téléchargement pour l'importer (abonnement requis)"
+        },
+        {
+          "type": "item",
+          "text": "Utilisez les boutons pouce levé / pouce baissé pour voter. Appuyer à nouveau sur le même vote le supprime. Voter nécessite un compte cloud mais pas d'abonnement payant"
+        },
+        {
+          "type": "subtitle",
+          "text": "Publier vos préréglages"
+        },
+        {
+          "type": "para",
+          "text": "Partagez vos sons avec la communauté. Nécessite un abonnement Cloud Pro."
+        },
+        {
+          "type": "item",
+          "text": "Ouvrez la boîte de dialogue Préréglage pour n'importe quelle section prise en charge et appuyez sur Publier…"
+        },
+        {
+          "type": "item",
+          "text": "Choisissez les sections à inclure (Analog, niveaux FX, MIDI Mapper, Appareil), donnez un nom et une description optionnelle au préréglage, et ajoutez des hashtags pour aider les autres à le trouver"
+        },
+        {
+          "type": "item",
+          "text": "Vos préréglages publiés apparaissent dans l'onglet Préréglages Partagés de la fenêtre Compte Cloud, où vous pouvez les modifier, les masquer ou les supprimer"
+        },
+        {
+          "type": "note",
+          "text": "Activez le Profil Public (onglet Profil dans Compte Cloud) pour rendre vos préréglages visibles à la communauté. Les préréglages marqués publics mais dont le profil auteur n'est pas public affichent une icône d'avertissement."
+        }
+      ]
+    },
+    {
+      "id": "PushNotifications",
+      "title": "Notifications Push",
+      "icon": "notifications_none",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Les Notifications Push permettent à Hemiola de vous contacter avec des annonces, des offres, des mises à jour et des messages système. Les notifications sont livrées en temps réel lorsque l'application est ouverte. À la reconnexion, les notifications manquées sont automatiquement récupérées depuis le serveur."
+        },
+        {
+          "type": "subtitle",
+          "text": "Icône Cloche"
+        },
+        {
+          "type": "para",
+          "text": "L'icône de cloche dans la barre supérieure est visible pour les utilisateurs connectés et les invités. Un badge rouge affiche le nombre de notifications non lues. Appuyez sur l'icône pour ouvrir le panneau de notifications, qui se développe directement sous l'icône."
+        },
+        {
+          "type": "item",
+          "text": "Les notifications non lues sont affichées avec un cercle plein ; les notifications lues avec un cercle vide"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur une notification pour la développer et lire le contenu complet"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur l'icône de paramètres dans le coin supérieur droit du popup pour ouvrir le Compte Cloud et gérer les préférences de notifications"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur le bouton d'ignorance (×) sur une notification pour la masquer de la liste"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur Tout Marquer Comme Lu pour marquer toutes les notifications visibles comme lues en une fois"
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur Tout Afficher pour ouvrir la page complète des notifications avec l'historique complet"
+        },
+        {
+          "type": "subtitle",
+          "text": "Synchronisation Cross-Device"
+        },
+        {
+          "type": "para",
+          "text": "Lorsque vous êtes connecté, l'état de lecture et d'ignorance des notifications est synchronisé sur tous vos appareils. En mode invité, l'état des notifications est suivi par appareil uniquement et n'est pas synchronisé avec d'autres appareils."
+        },
+        {
+          "type": "note",
+          "text": "Une notification que vous avez déjà ignorée ne réapparaîtra pas, même si la même notification est renvoyée par le serveur."
+        }
+      ]
+    },
+    {
+      "id": "Privacy",
+      "title": "Confidentialite",
+      "icon": "privacy_tip_outlined",
+      "entries": [
+        {
+          "type": "para",
+          "text": "L'onglet Confidentialite dans Compte Cloud contrôle la façon dont Hemiola gère les données d'utilisation anonymes des appareils. Aucune donnée personnelle n'est jamais collectée ni transmise."
+        },
+        {
+          "type": "subtitle",
+          "text": "Données anonymes des appareils"
+        },
+        {
+          "type": "para",
+          "text": "Lorsque cette option est activée, Hemiola signale des statistiques anonymes sur les appareils MIDI que vous connectez. Ces données servent à prioriser le développement de plugins et à améliorer la compatibilité."
+        },
+        {
+          "type": "item",
+          "text": "Les données sont toujours hachées et anonymisées"
+        },
+        {
+          "type": "item",
+          "text": "Aucune information personnelle n'est jamais incluse"
+        },
+        {
+          "type": "item",
+          "text": "Vous pouvez modifier votre choix à tout moment dans l'onglet Confidentialité"
+        },
+        {
+          "type": "subtitle",
+          "text": "Appareils connus"
+        },
+        {
+          "type": "para",
+          "text": "La liste des appareils connus affiche les appareils dont les données anonymes ont été envoyées au serveur."
+        },
+        {
+          "type": "item",
+          "text": "Appuyez sur Tout supprimer pour supprimer définitivement toutes les données d'appareils"
+        },
+        {
+          "type": "note",
+          "text": "Une boîte de dialogue de consentement s'affiche lors de votre première connexion."
+        }
+      ]
+    }
+  ]
+}

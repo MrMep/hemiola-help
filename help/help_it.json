@@ -1,0 +1,1135 @@
+{
+  "version": 1,
+  "language": "it",
+  "sections": [
+    {
+      "id": "Introduction",
+      "title": "Introduzione",
+      "icon": "info_outline",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Hemiola è un'app musicale multipiattaforma che ti permette di: suonare una tastiera piano, connettere dispositivi MIDI, generare suoni con un sintetizzatore SoundFont e uno Analog, applicare effetti audio e configurare dispositivi MIDI USB/BT, tutto da un'unica interfaccia."
+        },
+        {
+          "type": "para",
+          "text": "Hemiola è gratuita su mobile. La versione gratuita consente fino a 3 preset per sezione. La versione Pro (acquisto in‑app una tantum) rimuove questo limite. Le funzionalità cloud richiedono un account Cloud gratuito o a pagamento."
+        },
+        {
+          "type": "item",
+          "text": "Al primo avvio viene mostrato un breve tutorial. Puoi saltarlo e, dopo averlo saltato, accedervi di nuovo tramite il pulsante Info nella finestra principale."
+        },
+        {
+          "type": "item",
+          "text": "Per gli utenti staff o admin autenticati, nelle Preferenze è disponibile una sezione Debug con un interruttore endpoint Prod/Dev e un'azione Reimposta Tutorial per QA/testing. Tutti gli utenti possono accedere all'opzione Ripristino di Fabbrica per cancellare tutte le preferenze e i preset salvati e riavviare l'app da zero."
+        },
+        {
+          "type": "subtitle",
+          "text": "Preset & Scene"
+        },
+        {
+          "type": "para",
+          "text": "Un'icona preset (libreria/musica) è sempre visibile nella barra superiore. È grigia e discreta quando non ci sono modifiche non salvate (pulita), e arancione quando ci sono modifiche non salvate (sporca)."
+        },
+        {
+          "type": "item",
+          "text": "Finestra preset (pulita): tocca un preset per applicarlo immediatamente. Tocca l'icona di modifica per rinominarlo, l'icona del cestino per eliminarlo. Tieni premuto il pulsante Aggiungi per aggiungere un nuovo preset con il nome corrente dello stato."
+        },
+        {
+          "type": "item",
+          "text": "Finestra preset (sporca): tocca un preset utente per sovrascriverlo con i valori correnti, oppure usa il pulsante Aggiungi per salvarlo come nuovo preset."
+        },
+        {
+          "type": "item",
+          "text": "Sezioni con supporto preset: Tastiera Piano (scala, posizione di scorrimento, sensibilità pressione, feedback aptico), Suono (synth analogico + effetti), Configurazione Dispositivo, e MIDI Mapper."
+        },
+        {
+          "type": "note",
+          "text": "Il preset SCENE (nel Sound Generator) salva il preset Suono, limiter, SoundFont, MIDI Mapper e parametri dispositivo contemporaneamente — indipendente dai preset delle singole sezioni."
+        },
+        {
+          "type": "subtitle",
+          "text": "Barra Superiore"
+        },
+        {
+          "type": "para",
+          "text": "La barra superiore contiene azioni persistenti disponibili in ogni schermata."
+        },
+        {
+          "type": "item",
+          "text": "Logo Hemiola → Schermata principale; funge anche da pulsante Indietro nelle sotto-schermate."
+        },
+        {
+          "type": "item",
+          "text": "Icona maschere teatrali (Scene) → salva e ripristina un'istantanea completa di tutti i parametri del Sound Generator e MIDI in un unico tocco."
+        },
+        {
+          "type": "item",
+          "text": "Icona preset (libreria/musica) → sempre visibile; grigia quando la sezione corrente non ha modifiche non salvate, arancione quando ci sono modifiche non salvate."
+        },
+        {
+          "type": "item",
+          "text": "Icona campanella (Notifiche Push) → mostrata per utenti autenticati e ospiti; mostra il conteggio dei non letti con un badge rosso."
+        },
+        {
+          "type": "item",
+          "text": "Icona batteria → mostrata solo mentre Config Tool è la scheda attiva, per i dispositivi compatibili che riportano il livello della batteria."
+        },
+        {
+          "type": "subtitle",
+          "text": "Barra Schede Inferiore"
+        },
+        {
+          "type": "para",
+          "text": "La barra inferiore fornisce accesso rapido alle quattro sezioni principali. La scheda attiva è evidenziata."
+        },
+        {
+          "type": "item",
+          "text": "Icona piano → Tastiera Piano"
+        },
+        {
+          "type": "item",
+          "text": "Icona link (Config Tool) → colorata quando un dispositivo supportato è connesso; tieni premuto per aprire il menu di selezione del dispositivo."
+        },
+        {
+          "type": "item",
+          "text": "Icona MIDI → Gestore Dispositivi MIDI; colorata quando un dispositivo è connesso; tieni premuto per aprire la Console MIDI."
+        },
+        {
+          "type": "item",
+          "text": "Icona equalizzatore (Sound Generator) → colorata quando il generatore è in riproduzione; tieni premuto per aprire la scheda MAIN direttamente."
+        },
+        {
+          "type": "subtitle",
+          "text": "Manopole"
+        },
+        {
+          "type": "item",
+          "text": "Trascina verso l'alto o a destra per aumentare il valore; trascina verso il basso o a sinistra per diminuire"
+        },
+        {
+          "type": "item",
+          "text": "Tocca l'arco per saltare direttamente a quella posizione"
+        },
+        {
+          "type": "item",
+          "text": "Doppio tocco sulla manopola per reimpostare al valore predefinito"
+        },
+        {
+          "type": "item",
+          "text": "Tieni premuta l'etichetta del valore per aprire un editor modale per l'inserimento numerico preciso. L'input è convalidato in base all'intervallo del parametro."
+        },
+        {
+          "type": "item",
+          "text": "Tieni premuto il corpo della manopola (senza muoverti) per attivare la modalità Fine: la sensibilità del trascinamento è ridotta per aggiustamenti precisi."
+        },
+        {
+          "type": "subtitle",
+          "text": "Aggiornamenti App"
+        },
+        {
+          "type": "item",
+          "text": "Aggiornamenti Store (App Store / Play Store): nuove funzionalità e correzioni di bug"
+        },
+        {
+          "type": "item",
+          "text": "Aggiornamenti in‑app: file SoundFont integrati, nuove pagine plugin di Config Tool, help localizzati e altri asset. Vengono consegnati tramite il server cloud di Hemiola senza richiedere un aggiornamento Store."
+        },
+        {
+          "type": "item",
+          "text": "Quando un aggiornamento in‑app installa un nuovo plugin di dispositivo supportato, il catalogo viene ricaricato automaticamente nella stessa sessione."
+        },
+        {
+          "type": "note",
+          "text": "Un avviso viene mostrato all'avvio quando sono disponibili aggiornamenti. Puoi anche verificare manualmente tramite Controlla Aggiornamenti nelle Preferenze."
+        },
+        {
+          "type": "item",
+          "text": "La finestra controlla-aggiornamenti mostra una barra di avanzamento mentre i file vengono scaricati. Puoi chiuderla durante il download; il processo continua in background."
+        }
+      ]
+    },
+    {
+      "id": "Cloud Account",
+      "title": "Account Cloud",
+      "icon": "account_circle",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Accedi o crea un account su hemiola.app, o direttamente dalla schermata principale toccando il pulsante Account Cloud. I livelli a pagamento vengono gestiti tramite lo Store della piattaforma (App Store, Google Play, Microsoft Store)."
+        },
+        {
+          "type": "subtitle",
+          "text": "Livelli di Abbonamento"
+        },
+        {
+          "type": "table",
+          "text": "Funzionalità|App Gratuita|App Pro|Cloud Gratuito|Cloud Pro\nPiano & Sound Generator|✓|✓|✓|✓\nPreset per sezione|max 3|Illimitati|Illimitati|Illimitati\nScarica preset condivisi|✓|✓|✓|✓\nCondividi i tuoi preset|-|-|-|✓\nConfig Tool & MIDI (mobile)|✓|✓|✓|✓\nConfig Tool & MIDI (desktop)|—|—|-|✓\nBackup impostazioni|—|—|-|✓\nSnapshot di backup|—|—|-|✓\nSincronizzazione multi-dispositivo|—|—|-|✓"
+        },
+        {
+          "type": "note",
+          "text": "App Pro = acquisto in‑app una tantum (iOS/Android). Cloud Pro è un abbonamento ricorrente (mensile o annuale). Tutti i livelli includono piano e generatore di suoni completi."
+        },
+        {
+          "type": "subtitle",
+          "text": "Gestione Account"
+        },
+        {
+          "type": "item",
+          "text": "Scheda Profilo: modifica il tuo nome visualizzato, foto del profilo e impostazioni del profilo pubblico — l'abilitazione rende visibili alla community i preset pubblicati."
+        },
+        {
+          "type": "item",
+          "text": "Scheda Abbonamento: visualizza il livello corrente, gestisci il tuo abbonamento tramite lo Store della piattaforma."
+        },
+        {
+          "type": "item",
+          "text": "Scheda I Miei Dispositivi: elenca tutti i dispositivi registrati al tuo account con i timestamp dell'ultimo accesso. Tocca un dispositivo per aprire Impostazioni Dispositivo."
+        },
+        {
+          "type": "item",
+          "text": "Scheda Backup: visualizza lo stato di backup corrente, configura l'intervallo automatico, esegui un backup manuale o ripristina da uno snapshot."
+        },
+        {
+          "type": "item",
+          "text": "Scheda Preset Condivisi: gestisci i preset pubblicati (modifica, nascondi o elimina). Richiede Cloud Pro."
+        },
+        {
+          "type": "item",
+          "text": "Scheda Login: salva opzionalmente le credenziali in modo sicuro sul dispositivo per accessi più veloci; le credenziali salvate vengono cancellate se esci dall'account."
+        },
+        {
+          "type": "item",
+          "text": "Quando le credenziali salvate sono presenti, nome utente e password vengono pre-compilati all'avvio per un accesso rapido — tocca semplicemente Accedi."
+        },
+        {
+          "type": "item",
+          "text": "Reimpostazione password ed eliminazione account sono disponibili dalla pagina dell'account"
+        },
+        {
+          "type": "subtitle",
+          "text": "Preset Condivisi"
+        },
+        {
+          "type": "para",
+          "text": "Pubblica le tue impostazioni correnti di Suono o dispositivo come preset community. Richiede Cloud Pro."
+        },
+        {
+          "type": "item",
+          "text": "Abilita il Profilo Pubblico (scheda Profilo) per rendere visibili alla community i preset pubblicati — i preset contrassegnati come pubblici ma con un profilo non pubblico mostrano un'icona di avviso"
+        },
+        {
+          "type": "item",
+          "text": "Ogni preset pubblicato può essere nascosto (senza eliminarlo) o eliminato definitivamente dalla scheda Preset Condivisi"
+        },
+        {
+          "type": "item",
+          "text": "Puoi modificare nome, descrizione e hashtag di un preset pubblicato in qualsiasi momento"
+        },
+        {
+          "type": "note",
+          "text": "Il profilo viene aggiornato automaticamente ogni volta che cambi scheda nella finestra Account Cloud, quindi le modifiche apportate su un altro dispositivo si riflettono sempre."
+        },
+        {
+          "type": "subtitle",
+          "text": "Backup Impostazioni"
+        },
+        {
+          "type": "para",
+          "text": "Backup cloud automatico delle impostazioni e dei preset, configurabile dalla finestra Account Cloud → scheda Backup. Richiede Cloud Pro."
+        },
+        {
+          "type": "item",
+          "text": "Intervallo di Backup Automatico (scheda Backup): scegli Disabilitato, Il Prima Possibile (30 s), Dopo 5/15/30 min di inattività, o Dopo 1 ora di inattività. Il backup si avvia dopo il periodo di silenzio selezionato dall'ultima modifica — non su un programma fisso"
+        },
+        {
+          "type": "item",
+          "text": "Vengono trasmesse solo le differenze dall'ultimo backup (backup delta), mantenendo upload veloci ed efficienti in banda. La baseline persiste tra i riavvii, quindi non viene effettuato alcun upload ridondante all'avvio se nulla è cambiato"
+        },
+        {
+          "type": "item",
+          "text": "Ogni backup crea uno snapshot con nome. Sfoglia la cronologia completa e ripristina qualsiasi stato precedente dalla scheda Backup"
+        },
+        {
+          "type": "item",
+          "text": "I backup sono per dispositivo: ogni dispositivo registrato ha la propria cronologia di backup indipendente"
+        },
+        {
+          "type": "note",
+          "text": "Il backup manuale è disponibile anche dalla scheda Backup in qualsiasi momento. Dopo un ripristino, il successivo backup automatico è sempre un upload completo per riflettere lo stato ripristinato."
+        },
+        {
+          "type": "subtitle",
+          "text": "Registrazione Dispositivo"
+        },
+        {
+          "type": "para",
+          "text": "Ogni dispositivo che esegue Hemiola viene registrato automaticamente al tuo account quando accedi con un abbonamento Cloud attivo. La registrazione abilita il backup per dispositivo e ti permette di gestire i tuoi dispositivi dal cloud."
+        },
+        {
+          "type": "item",
+          "text": "I dispositivi sono identificati da un UUID univoco generato e memorizzato localmente sul dispositivo"
+        },
+        {
+          "type": "item",
+          "text": "Il nome del dispositivo viene impostato automaticamente in base alla piattaforma (iOS, Android, macOS, ecc.)"
+        },
+        {
+          "type": "item",
+          "text": "Tocca qualsiasi dispositivo nell'elenco I Miei Dispositivi per aprire Impostazioni Dispositivo, dove puoi rinominare il dispositivo o accedere alle funzionalità premium di gestione"
+        },
+        {
+          "type": "item",
+          "text": "Se disinstalli e reinstalli l'app, o la installi su un nuovo dispositivo, viene generato un nuovo UUID e il dispositivo appare come nuova voce nel tuo account"
+        },
+        {
+          "type": "item",
+          "text": "Ogni account può registrare fino a 5 dispositivi su tutte le piattaforme. Se raggiungi il limite, rimuovi un dispositivo esistente da I Miei Dispositivi prima di accedere su uno nuovo"
+        },
+        {
+          "type": "subtitle",
+          "text": "Gestione Dispositivi (Cloud Pro)"
+        },
+        {
+          "type": "para",
+          "text": "Gli abbonati Cloud Pro possono gestire i loro dispositivi direttamente da Impostazioni Dispositivo. Queste funzionalità sono visibili a tutti ma disattivate per i non abbonati Pro; toccando un'azione disattivata appare una descrizione e un'opzione per l'upgrade."
+        },
+        {
+          "type": "item",
+          "text": "Elimina Dispositivo: rimuovi definitivamente un dispositivo e tutti i suoi backup cloud dal tuo account. Questa operazione non può essere annullata"
+        },
+        {
+          "type": "item",
+          "text": "Trasferisci Preset: copia selettivamente preset tra due dispositivi. Scegli la direzione (da o verso questo dispositivo), quindi seleziona gruppi di preset e singoli preset da trasferire. I conflitti di nomi vengono risolti automaticamente aggiungendo il nome del dispositivo sorgente tra parentesi"
+        },
+        {
+          "type": "item",
+          "text": "Clona: replica completamente la configurazione di un dispositivo su un altro. Scegli la direzione, quindi seleziona Clona Completa (impostazioni + tutti i preset) o Solo Preset. Entrambe le modalità sovrascrivono la destinazione — è richiesta una doppia conferma"
+        },
+        {
+          "type": "note",
+          "text": "Dopo una reinstallazione o su un nuovo dispositivo: accedi, poi apri Impostazioni Dispositivo per il vecchio dispositivo e usa Clona per ripristinare le tue impostazioni e preset precedenti."
+        }
+      ]
+    },
+    {
+      "id": "Scenes",
+      "title": "Scene",
+      "icon": "theaters",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Una Scena è un'istantanea che cattura il preset Suono (synth analogico + effetti), limiter, configurazione SoundFont, MIDI Mapper e parametri dispositivo in un unico preset. È il modo più rapido per passare tra impostazioni sonore completamente diverse."
+        },
+        {
+          "type": "subtitle",
+          "text": "Come si usa"
+        },
+        {
+          "type": "item",
+          "text": "Tocca l'icona maschere teatrali nella barra superiore per aprire l'elenco Scene"
+        },
+        {
+          "type": "item",
+          "text": "Tocca il nome di una scena per applicarla immediatamente — tutti i parametri coperti vengono aggiornati contemporaneamente"
+        },
+        {
+          "type": "item",
+          "text": "L'icona diventa arancione quando lo stato corrente differisce dalla scena salvata (sporca); toccala per salvare su una scena esistente o aggiungerne una nuova"
+        },
+        {
+          "type": "item",
+          "text": "Aggiungi Nuova: salva lo stato corrente come nuova scena con nome"
+        },
+        {
+          "type": "item",
+          "text": "Tocca l'icona di modifica accanto a una scena per rinominarla; tocca l'icona del cestino per rimuoverla"
+        },
+        {
+          "type": "note",
+          "text": "Le Scene non vengono condivise alla community cloud — sono locali al dispositivo e vengono salvate con il backup regolare delle impostazioni (Cloud Pro)."
+        },
+        {
+          "type": "subtitle",
+          "text": "Cosa contiene una Scena"
+        },
+        {
+          "type": "item",
+          "text": "Preset Suono: parametri synth analogico (oscillatori, LFO, LPF, ADSR, rumore) più effetti (chorus, delay, reverb)"
+        },
+        {
+          "type": "item",
+          "text": "Impostazioni Limiter"
+        },
+        {
+          "type": "item",
+          "text": "SoundFont Synth: on/off, volume, pan, file SoundFont attivo, patch attiva"
+        },
+        {
+          "type": "item",
+          "text": "MIDI Mapper: elenco completo delle mappature con stato attivo/inattivo"
+        },
+        {
+          "type": "item",
+          "text": "Parametri dispositivo (se un dispositivo è connesso tramite Config Tool)"
+        },
+        {
+          "type": "note",
+          "text": "Le impostazioni della Tastiera Piano (zoom, posizione di scorrimento, pressione, aptico) sono memorizzate in preset Piano separati e NON sono incluse in una Scena."
+        }
+      ]
+    },
+    {
+      "id": "Piano Keyboard",
+      "title": "Tastiera Piano",
+      "icon": "piano_outlined",
+      "entries": [
+        {
+          "type": "para",
+          "text": "La tastiera di Hemiola si estende su 7 ottave con sensibilità alla pressione (su iOS e dispositivi Android compatibili) e supporto per accordi multi-touch."
+        },
+        {
+          "type": "para",
+          "text": "La tastiera viene visualizzata verticalmente sui telefoni (ritratto), e orizzontalmente in modalità paesaggio, tablet e desktop."
+        },
+        {
+          "type": "subtitle",
+          "text": "Navigazione"
+        },
+        {
+          "type": "item",
+          "text": "Sui telefoni, la barra delle schede inferiore è nascosta quando il layout è troppo compatto (incluso ritratto e paesaggio compatto) per massimizzare l'area di gioco."
+        },
+        {
+          "type": "item",
+          "text": "Quando è disponibile spazio sufficiente (tablet, desktop o layout telefono più ampi), la barra delle schede e il nome della sezione / link di aiuto vengono mostrati sotto la tastiera."
+        },
+        {
+          "type": "subtitle",
+          "text": "Controlli Barra Superiore"
+        },
+        {
+          "type": "item",
+          "text": "Frecce di scorrimento: tocca per spostare di un tasto, tieni premuto per spostare di un'intera ottava"
+        },
+        {
+          "type": "item",
+          "text": "Toggle pressione: abilita o disabilita la sensibilità alla pressione touch (velocity)"
+        },
+        {
+          "type": "item",
+          "text": "Toggle aptico: abilita o disabilita il feedback vibrazionale alla pressione del tasto"
+        },
+        {
+          "type": "item",
+          "text": "Slider volume master: accesso rapido al volume generale"
+        },
+        {
+          "type": "item",
+          "text": "Zoom in/out: regola la larghezza dei tasti; tieni premuto il mirino per saltare allo zoom minimo o massimo"
+        },
+        {
+          "type": "item",
+          "text": "Icona centro: reimposta lo zoom al valore predefinito; tieni premuto per centrare l'ottava attiva"
+        },
+        {
+          "type": "item",
+          "text": "Icona preset: salva e richiama configurazioni della Tastiera Piano (scala, posizione di scorrimento, sensibilità pressione, feedback aptico). Applicando un preset la tastiera viene ridisegnata immediatamente con il livello di zoom e la posizione di scorrimento salvati."
+        }
+      ]
+    },
+    {
+      "id": "Configuration Tool",
+      "title": "Configuration Tool",
+      "icon": "settings_outlined",
+      "entries": [
+        {
+          "type": "para",
+          "text": "La scheda Configuration Tool mostra un'interfaccia nativa per il dispositivo MIDI connesso. Connetti un dispositivo supportato e tocca la scheda Config per configurarlo."
+        },
+        {
+          "type": "subtitle",
+          "text": "Come funziona"
+        },
+        {
+          "type": "item",
+          "text": "Ogni dispositivo supportato ha il suo plugin che si renderizza direttamente all'interno di Hemiola."
+        },
+        {
+          "type": "item",
+          "text": "Tutte le modifiche ai parametri vengono inviate al dispositivo in tempo reale."
+        },
+        {
+          "type": "item",
+          "text": "Usa l'icona Preset nella barra superiore per salvare e richiamare la configurazione del dispositivo. L'icona è colorata quando è pulita e arancione quando ci sono modifiche non salvate."
+        },
+        {
+          "type": "item",
+          "text": "Quando un plugin è attivo, un'icona di avviso arancione appare accanto al titolo Configuration Tool in basso. Toccala per visualizzare il disclaimer del produttore."
+        },
+        {
+          "type": "note",
+          "text": "Se nessun dispositivo è connesso, la scheda mostra un segnaposto \"Nessun dispositivo supportato connesso\". Quando un dispositivo è attivo, una sezione di aiuto specifica per il dispositivo appare in fondo."
+        },
+        {
+          "type": "subtitle",
+          "text": "Dispositivi Multipli"
+        },
+        {
+          "type": "para",
+          "text": "Quando due o più dispositivi supportati sono connessi contemporaneamente, un pulsante di selezione dispositivo appare accanto all'icona preset nella barra superiore."
+        },
+        {
+          "type": "item",
+          "text": "Tocca di nuovo l'icona della scheda Config (mentre è già attiva) per aprire il menu di selezione dispositivo e scegliere quale dispositivo configurare"
+        },
+        {
+          "type": "item",
+          "text": "Il menu mostra tutti i dispositivi attualmente riconosciuti; quello attivo è evidenziato"
+        },
+        {
+          "type": "item",
+          "text": "Ogni dispositivo mantiene il proprio elenco di preset indipendente"
+        },
+        {
+          "type": "subtitle",
+          "text": "Dispositivi Supportati"
+        },
+        {
+          "type": "item",
+          "text": "Tahorng Windkey — strumento a fiato digitale stile melodica"
+        },
+        {
+          "type": "item",
+          "text": "Akai EWI USB — controller a fiato digitale"
+        },
+        {
+          "type": "item",
+          "text": "Roland AE-01 Aerophone — strumento a fiato digitale"
+        },
+        {
+          "type": "item",
+          "text": "ClariiMini — strumento a fiato digitale"
+        },
+        {
+          "type": "item",
+          "text": "Moog Theremini — theremin digitale"
+        }
+      ]
+    },
+    {
+      "id": "MIDI Devices",
+      "title": "Dispositivi MIDI",
+      "icon": "device_hub",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Il Gestore Dispositivi MIDI elenca tutti i dispositivi MIDI disponibili. Tocca un dispositivo per connettierti o disconnetterti."
+        },
+        {
+          "type": "item",
+          "text": "Dispositivi Bluetooth: la scansione BT è disattivata per impostazione predefinita; tocca l'icona BT e concedi il permesso per scansionare"
+        },
+        {
+          "type": "item",
+          "text": "Switch rete (iOS/macOS): abilita sessioni MIDI di Rete"
+        },
+        {
+          "type": "item",
+          "text": "Switch virtuale: abilita una porta MIDI virtuale (la disponibilità dipende dalla piattaforma)"
+        },
+        {
+          "type": "item",
+          "text": "Pulsante ricarica: arresta completamente il sottosistema MIDI e lo riavvia — utile se i dispositivi non vengono rilevati o lo stack MIDI sembra bloccato. Gli ultimi dispositivi noti vengono riconnessi automaticamente."
+        },
+        {
+          "type": "para",
+          "text": "Usa i pulsanti della barra inferiore per accedere al MIDI Mapper. Alcune impostazioni MIDI generali sono disponibili anche nella finestra principale Impostazioni."
+        },
+        {
+          "type": "subtitle",
+          "text": "Preferenze MIDI Generali"
+        },
+        {
+          "type": "item",
+          "text": "Canale SF: canale MIDI per il sintetizzatore SoundFont (predefinito: OMNI)"
+        },
+        {
+          "type": "item",
+          "text": "Canale Analog: canale MIDI per il sintetizzatore Analog (predefinito: OMNI)"
+        },
+        {
+          "type": "item",
+          "text": "MIDI Thru: inoltra i messaggi MIDI in ingresso ai dispositivi di output connessi"
+        },
+        {
+          "type": "item",
+          "text": "Intervallo Pitch Bend: sensibilità del pitch bend in entrata in semitoni"
+        },
+        {
+          "type": "subtitle",
+          "text": "MIDI Mapper"
+        },
+        {
+          "type": "para",
+          "text": "Ti permette di controllare i parametri di Hemiola tramite MIDI (modalità UI) o di inoltrare e trasformare messaggi MIDI (modalità Custom)."
+        },
+        {
+          "type": "item",
+          "text": "Tocca una voce per attivarla o disattivarla"
+        },
+        {
+          "type": "item",
+          "text": "Filtra l'elenco per tipo di messaggio; \"attiva tutti i visibili\" si applica all'insieme filtrato"
+        },
+        {
+          "type": "item",
+          "text": "Aggiungi mappatura personalizzata: definisci nome, canale in/out, comando e dati; tocca l'icona impostazioni per modificare o eliminare"
+        },
+        {
+          "type": "note",
+          "text": "Tieni premuto il pulsante Aggiungi per ripristinare tutte le mappature ai valori predefiniti ed eliminare tutte le voci personalizzate."
+        },
+        {
+          "type": "subtitle",
+          "text": "Console MIDI"
+        },
+        {
+          "type": "para",
+          "text": "Mostra un elenco in tempo reale dei messaggi MIDI ricevuti di recente. Utile per testare e diagnosticare connessioni MIDI e per identificare i valori giusti di canale/comando quando si creano voci MIDI Mapper."
+        },
+        {
+          "type": "item",
+          "text": "Accesso: tieni premuta l'icona MIDI nella barra delle schede inferiore, o tieni premuta l'icona MIDI all'interno della schermata Gestore Dispositivi MIDI"
+        },
+        {
+          "type": "item",
+          "text": "Tocca il pulsante Cancella in basso per cancellare l'elenco messaggi corrente"
+        }
+      ]
+    },
+    {
+      "id": "Sound Generator",
+      "title": "Sound Generator",
+      "icon": "graphic_eq",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Il Sound Generator include due sintetizzatori indipendenti: SoundFont e Analog. Risponde alla tastiera piano, a dispositivi MIDI USB/BT, all'interfaccia virtuale e a MIDI Network (iOS/macOS). La dimensione del buffer audio è configurabile per la latenza minima."
+        },
+        {
+          "type": "subtitle",
+          "text": "MAIN"
+        },
+        {
+          "type": "item",
+          "text": "Volume Master: livello di uscita generale"
+        },
+        {
+          "type": "item",
+          "text": "Volume Canale: volume inviato tramite MIDI CC 7"
+        },
+        {
+          "type": "item",
+          "text": "Pan: panning stereo (sinistra ↔ destra)"
+        },
+        {
+          "type": "item",
+          "text": "Modalità stereo: seleziona uscita mono o stereo"
+        },
+        {
+          "type": "note",
+          "text": "Un punto rosso appare nella barra superiore quando viene rilevato il clipping. Abbassa il volume o attiva il Limiter (Sound Effects) per risolverlo."
+        },
+        {
+          "type": "subtitle",
+          "text": "ALTEZZA"
+        },
+        {
+          "type": "item",
+          "text": "Master Tuning: accordatura fine in cent (−100 a +100); la frequenza di riferimento A4 è mostrata in Hz"
+        },
+        {
+          "type": "item",
+          "text": "Trasposizione: sposta l'altezza di −12 a +12 semitoni"
+        },
+        {
+          "type": "item",
+          "text": "Switch A4: emette un tono di riferimento A4, influenzato da Trasposizione e Master Tuning"
+        },
+        {
+          "type": "subtitle",
+          "text": "USCITA AUDIO"
+        },
+        {
+          "type": "item",
+          "text": "Dimensione Buffer: valori più grandi riducono i sotto-apertura ma aumentano la latenza"
+        },
+        {
+          "type": "item",
+          "text": "AUTO: gestione automatica della dimensione del buffer (consigliata nella maggior parte dei casi)"
+        },
+        {
+          "type": "note",
+          "text": "Se l'icona Sound Engine diventa rossa, si è verificato un sotto-apertura del buffer audio — aumenta la dimensione del buffer o abilita AUTO. La sezione mostra anche una stima approssimativa della latenza audio corrente e la frequenza di campionamento (impostata automaticamente dal motore audio)."
+        },
+        {
+          "type": "subtitle",
+          "text": "SoundFont Synth"
+        },
+        {
+          "type": "para",
+          "text": "Un sintetizzatore basato su campioni che utilizza il formato file sf2. Molte collezioni SoundFont gratuite sono disponibili online e possono essere caricate su Hemiola."
+        },
+        {
+          "type": "item",
+          "text": "Volume: livello di uscita del modulo SoundFont"
+        },
+        {
+          "type": "item",
+          "text": "Pan: panning stereo del modulo SoundFont"
+        },
+        {
+          "type": "item",
+          "text": "Corrente: seleziona il file SoundFont attivo (quando ne sono caricati più di uno)"
+        },
+        {
+          "type": "item",
+          "text": "Patch: seleziona un preset strumento all'interno del SoundFont corrente"
+        },
+        {
+          "type": "item",
+          "text": "Personalizzato: carica un file .sf2 locale su Hemiola"
+        },
+        {
+          "type": "subtitle",
+          "text": "Analog Synth"
+        },
+        {
+          "type": "para",
+          "text": "Un'emulazione digitale di un sintetizzatore analogico classico, liberamente ispirata al Minimoog Model D."
+        },
+        {
+          "type": "item",
+          "text": "Volume: livello di uscita del modulo Analog"
+        },
+        {
+          "type": "item",
+          "text": "Pan: panning stereo del modulo Analog"
+        },
+        {
+          "type": "subtitle",
+          "text": "Oscillatori Analog"
+        },
+        {
+          "type": "para",
+          "text": "Tutti e tre gli oscillatori condividono lo stesso set di parametri:"
+        },
+        {
+          "type": "item",
+          "text": "Onda: forma d'onda — Sinusoide, Quadra, Dente di Sega (×2), Triangolare (×2)"
+        },
+        {
+          "type": "item",
+          "text": "Gamma: ottava base — 32', 16', 8', 4', o 2'"
+        },
+        {
+          "type": "item",
+          "text": "Detune: offset di accordatura fine in cent (−100 a +100)"
+        },
+        {
+          "type": "item",
+          "text": "Shift: offset in semitoni (−12 a +12)"
+        },
+        {
+          "type": "item",
+          "text": "Volume: livello di uscita del singolo oscillatore"
+        },
+        {
+          "type": "subtitle",
+          "text": "Oscillatore a Bassa Frequenza (LFO)"
+        },
+        {
+          "type": "item",
+          "text": "Percorso: Vibrato, Frequenza (altezza), Taglio LPF, o ampiezza Stereo"
+        },
+        {
+          "type": "item",
+          "text": "Onda: forma d'onda del LFO (stessi tipi degli oscillatori)"
+        },
+        {
+          "type": "item",
+          "text": "BPM: frequenza di oscillazione"
+        },
+        {
+          "type": "item",
+          "text": "Profondità: ampiezza di modulazione"
+        },
+        {
+          "type": "subtitle",
+          "text": "Filtro Passa-Basso (LPF)"
+        },
+        {
+          "type": "item",
+          "text": "Taglio: le frequenze sopra questa soglia vengono attenuate"
+        },
+        {
+          "type": "item",
+          "text": "Enfasi: amplifica le frequenze intorno alla frequenza di taglio (risonanza)"
+        },
+        {
+          "type": "note",
+          "text": "Il taglio LPF può essere modulato dal LFO (Percorso: Taglio LPF) o da MIDI CC."
+        },
+        {
+          "type": "subtitle",
+          "text": "Generatore di Rumore"
+        },
+        {
+          "type": "item",
+          "text": "Oscillatore di rumore bianco — utile per aggiungere respiro o aria a un suono"
+        },
+        {
+          "type": "item",
+          "text": "Volume: livello di uscita del rumore"
+        },
+        {
+          "type": "subtitle",
+          "text": "Inviluppo Sonorità (ADSR)"
+        },
+        {
+          "type": "para",
+          "text": "Controlla l'inviluppo di ampiezza del sintetizzatore Analog:"
+        },
+        {
+          "type": "item",
+          "text": "Attack: tempo (ms) per raggiungere l'ampiezza massima dopo note-on"
+        },
+        {
+          "type": "item",
+          "text": "Decay: tempo (ms) per scendere al livello di sustain"
+        },
+        {
+          "type": "item",
+          "text": "Sustain: livello di ampiezza mentre il tasto è tenuto premuto (per mille, 0–1000)"
+        },
+        {
+          "type": "item",
+          "text": "Release: tempo (ms) per sfumarsi al silenzio dopo note-off"
+        }
+      ]
+    },
+    {
+      "id": "Sound Effects",
+      "title": "Effetti Sonori",
+      "icon": "blur_on",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Gli effetti audio vengono applicati in serie: SoundFont + Analog → Chorus → Delay → Reverb → Limiter."
+        },
+        {
+          "type": "subtitle",
+          "text": "Chorus"
+        },
+        {
+          "type": "item",
+          "text": "Invio: livello mix effetto (0–127; risponde a MIDI CC 93)"
+        },
+        {
+          "type": "item",
+          "text": "Delay: tempo di ritardo in millisecondi"
+        },
+        {
+          "type": "item",
+          "text": "Profondità: intervallo di frequenza di modulazione"
+        },
+        {
+          "type": "item",
+          "text": "Freq: velocità LFO della modulazione chorus"
+        },
+        {
+          "type": "subtitle",
+          "text": "Delay"
+        },
+        {
+          "type": "item",
+          "text": "BPM: frequenza di ripetizione"
+        },
+        {
+          "type": "item",
+          "text": "Decay: attenuazione per ripetizione — 0% = ripetizione infinita, 100% = off"
+        },
+        {
+          "type": "item",
+          "text": "Ampiezza: livello di uscita dell'effetto delay (%)"
+        },
+        {
+          "type": "subtitle",
+          "text": "Reverb"
+        },
+        {
+          "type": "para",
+          "text": "8 preset: Vocal I, Vocal II, Bathroom, Small Room, Medium Room, Large Room, Church Hall, Cathedral."
+        },
+        {
+          "type": "item",
+          "text": "Invio: livello di ingresso al reverb (risponde a MIDI CC 91)"
+        },
+        {
+          "type": "item",
+          "text": "Wet: mix di uscita del segnale reverb (%)"
+        },
+        {
+          "type": "item",
+          "text": "Room Size: dimensione della stanza simulata (%)"
+        },
+        {
+          "type": "item",
+          "text": "Damp: assorbimento delle alte frequenze (%)"
+        },
+        {
+          "type": "item",
+          "text": "Spread/Width: ampiezza stereo della coda reverb (%)"
+        },
+        {
+          "type": "note",
+          "text": "Basato sull'algoritmo Freeverb di Jezar, implementato tramite Dart Melty Sounds."
+        },
+        {
+          "type": "subtitle",
+          "text": "Limiter"
+        },
+        {
+          "type": "para",
+          "text": "Previene il clipping comprimendo l'audio che supera la soglia. Un punto celeste nella barra superiore indica che il limiter è attivo; un misuratore orizzontale mostra la riduzione del guadagno corrente."
+        },
+        {
+          "type": "item",
+          "text": "Soglia: livello di ampiezza a cui inizia la compressione (%)"
+        },
+        {
+          "type": "item",
+          "text": "Soffitto: ampiezza di uscita massima dopo la compressione (%)"
+        },
+        {
+          "type": "item",
+          "text": "Attack: tempo (ms) per attivare la compressione dopo che la soglia è superata"
+        },
+        {
+          "type": "item",
+          "text": "Release: tempo (ms) per disattivare la compressione dopo che il segnale scende sotto la soglia"
+        }
+      ]
+    },
+    {
+      "id": "Community Library",
+      "title": "Libreria Community",
+      "icon": "cloud_queue",
+      "entries": [
+        {
+          "type": "para",
+          "text": "La Libreria Community è una raccolta condivisa di preset pubblicati dagli utenti di Hemiola. Aprila dall'icona cloud nella barra superiore. È disponibile per tutti — non è necessario un abbonamento per sfogliare e applicare i preset."
+        },
+        {
+          "type": "subtitle",
+          "text": "Sfoglia"
+        },
+        {
+          "type": "item",
+          "text": "Digita nella barra di ricerca per filtrare i preset per nome o hashtag in tempo reale"
+        },
+        {
+          "type": "item",
+          "text": "Scorri verso il basso per caricare altri preset automaticamente (scorrimento infinito); tira per aggiornare l'elenco"
+        },
+        {
+          "type": "item",
+          "text": "Ogni scheda mostra il nome del preset, hashtag, nome dell'autore, conteggi voti e conteggio download. Tocca la scheda per espanderla e vedere la descrizione completa, i chip di sezione e i pulsanti di azione"
+        },
+        {
+          "type": "item",
+          "text": "Tocca il nome dell'autore per visualizzare il suo profilo (avatar, nome visualizzato, nome utente, bio)"
+        },
+        {
+          "type": "subtitle",
+          "text": "Applicare un preset"
+        },
+        {
+          "type": "para",
+          "text": "Applicare è gratuito e disponibile per tutti gli utenti. Carica i valori del preset in diretta senza salvarli localmente — perfetto per un ascolto rapido."
+        },
+        {
+          "type": "item",
+          "text": "Tocca Applica su qualsiasi scheda per applicare il preset immediatamente. Se hai modifiche locali non salvate, una finestra di dialogo chiede se salvare prima o applicare comunque"
+        },
+        {
+          "type": "item",
+          "text": "Le impostazioni del dispositivo incorporate in un preset non vengono applicate in questa versione; viene mostrato un avviso quando un preset le contiene"
+        },
+        {
+          "type": "subtitle",
+          "text": "Importare un preset"
+        },
+        {
+          "type": "para",
+          "text": "L'importazione salva il preset come voce locale con nome nella tua libreria, così puoi tornare ad esso in qualsiasi momento — proprio come un preset creato localmente. Richiede un abbonamento Cloud Pro, o l'acquisto in‑app Hemiola Pro."
+        },
+        {
+          "type": "item",
+          "text": "Tocca Importa, scegli un nome (precompilato con il nome del preset) e conferma"
+        },
+        {
+          "type": "item",
+          "text": "Il preset importato viene aggiunto a ogni sezione rilevante (Analog, livelli FX, MIDI Mapper) che contiene"
+        },
+        {
+          "type": "subtitle",
+          "text": "Pannello Ultimo Usato"
+        },
+        {
+          "type": "para",
+          "text": "L'ultimo preset applicato o importato è fissato in fondo alla schermata per una rapida ri-applicazione e votazione."
+        },
+        {
+          "type": "item",
+          "text": "Tocca il pulsante play per riapplicare il preset senza tornare a scorrere fino ad esso"
+        },
+        {
+          "type": "item",
+          "text": "Tocca il pulsante download per importarlo (richiede abbonamento)"
+        },
+        {
+          "type": "item",
+          "text": "Usa i pulsanti pollice su / pollice giù per votare. Toccando di nuovo lo stesso voto lo rimuove. Il voto richiede un account cloud ma non un abbonamento a pagamento"
+        },
+        {
+          "type": "subtitle",
+          "text": "Pubblicare i tuoi preset"
+        },
+        {
+          "type": "para",
+          "text": "Condividi i tuoi suoni con la community. Richiede un abbonamento Cloud Pro."
+        },
+        {
+          "type": "item",
+          "text": "Apri la finestra Preset per qualsiasi sezione supportata e tocca Pubblica…"
+        },
+        {
+          "type": "item",
+          "text": "Scegli quali sezioni includere (Analog, livelli FX, MIDI Mapper, Dispositivo), dai al preset un nome e una descrizione opzionale, e aggiungi hashtag per aiutare gli altri a trovarlo"
+        },
+        {
+          "type": "item",
+          "text": "I tuoi preset pubblicati appaiono nella scheda Preset Condivisi della finestra Account Cloud, dove puoi modificarli, nasconderli o eliminarli"
+        },
+        {
+          "type": "note",
+          "text": "Abilita il Profilo Pubblico (scheda Profilo in Account Cloud) per rendere visibili alla community i tuoi preset. I preset contrassegnati come pubblici ma il cui profilo autore non è pubblico mostrano un'icona di avviso."
+        }
+      ]
+    },
+    {
+      "id": "PushNotifications",
+      "title": "Notifiche Push",
+      "icon": "notifications_none",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Le Notifiche Push permettono a Hemiola di raggiungerti con annunci, offerte, aggiornamenti e messaggi di sistema. Le notifiche vengono consegnate in tempo reale quando l'app è aperta. Alla riconnessione, le notifiche perse vengono recuperate automaticamente dal server."
+        },
+        {
+          "type": "subtitle",
+          "text": "Icona Campanella"
+        },
+        {
+          "type": "para",
+          "text": "L'icona campanella nella barra superiore è visibile sia per gli utenti autenticati che per gli ospiti. Un badge rosso mostra il numero di notifiche non lette. Tocca l'icona per aprire il pannello notifiche, che si espande direttamente sotto l'icona."
+        },
+        {
+          "type": "item",
+          "text": "Le notifiche non lette vengono mostrate con un cerchio pieno; quelle lette con un cerchio vuoto"
+        },
+        {
+          "type": "item",
+          "text": "Tocca una notifica per espanderla e leggere il contenuto completo"
+        },
+        {
+          "type": "item",
+          "text": "Tocca l'icona impostazioni nell'angolo in alto a destra del popup per aprire Account Cloud e gestire le preferenze di notifica"
+        },
+        {
+          "type": "item",
+          "text": "Tocca il pulsante ignora (×) su una notifica per nasconderla dall'elenco"
+        },
+        {
+          "type": "item",
+          "text": "Tocca Segna Tutte Come Lette per contrassegnare tutte le notifiche visibili come lette contemporaneamente"
+        },
+        {
+          "type": "item",
+          "text": "Tocca Mostra Tutte per aprire la pagina completa delle notifiche con la cronologia completa"
+        },
+        {
+          "type": "subtitle",
+          "text": "Sincronizzazione Cross-Device"
+        },
+        {
+          "type": "para",
+          "text": "Quando sei autenticato, lo stato di lettura e ignorata delle notifiche viene sincronizzato su tutti i tuoi dispositivi. In modalità ospite, lo stato delle notifiche viene tracciato solo per dispositivo e non viene sincronizzato."
+        },
+        {
+          "type": "note",
+          "text": "Una notifica che hai già ignorato non riapparirà, anche se la stessa notifica viene reinviata dal server."
+        }
+      ]
+    },
+    {
+      "id": "Privacy",
+      "title": "Privacy",
+      "icon": "privacy_tip_outlined",
+      "entries": [
+        {
+          "type": "para",
+          "text": "La scheda Privacy nell'Account Cloud controlla come Hemiola gestisce i dati di utilizzo anonimi. Non vengono mai raccolti né trasmessi dati personali."
+        },
+        {
+          "type": "subtitle",
+          "text": "Dati anonimi dei dispositivi"
+        },
+        {
+          "type": "para",
+          "text": "Se abilitato, Hemiola segnala statistiche anonime sui dispositivi MIDI collegati. Questi dati vengono usati per definire le priorità di sviluppo dei plugin."
+        },
+        {
+          "type": "item",
+          "text": "I dati sono sempre anonimizzati"
+        },
+        {
+          "type": "item",
+          "text": "Non vengono mai incluse informazioni personali"
+        },
+        {
+          "type": "item",
+          "text": "Puoi modificare questa opzione in qualsiasi momento nella scheda Privacy"
+        },
+        {
+          "type": "subtitle",
+          "text": "Dispositivi conosciuti"
+        },
+        {
+          "type": "para",
+          "text": "La lista dei dispositivi conosciuti mostra i dispositivi i cui dati sono stati inviati al server."
+        },
+        {
+          "type": "item",
+          "text": "Tocca Elimina tutto per rimuovere definitivamente tutti i dati"
+        },
+        {
+          "type": "note",
+          "text": "Al primo accesso viene mostrata una finestra di consenso."
+        }
+      ]
+    }
+  ]
+}
