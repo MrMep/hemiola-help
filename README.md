@@ -1,5 +1,7 @@
 # Hemiola Help Content
 
+[![Validate Help](https://github.com/MrMep/hemiola-help/actions/workflows/validate-help.yml/badge.svg)](https://github.com/MrMep/hemiola-help/actions/workflows/validate-help.yml)
+
 Localized help content for the [Hemiola](https://hemiola.app) music app.
 
 This repository contains the structured JSON files that power the in-app help system. Each file represents a complete translation of the help content.
