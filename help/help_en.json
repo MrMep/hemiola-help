@@ -16,12 +16,8 @@
           "text": "Hemiola is free on mobile. The Free version allows up to 3 presets per section. A one-time Pro upgrade (iOS/Android) removes that limit. Cloud subscriptions unlock additional features and supersede the one-time purchase for the duration of the subscription — see the Cloud Account section for details."
         },
         {
-          "type": "item",
-          "text": "On first startup, a short tutorial is shown. You can skip it, and after skipping it twice an additional Skip Forever action appears to mark the tutorial as completed permanently."
-        },
-        {
-          "type": "item",
-          "text": "For logged-in staff and admin users, Preferences includes a Debug section with a Prod/Dev endpoint switch and a Reset Tutorial action for QA/testing. All users can access the Factory Reset option to erase all saved preferences and presets and restart the app from scratch."
+          "type": "para",
+          "text": "Cloud features include automatic backup, preset sync across devices, a Community Library for browsing and publishing shared presets, bookmark syncing, push notifications, and a public profile."
         },
         {
           "type": "subtitle",
@@ -45,7 +41,7 @@
         },
         {
           "type": "note",
-          "text": "The SCENE preset (in the Sound Generator) saves the Sound preset, limiter, SoundFont, MIDI Mapper, and device plugin parameters at once — independent of individual section presets."
+          "text": "The SCENE preset saves the Sound preset, limiter, SoundFont, MIDI Mapper, and device plugin parameters at once — independent of individual section presets."
         },
         {
           "type": "subtitle",
@@ -57,19 +53,23 @@
         },
         {
           "type": "item",
-          "text": "Hemiola logo → Home screen; also acts as a Back button when inside a sub-screen. On smartphones, while the Piano is open, tapping the logo returns to the previously active tab instead of the Home screen"
-        },
-        {
-          "type": "item",
-          "text": "Theater masks icon (Scenes) → save and restore a full snapshot of all Sound Generator and MIDI settings in one step"
-        },
-        {
-          "type": "item",
-          "text": "Preset icon (library/music) → always visible; grey when the current section has no preset support, accent-coloured when clean, orange when there are unsaved changes"
+          "text": "Hemiola logo → Home screen; also acts as a Back button when inside a sub-screen."
         },
         {
           "type": "item",
           "text": "Bell icon (Push Notifications) → shown for both signed-in users and guests; displays a red badge with the count of unread notifications. Tap to open the notifications panel directly below the icon. See the Push Notifications section for details."
+        },
+        {
+          "type": "item",
+          "text": "Community Library icon (cloud) → opens the shared preset library where you can browse, apply, import, and bookmark presets published by the community. Appears grey with a bar when the app is offline."
+        },
+        {
+          "type": "item",
+          "text": "Scenes icon → save and restore a full snapshot of all Sound Generator and MIDI settings in one step"
+        },
+        {
+          "type": "item",
+          "text": "Preset icon (library/music) → always visible; grey when the current section has no preset support, accent-coloured when clean, orange when there are unsaved changes"
         },
         {
           "type": "item",
@@ -81,7 +81,7 @@
         },
         {
           "type": "para",
-          "text": "The bottom bar gives quick access to the four main sections. The active tab is highlighted by an accent underline at the top of the icon. While the Piano is open on smartphones, the bar is shown only when there is enough space; on compact layouts it is hidden to avoid covering the keyboard."
+          "text": "The bottom bar gives quick access to the four main sections."
         },
         {
           "type": "item",
@@ -89,7 +89,7 @@
         },
         {
           "type": "item",
-          "text": "Link icon (Config Tool) → accent-coloured when a supported device is connected; long-tap to activate Developer/Sandbox mode"
+          "text": "Link icon (Config Tool) → accent-coloured when a supported device is connected; long-tap to activate plugin Developer/Sandbox mode"
         },
         {
           "type": "item",
@@ -117,7 +117,7 @@
         },
         {
           "type": "item",
-          "text": "Long-press the value label to open a modal editor for exact numeric entry. The field is focused immediately, the knob name is shown, and the entered value is validated against the visible range before Apply or Enter/Done is accepted."
+          "text": "Long-press the value label to open a modal editor for exact numeric entry."
         },
         {
           "type": "item",
@@ -142,10 +142,6 @@
         {
           "type": "note",
           "text": "An alert is shown at startup when updates are available. You can also check manually: Home → About Hemiola → \"Check for updates\"."
-        },
-        {
-          "type": "item",
-          "text": "The check-for-updates dialog shows a progress bar while update files are being checked and downloaded."
         }
       ]
     },
@@ -156,7 +152,7 @@
       "entries": [
         {
           "type": "para",
-          "text": "Sign in or create an account at hemiola.app, or directly from the Home screen by tapping the account icon. An active cloud subscription unlocks additional features and supersedes the one-time app purchase for as long as the subscription is maintained."
+          "text": "Sign in or create an account directly from the Home screen by tapping the account icon. An active cloud subscription unlocks additional features and supersedes the one-time app purchase for as long as the subscription is maintained."
         },
         {
           "type": "subtitle",
@@ -197,10 +193,6 @@
         {
           "type": "item",
           "text": "Login tab: optionally save credentials securely on the device for faster sign-in; saved credentials are shown with a dedicated indicator and can be removed with Forget Credentials"
-        },
-        {
-          "type": "item",
-          "text": "When saved credentials are present, username and password are prefilled at startup for faster access; use Forget Credentials to remove them from secure storage"
         },
         {
           "type": "item",
@@ -264,7 +256,7 @@
         },
         {
           "type": "para",
-          "text": "Each device running Hemiola is automatically registered to your account when you sign in with an active Cloud subscription. Registration enables per-device backup and lets you manage your devices from the cloud."
+          "text": "Each device running Hemiola is automatically registered to your account when you sign in with an active Cloud subscription. Registration enables per-device backup and lets you manage your devices via the cloud."
         },
         {
           "type": "item",
@@ -276,7 +268,7 @@
         },
         {
           "type": "item",
-          "text": "Tap any device in the My Devices list to open Device Settings, where you can rename the device, or access premium device management features"
+          "text": "Tap any device in the My Devices list to open Device Settings, where you can rename the device, or access Pro device management features"
         },
         {
           "type": "item",
@@ -292,7 +284,7 @@
         },
         {
           "type": "para",
-          "text": "Cloud Pro subscribers can manage their devices directly from Device Settings. These features are visible to all users but greyed out for non-Pro subscribers; tapping a greyed-out action shows a description and an option to upgrade."
+          "text": "Cloud Pro subscribers can manage their devices directly from Device Settings."
         },
         {
           "type": "item",
@@ -327,7 +319,7 @@
         },
         {
           "type": "item",
-          "text": "Tap the theater-masks icon in the app bar to open the Scene list"
+          "text": "Tap the Scenes icon in the app bar to open the Scene list"
         },
         {
           "type": "item",
@@ -514,6 +506,18 @@
         {
           "type": "item",
           "text": "Moog Theremini — digital theremin"
+        },
+        {
+          "type": "subtitle",
+          "text": "Open Source"
+        },
+        {
+          "type": "note",
+          "text": "Device plugins are open source. You can propose new devices, report issues, or contribute plugins on GitHub: https://github.com/MrMep/hemiola-device-plugins"
+        },
+        {
+          "type": "note",
+          "text": "Help pages are also open source. You can suggest improvements or contribute translations on GitHub: https://github.com/MrMep/hemiola-help"
         }
       ]
     },
@@ -547,24 +551,8 @@
           "text": "Use the bottom bar buttons to access MIDI Mapper. Some general MIDI settings are also available in the main Settings window."
         },
         {
-          "type": "subtitle",
-          "text": "General MIDI Prefs"
-        },
-        {
-          "type": "item",
-          "text": "SF Channel: MIDI channel for the SoundFont synth (default: OMNI)"
-        },
-        {
-          "type": "item",
-          "text": "Analog Channel: MIDI channel for the Analog synth (default: OMNI)"
-        },
-        {
-          "type": "item",
-          "text": "MIDI Thru: forward incoming MIDI messages to connected output devices"
-        },
-        {
-          "type": "item",
-          "text": "Pitch Bend Range: sensitivity of incoming pitch bend in semitones"
+          "type": "note",
+          "text": "General MIDI preferences (SoundFont/Analog channel, MIDI Thru, Pitch Bend Range) are configured in the Preferences dialog. See the Settings section for details."
         },
         {
           "type": "subtitle",
@@ -1005,6 +993,22 @@
         },
         {
           "type": "subtitle",
+          "text": "Bookmarks"
+        },
+        {
+          "type": "para",
+          "text": "Bookmark presets you want to find again quickly. Requires a Cloud Pro subscription. Bookmarks are synced across your devices."
+        },
+        {
+          "type": "item",
+          "text": "Tap the bookmark icon on any preset card to add or remove it from your bookmarks"
+        },
+        {
+          "type": "item",
+          "text": "Use the Bookmarks filter button at the top of the library to show only your bookmarked presets"
+        },
+        {
+          "type": "subtitle",
           "text": "Publishing your presets"
         },
         {
@@ -1017,7 +1021,7 @@
         },
         {
           "type": "item",
-          "text": "Choose which sections to include (Analog, FX tiers, MIDI Mapper, Device), give the preset a name and optional description, and add hashtags to help others find it"
+          "text": "Choose which sections to include (Analog, FX tiers, Device), give the preset a name and optional description, and add hashtags to help others find it"
         },
         {
           "type": "item",
@@ -1081,6 +1085,69 @@
         {
           "type": "note",
           "text": "A notification you have already dismissed will not reappear, even if the same notification is re-sent by the server."
+        }
+      ]
+    },
+    {
+      "id": "Settings",
+      "title": "Settings",
+      "icon": "tune",
+      "entries": [
+        {
+          "type": "para",
+          "text": "The Preferences dialog is accessible from the Home screen (tap Hemiola logo → Preferences). It contains app-wide settings organized in sections."
+        },
+        {
+          "type": "subtitle",
+          "text": "General"
+        },
+        {
+          "type": "item",
+          "text": "Language: choose the app language. The system language is used by default."
+        },
+        {
+          "type": "item",
+          "text": "Keep Screen On: prevents the device screen from dimming while the app is in use (mobile only)."
+        },
+        {
+          "type": "subtitle",
+          "text": "Cloud"
+        },
+        {
+          "type": "item",
+          "text": "Stay Signed On: when enabled, the app keeps you logged in across sessions."
+        },
+        {
+          "type": "subtitle",
+          "text": "General MIDI Prefs"
+        },
+        {
+          "type": "item",
+          "text": "SF Channel: MIDI channel for the SoundFont synth (default: OMNI)."
+        },
+        {
+          "type": "item",
+          "text": "Analog Channel: MIDI channel for the Analog synth (default: OMNI)."
+        },
+        {
+          "type": "item",
+          "text": "MIDI Thru: forward incoming MIDI messages to connected output devices."
+        },
+        {
+          "type": "item",
+          "text": "Pitch Bend Range: sensitivity of incoming pitch bend in semitones."
+        },
+        {
+          "type": "subtitle",
+          "text": "Factory Reset"
+        },
+        {
+          "type": "para",
+          "text": "Erases all saved preferences, presets, and cloud device registration. The app closes and restarts fresh on the next launch."
+        },
+        {
+          "type": "note",
+          "text": "Factory Reset cannot be undone. Your cloud account and published presets are not affected — only the local data on this device is erased."
         }
       ]
     },

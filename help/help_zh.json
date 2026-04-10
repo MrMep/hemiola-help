@@ -16,12 +16,8 @@
           "text": "Hemiola 在移动端免费使用。免费版每个分区最多允许 3 个预设。Pro 版（一次性应用内购买）取消此限制。云功能需要免费或付费的 Cloud 账户。"
         },
         {
-          "type": "item",
-          "text": "首次启动时会显示简短教程。你可以跳过，之后可通过主窗口的 Info 按钮再次访问。"
-        },
-        {
-          "type": "item",
-          "text": "对于已登录的 staff 或 admin 用户，偏好设置中会显示一个 Debug 分区，其中包含 Prod/Dev 端点切换和用于 QA/测试的重置教程操作。所有用户都可以使用恢复出厂设置选项来清除所有已保存的偏好设置和预设，并从头开始重新启动应用。"
+          "type": "para",
+          "text": "云功能包括自动备份、设备间预设同步、用于浏览和发布共享预设的社区库、书签同步、推送通知和公开个人资料。"
         },
         {
           "type": "subtitle",
@@ -45,7 +41,7 @@
         },
         {
           "type": "note",
-          "text": "SCENE 预设（在 Sound Generator 中）一次保存 Sound 预设、限制器、SoundFont、MIDI Mapper 和设备插件参数——独立于各个分区预设。"
+          "text": "SCENE 预设一次保存 Sound 预设、限制器、SoundFont、MIDI Mapper 和设备插件参数——独立于各个分区预设。"
         },
         {
           "type": "subtitle",
@@ -61,15 +57,19 @@
         },
         {
           "type": "item",
-          "text": "剧院面具图标（场景）→ 一键保存和恢复所有 Sound Generator 和 MIDI 参数的完整快照。"
+          "text": "铃铛图标（推送通知）→ 对登录用户和访客可见；用红色徽章显示未读数量。"
+        },
+        {
+          "type": "item",
+          "text": "社区库图标（云）→ 打开共享预设库，您可以浏览、应用、导入和收藏社区发布的预设。离线时显示为灰色并带有横杠。"
+        },
+        {
+          "type": "item",
+          "text": "场景图标→ 一键保存和恢复所有 Sound Generator 和 MIDI 参数的完整快照。"
         },
         {
           "type": "item",
           "text": "预设图标（资料库/音符）→ 始终可见；当前分区没有未保存更改时为灰色，有时为橙色。"
-        },
-        {
-          "type": "item",
-          "text": "铃铛图标（推送通知）→ 对登录用户和访客可见；用红色徽章显示未读数量。"
         },
         {
           "type": "item",
@@ -81,7 +81,7 @@
         },
         {
           "type": "para",
-          "text": "底部栏提供对四个主要分区的快速访问。活动标签会高亮显示。"
+          "text": "底部栏提供对四个主要分区的快速访问。"
         },
         {
           "type": "item",
@@ -117,7 +117,7 @@
         },
         {
           "type": "item",
-          "text": "长按数值标签打开精确数值输入的模态编辑器。输入值将根据参数范围进行验证。"
+          "text": "长按数值标签打开精确数值输入的模态编辑器。"
         },
         {
           "type": "item",
@@ -142,10 +142,6 @@
         {
           "type": "note",
           "text": "有可用更新时，启动时会显示提醒。也可通过偏好设置中的检查更新手动检查。"
-        },
-        {
-          "type": "item",
-          "text": "更新检查窗口会在下载文件时显示进度条。下载期间可以关闭窗口，过程在后台继续。"
         }
       ]
     },
@@ -196,11 +192,7 @@
         },
         {
           "type": "item",
-          "text": "登录标签：选择将凭据安全存储在设备上以便快速登录；注销时保存的凭据会被清除。"
-        },
-        {
-          "type": "item",
-          "text": "有保存的凭据时，启动时会预填用户名和密码以便快速登录——只需点击登录即可。"
+          "text": "登录标签：选择将凭据安全存储在设备上以便快速登录；保存的凭据会以专用指示器显示，可通过“忘记凭据”移除"
         },
         {
           "type": "item",
@@ -514,6 +506,18 @@
         {
           "type": "item",
           "text": "Moog Theremini — 数字特雷门琴"
+        },
+        {
+          "type": "subtitle",
+          "text": "开源"
+        },
+        {
+          "type": "note",
+          "text": "设备插件是开源的。您可以在 GitHub 上提议新设备、报告问题或贡献插件：https://github.com/MrMep/hemiola-device-plugins"
+        },
+        {
+          "type": "note",
+          "text": "帮助页面也是开源的。您可以在 GitHub 上建议改进或贡献翻译：https://github.com/MrMep/hemiola-help"
         }
       ]
     },
@@ -547,24 +551,8 @@
           "text": "使用底部栏的按钮访问 MIDI Mapper。部分通用 MIDI 设置也可在主设置窗口中找到。"
         },
         {
-          "type": "subtitle",
-          "text": "通用 MIDI 设置"
-        },
-        {
-          "type": "item",
-          "text": "SF 通道：SoundFont 合成器的 MIDI 通道（默认：OMNI）"
-        },
-        {
-          "type": "item",
-          "text": "Analog 通道：Analog 合成器的 MIDI 通道（默认：OMNI）"
-        },
-        {
-          "type": "item",
-          "text": "MIDI Thru：将接收到的 MIDI 消息转发到已连接的输出设备"
-        },
-        {
-          "type": "item",
-          "text": "弯音范围：以半音为单位的接收弯音灵敏度"
+          "type": "note",
+          "text": "常规 MIDI 设置（SoundFont/Analog 通道、MIDI Thru、弯音范围）在“偏好设置”对话框中配置。详情请参阅“设置”部分。"
         },
         {
           "type": "subtitle",
@@ -1005,6 +993,22 @@
         },
         {
           "type": "subtitle",
+          "text": "书签"
+        },
+        {
+          "type": "para",
+          "text": "收藏您希望快速找到的预设。需要 Cloud Pro 订阅。书签会在设备间同步。"
+        },
+        {
+          "type": "item",
+          "text": "点击任意预设卡片上的书签图标以添加或移除书签"
+        },
+        {
+          "type": "item",
+          "text": "使用库顶部的书签筛选按钮仅显示您收藏的预设"
+        },
+        {
+          "type": "subtitle",
           "text": "发布你的预设"
         },
         {
@@ -1085,6 +1089,69 @@
       ]
     },
     {
+      "id": "Settings",
+      "title": "设置",
+      "icon": "tune",
+      "entries": [
+        {
+          "type": "para",
+          "text": "偏好设置对话框可从主屏幕访问（点击 Hemiola 标志 → 偏好设置）。它包含按分类组织的全局设置。"
+        },
+        {
+          "type": "subtitle",
+          "text": "常规"
+        },
+        {
+          "type": "item",
+          "text": "语言：选择应用程序语言。默认使用系统语言。"
+        },
+        {
+          "type": "item",
+          "text": "保持屏幕常亮：防止应用使用时屏幕变暗（仅移动端）。"
+        },
+        {
+          "type": "subtitle",
+          "text": "Cloud"
+        },
+        {
+          "type": "item",
+          "text": "保持登录：启用后，应用会在会话之间保持登录状态。"
+        },
+        {
+          "type": "subtitle",
+          "text": "常规 MIDI 设置"
+        },
+        {
+          "type": "item",
+          "text": "SF 通道：SoundFont 合成器的 MIDI 通道（默认：OMNI）。"
+        },
+        {
+          "type": "item",
+          "text": "Analog 通道：Analog 合成器的 MIDI 通道（默认：OMNI）。"
+        },
+        {
+          "type": "item",
+          "text": "MIDI Thru：将传入的 MIDI 消息转发到已连接的输出设备。"
+        },
+        {
+          "type": "item",
+          "text": "Pitch Bend Range：传入弯音的灵敏度（以半音为单位）。"
+        },
+        {
+          "type": "subtitle",
+          "text": "恢复出厂设置"
+        },
+        {
+          "type": "para",
+          "text": "清除所有已保存的偏好设置、预设和云设备注册。应用关闭后将在下次启动时重新开始。"
+        },
+        {
+          "type": "note",
+          "text": "恢复出厂设置无法撤消。您的云账户和已发布的预设不受影响 — 只有此设备上的本地数据会被清除。"
+        }
+      ]
+    },
+    {
       "id": "Privacy",
       "title": "隐私",
       "icon": "privacy_tip_outlined",
@@ -1126,8 +1193,12 @@
           "text": "点击“全部删除”可永久删除所有设备数据"
         },
         {
+          "type": "item",
+          "text": "删除后，列表将为空，直到报告新数据（如果共享已启用）"
+        },
+        {
           "type": "note",
-          "text": "首次登录时会显示同意对话框。"
+          "text": "首次登录时会显示同意对话框。. 你的选择会被保存，但你可以随时在隐私标签页中更改。"
         }
       ]
     }

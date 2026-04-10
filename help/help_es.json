@@ -16,12 +16,8 @@
           "text": "Hemiola es gratis en móvil. La versión gratuita permite hasta 3 presets por sección. La versión Pro (compra única integrada) elimina esta limitación. Las funciones cloud requieren una cuenta Cloud gratuita o de pago."
         },
         {
-          "type": "item",
-          "text": "En el primer inicio, se muestra un breve tutorial. Puedes saltarlo y, después de hacerlo, acceder a él de nuevo mediante el botón Info en la ventana principal."
-        },
-        {
-          "type": "item",
-          "text": "Para usuarios staff o admin con sesión iniciada, Preferencias incluye una sección Debug con un selector de endpoints Prod/Dev y una acción Reiniciar Tutorial para QA/pruebas. Todos los usuarios pueden acceder a la opción Restablecer de Fábrica para borrar todas las preferencias y presets guardados y reiniciar la app desde cero."
+          "type": "para",
+          "text": "Las funciones en la nube incluyen copia de seguridad automática, sincronización de presets entre dispositivos, una Biblioteca Comunitaria para explorar y publicar presets compartidos, sincronización de marcadores, notificaciones push y un perfil público."
         },
         {
           "type": "subtitle",
@@ -45,7 +41,7 @@
         },
         {
           "type": "note",
-          "text": "El preset SCENE (en el Sound Generator) guarda el preset de Sound, el limitador, SoundFont, MIDI Mapper y los parámetros del plugin de dispositivo a la vez — independiente de los presets de secciones individuales."
+          "text": "El preset SCENE guarda el preset de Sound, el limitador, SoundFont, MIDI Mapper y los parámetros del plugin de dispositivo a la vez — independiente de los presets de secciones individuales."
         },
         {
           "type": "subtitle",
@@ -61,15 +57,19 @@
         },
         {
           "type": "item",
-          "text": "Icono de máscaras de teatro (Escenas) → guarda y restaura un instantáneo completo de todos los parámetros del Sound Generator y MIDI con un toque."
+          "text": "Icono de campana (Notificaciones Push) → visible para usuarios conectados y visitantes; muestra el recuento de no leídos con una insignia roja."
+        },
+        {
+          "type": "item",
+          "text": "Icono Biblioteca Comunitaria (nube) → abre la biblioteca de presets compartidos donde puedes explorar, aplicar, importar y guardar en marcadores los presets publicados por la comunidad. Aparece gris con una barra cuando la app está sin conexión."
+        },
+        {
+          "type": "item",
+          "text": "Icono de Escenas → guarda y restaura un instantáneo completo de todos los parámetros del Sound Generator y MIDI con un toque."
         },
         {
           "type": "item",
           "text": "Icono de preset (biblioteca/música) → siempre visible; gris cuando la sección actual no tiene cambios no guardados, naranja cuando los tiene."
-        },
-        {
-          "type": "item",
-          "text": "Icono de campana (Notificaciones Push) → visible para usuarios conectados y visitantes; muestra el recuento de no leídos con una insignia roja."
         },
         {
           "type": "item",
@@ -81,7 +81,7 @@
         },
         {
           "type": "para",
-          "text": "La barra inferior proporciona acceso rápido a las cuatro secciones principales. La pestaña activa está resaltada."
+          "text": "La barra inferior proporciona acceso rápido a las cuatro secciones principales."
         },
         {
           "type": "item",
@@ -117,7 +117,7 @@
         },
         {
           "type": "item",
-          "text": "Mantén presionado en la etiqueta de valor para abrir un editor modal para la entrada numérica precisa. El valor ingresado se valida contra el rango del parámetro."
+          "text": "Mantén presionado en la etiqueta de valor para abrir un editor modal para la entrada numérica precisa."
         },
         {
           "type": "item",
@@ -142,10 +142,6 @@
         {
           "type": "note",
           "text": "Se muestra una alerta al inicio cuando hay actualizaciones disponibles. También puedes verificar manualmente a través de Buscar Actualizaciones en Preferencias."
-        },
-        {
-          "type": "item",
-          "text": "La ventana de verificación de actualizaciones muestra una barra de progreso mientras se descargan los archivos. Puedes cerrarla durante la descarga; el proceso continúa en segundo plano."
         }
       ]
     },
@@ -196,11 +192,7 @@
         },
         {
           "type": "item",
-          "text": "Pestaña Inicio de Sesión: guarda opcionalmente las credenciales de forma segura en el dispositivo para inicios de sesión más rápidos; las credenciales guardadas se borran al cerrar sesión."
-        },
-        {
-          "type": "item",
-          "text": "Cuando hay credenciales guardadas, el nombre de usuario y la contraseña se rellenan previamente al inicio para un inicio de sesión rápido — simplemente toca Iniciar Sesión."
+          "text": "Pestaña Inicio de Sesión: guarda opcionalmente las credenciales de forma segura en el dispositivo para inicios de sesión más rápidos; las credenciales guardadas se muestran con un indicador dedicado y pueden eliminarse con Olvidar Credenciales"
         },
         {
           "type": "item",
@@ -514,6 +506,18 @@
         {
           "type": "item",
           "text": "Moog Theremini — theremin digital"
+        },
+        {
+          "type": "subtitle",
+          "text": "Código Abierto"
+        },
+        {
+          "type": "note",
+          "text": "Los plugins de dispositivos son de código abierto. Puedes proponer nuevos dispositivos, reportar problemas o contribuir con plugins en GitHub: https://github.com/MrMep/hemiola-device-plugins"
+        },
+        {
+          "type": "note",
+          "text": "Las páginas de ayuda también son de código abierto. Puedes sugerir mejoras o contribuir con traducciones en GitHub: https://github.com/MrMep/hemiola-help"
         }
       ]
     },
@@ -544,27 +548,11 @@
         },
         {
           "type": "para",
-          "text": "Usa los botones de la barra inferior para acceder al MIDI Mapper. Algunos ajustes MIDI generales también están disponibles en la ventana principal de Ajustes."
+          "text": "Usa los botones de la barra inferior para acceder al MIDI Mapper. Algunos ajustes MIDI generales también están disponibles en la ventana de configuración principal."
         },
         {
-          "type": "subtitle",
-          "text": "Preferencias MIDI Generales"
-        },
-        {
-          "type": "item",
-          "text": "Canal SF: canal MIDI para el sintetizador SoundFont (por defecto: OMNI)"
-        },
-        {
-          "type": "item",
-          "text": "Canal Analog: canal MIDI para el sintetizador Analog (por defecto: OMNI)"
-        },
-        {
-          "type": "item",
-          "text": "MIDI Thru: reenviar mensajes MIDI entrantes a los dispositivos de salida conectados"
-        },
-        {
-          "type": "item",
-          "text": "Rango Pitch Bend: sensibilidad del pitch bend entrante en semitonos"
+          "type": "note",
+          "text": "Las preferencias MIDI generales (canal SoundFont/Analog, MIDI Thru, Pitch Bend Range) se configuran en el diálogo de Preferencias. Consulta la sección Ajustes para más detalles."
         },
         {
           "type": "subtitle",
@@ -1005,6 +993,22 @@
         },
         {
           "type": "subtitle",
+          "text": "Marcadores"
+        },
+        {
+          "type": "para",
+          "text": "Guarda en marcadores los presets que quieras encontrar rápidamente. Requiere una suscripción Cloud Pro. Los marcadores se sincronizan entre tus dispositivos."
+        },
+        {
+          "type": "item",
+          "text": "Toca el icono de marcador en cualquier tarjeta de preset para añadirlo o quitarlo de tus marcadores"
+        },
+        {
+          "type": "item",
+          "text": "Usa el botón de filtro Marcadores en la parte superior de la biblioteca para mostrar solo tus presets guardados"
+        },
+        {
+          "type": "subtitle",
           "text": "Publicar tus presets"
         },
         {
@@ -1085,6 +1089,69 @@
       ]
     },
     {
+      "id": "Settings",
+      "title": "Ajustes",
+      "icon": "tune",
+      "entries": [
+        {
+          "type": "para",
+          "text": "El diálogo de Preferencias es accesible desde la pantalla de Inicio (toca el logo de Hemiola → Preferencias). Contiene ajustes generales de la app organizados en secciones."
+        },
+        {
+          "type": "subtitle",
+          "text": "General"
+        },
+        {
+          "type": "item",
+          "text": "Idioma: elige el idioma de la app. Por defecto se usa el idioma del sistema."
+        },
+        {
+          "type": "item",
+          "text": "Mantener pantalla encendida: evita que la pantalla se atenúe mientras la app está en uso (solo móvil)."
+        },
+        {
+          "type": "subtitle",
+          "text": "Cloud"
+        },
+        {
+          "type": "item",
+          "text": "Mantener sesión: cuando está habilitado, la app mantiene tu sesión iniciada entre sesiones."
+        },
+        {
+          "type": "subtitle",
+          "text": "Preferencias MIDI Generales"
+        },
+        {
+          "type": "item",
+          "text": "Canal SF: canal MIDI para el sintetizador SoundFont (predeterminado: OMNI)."
+        },
+        {
+          "type": "item",
+          "text": "Canal Analog: canal MIDI para el sintetizador Analog (predeterminado: OMNI)."
+        },
+        {
+          "type": "item",
+          "text": "MIDI Thru: reenvía los mensajes MIDI entrantes a los dispositivos de salida conectados."
+        },
+        {
+          "type": "item",
+          "text": "Pitch Bend Range: sensibilidad del pitch bend entrante en semitonos."
+        },
+        {
+          "type": "subtitle",
+          "text": "Restablecimiento de Fábrica"
+        },
+        {
+          "type": "para",
+          "text": "Borra todas las preferencias guardadas, presets y el registro del dispositivo en la nube. La app se cierra y vuelve a empezar desde cero en el próximo inicio."
+        },
+        {
+          "type": "note",
+          "text": "El restablecimiento de fábrica no se puede deshacer. Tu cuenta en la nube y los presets publicados no se ven afectados — solo se borran los datos locales de este dispositivo."
+        }
+      ]
+    },
+    {
       "id": "Privacy",
       "title": "Privacidad",
       "icon": "privacy_tip_outlined",
@@ -1126,8 +1193,12 @@
           "text": "Toca Eliminar todo para eliminar permanentemente todos los datos"
         },
         {
+          "type": "item",
+          "text": "Después de la eliminación, la lista estará vacía hasta que se reporten nuevos datos (si la compartición está habilitada)"
+        },
+        {
           "type": "note",
-          "text": "Se muestra un diálogo de consentimiento la primera vez que inicias sesión."
+          "text": "Se muestra un diálogo de consentimiento la primera vez que inicias sesión. Tu elección se guarda, pero siempre puedes cambiarla en la pestaña Privacidad."
         }
       ]
     }

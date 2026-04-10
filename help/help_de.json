@@ -16,12 +16,8 @@
           "text": "Hemiola ist auf Mobilgeräten kostenlos. Die kostenlose Version erlaubt bis zu 3 Presets pro Abschnitt. Die Pro-Version (einmaliger In-App-Kauf) hebt diese Beschränkung auf. Cloud-Funktionen erfordern ein kostenloses oder kostenpflichtiges Cloud-Konto."
         },
         {
-          "type": "item",
-          "text": "Beim ersten Start wird ein kurzes Tutorial angezeigt. Sie können es überspringen und danach über die Info-Schaltfläche im Hauptfenster erneut aufrufen."
-        },
-        {
-          "type": "item",
-          "text": "Für angemeldete Staff- oder Admin-Benutzer gibt es in den Einstellungen einen Debug-Bereich mit einem Prod/Dev-Endpunkt-Schalter und einer Aktion Tutorial zurücksetzen für QA/Tests. Alle Benutzer können die Option Werksreset verwenden, um alle gespeicherten Einstellungen und Presets zu löschen und die App von Grund auf neu zu starten."
+          "type": "para",
+          "text": "Cloud-Funktionen umfassen automatisches Backup, Preset-Synchronisation zwischen Geräten, eine Community-Bibliothek zum Durchsuchen und Veröffentlichen geteilter Presets, Lesezeichen-Synchronisation, Push-Benachrichtigungen und ein öffentliches Profil."
         },
         {
           "type": "subtitle",
@@ -45,7 +41,7 @@
         },
         {
           "type": "note",
-          "text": "Das SCENE-Preset (im Sound Generator) speichert das Sound-Preset, den Limiter, SoundFont, MIDI Mapper und die Geräte-Plugin-Parameter auf einmal — unabhängig von einzelnen Abschnitts-Presets."
+          "text": "Das SCENE-Preset speichert das Sound-Preset, den Limiter, SoundFont, MIDI Mapper und die Geräte-Plugin-Parameter auf einmal — unabhängig von einzelnen Abschnitts-Presets."
         },
         {
           "type": "subtitle",
@@ -61,15 +57,19 @@
         },
         {
           "type": "item",
-          "text": "Theatermasken-Symbol (Szenen) → speichert und stellt einen vollständigen Snapshot aller Sound-Generator- und MIDI-Parameter mit einem Tipp wieder her."
+          "text": "Glocken-Symbol (Push-Benachrichtigungen) → für angemeldete Benutzer und Gäste sichtbar; zeigt die Anzahl der ungelesenen Nachrichten mit einem roten Badge."
+        },
+        {
+          "type": "item",
+          "text": "Community-Bibliothek-Symbol (Wolke) → öffnet die geteilte Preset-Bibliothek, in der Sie Presets der Community durchsuchen, anwenden, importieren und als Lesezeichen speichern können. Es erscheint grau mit einem Balken, wenn die App offline ist."
+        },
+        {
+          "type": "item",
+          "text": "Szenen-Symbol → speichert und stellt einen vollständigen Snapshot aller Sound-Generator- und MIDI-Parameter mit einem Tipp wieder her."
         },
         {
           "type": "item",
           "text": "Preset-Symbol (Bibliothek/Musik) → immer sichtbar; grau wenn der aktuelle Abschnitt keine ungespeicherten Änderungen hat, orange wenn vorhanden."
-        },
-        {
-          "type": "item",
-          "text": "Glocken-Symbol (Push-Benachrichtigungen) → für angemeldete Benutzer und Gäste sichtbar; zeigt die Anzahl der ungelesenen Nachrichten mit einem roten Badge."
         },
         {
           "type": "item",
@@ -81,7 +81,7 @@
         },
         {
           "type": "para",
-          "text": "Die untere Leiste ermöglicht schnellen Zugriff auf die vier Hauptabschnitte. Der aktive Tab ist hervorgehoben."
+          "text": "Die untere Leiste ermöglicht schnellen Zugriff auf die vier Hauptabschnitte."
         },
         {
           "type": "item",
@@ -117,7 +117,7 @@
         },
         {
           "type": "item",
-          "text": "Langes Drücken auf die Wertebeschriftung öffnet einen modalen Editor für die genaue numerische Eingabe. Die Eingabe wird anhand des Parameterbereichs validiert."
+          "text": "Langes Drücken auf die Wertebeschriftung öffnet einen modalen Editor für die genaue numerische Eingabe."
         },
         {
           "type": "item",
@@ -142,10 +142,6 @@
         {
           "type": "note",
           "text": "Beim Start wird eine Meldung angezeigt, wenn Updates verfügbar sind. Sie können auch manuell über Nach Updates suchen in den Einstellungen prüfen."
-        },
-        {
-          "type": "item",
-          "text": "Das Update-Prüffenster zeigt einen Fortschrittsbalken, während Dateien heruntergeladen werden. Sie können es während des Downloads schließen; der Vorgang läuft im Hintergrund weiter."
         }
       ]
     },
@@ -196,11 +192,7 @@
         },
         {
           "type": "item",
-          "text": "Login-Tab: Anmeldedaten optional sicher auf dem Gerät speichern für schnellere Anmeldungen; gespeicherte Anmeldedaten werden gelöscht, wenn Sie sich abmelden."
-        },
-        {
-          "type": "item",
-          "text": "Wenn gespeicherte Anmeldedaten vorhanden sind, werden Benutzername und Passwort beim Start vorausgefüllt für eine schnelle Anmeldung — tippen Sie einfach auf Anmelden."
+          "text": "Login-Tab: Anmeldedaten optional sicher auf dem Gerät speichern für schnellere Anmeldungen; gespeicherte Anmeldedaten werden mit einem speziellen Indikator angezeigt und können mit Anmeldedaten Vergessen entfernt werden"
         },
         {
           "type": "item",
@@ -514,6 +506,18 @@
         {
           "type": "item",
           "text": "Moog Theremini — digitales Theremin"
+        },
+        {
+          "type": "subtitle",
+          "text": "Open Source"
+        },
+        {
+          "type": "note",
+          "text": "Geräte-Plugins sind Open Source. Sie können neue Geräte vorschlagen, Probleme melden oder Plugins auf GitHub beitragen: https://github.com/MrMep/hemiola-device-plugins"
+        },
+        {
+          "type": "note",
+          "text": "Die Hilfeseiten sind ebenfalls Open Source. Sie können Verbesserungen vorschlagen oder Übersetzungen auf GitHub beitragen: https://github.com/MrMep/hemiola-help"
         }
       ]
     },
@@ -547,24 +551,8 @@
           "text": "Verwenden Sie die Schaltflächen in der unteren Leiste für den Zugriff auf den MIDI Mapper. Einige allgemeine MIDI-Einstellungen sind auch im Haupteinstellungsfenster verfügbar."
         },
         {
-          "type": "subtitle",
-          "text": "Allgemeine MIDI-Einstellungen"
-        },
-        {
-          "type": "item",
-          "text": "SF-Kanal: MIDI-Kanal für den SoundFont-Synthesizer (Standard: OMNI)"
-        },
-        {
-          "type": "item",
-          "text": "Analog-Kanal: MIDI-Kanal für den Analog-Synthesizer (Standard: OMNI)"
-        },
-        {
-          "type": "item",
-          "text": "MIDI Thru: eingehende MIDI-Nachrichten an verbundene Ausgabegeräte weiterleiten"
-        },
-        {
-          "type": "item",
-          "text": "Pitchbend-Bereich: Empfindlichkeit des eingehenden Pitchbends in Halbtönen"
+          "type": "note",
+          "text": "Allgemeine MIDI-Einstellungen (SoundFont/Analog-Kanal, MIDI Thru, Pitch Bend Range) werden im Einstellungsdialog konfiguriert. Siehe den Abschnitt Einstellungen für Details."
         },
         {
           "type": "subtitle",
@@ -1005,6 +993,22 @@
         },
         {
           "type": "subtitle",
+          "text": "Lesezeichen"
+        },
+        {
+          "type": "para",
+          "text": "Speichern Sie Presets als Lesezeichen, die Sie schnell wiederfinden möchten. Erfordert ein Cloud-Pro-Abonnement. Lesezeichen werden geräteübergreifend synchronisiert."
+        },
+        {
+          "type": "item",
+          "text": "Tippen Sie auf das Lesezeichen-Symbol auf einer Preset-Karte, um es hinzuzufügen oder zu entfernen"
+        },
+        {
+          "type": "item",
+          "text": "Verwenden Sie die Lesezeichen-Filtertaste oben in der Bibliothek, um nur Ihre gespeicherten Presets anzuzeigen"
+        },
+        {
+          "type": "subtitle",
           "text": "Eigene Presets veröffentlichen"
         },
         {
@@ -1085,6 +1089,69 @@
       ]
     },
     {
+      "id": "Settings",
+      "title": "Einstellungen",
+      "icon": "tune",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Der Einstellungsdialog ist über den Startbildschirm erreichbar (tippen Sie auf das Hemiola-Logo → Einstellungen). Er enthält appweite Einstellungen in Abschnitten."
+        },
+        {
+          "type": "subtitle",
+          "text": "Allgemein"
+        },
+        {
+          "type": "item",
+          "text": "Sprache: wählen Sie die App-Sprache. Standardmäßig wird die Systemsprache verwendet."
+        },
+        {
+          "type": "item",
+          "text": "Bildschirm eingeschaltet lassen: verhindert, dass der Bildschirm während der Nutzung abdunkelt (nur Mobil)."
+        },
+        {
+          "type": "subtitle",
+          "text": "Cloud"
+        },
+        {
+          "type": "item",
+          "text": "Angemeldet bleiben: wenn aktiviert, bleibt die Anmeldung sitzungsübergreifend erhalten."
+        },
+        {
+          "type": "subtitle",
+          "text": "Allgemeine MIDI-Einstellungen"
+        },
+        {
+          "type": "item",
+          "text": "SF-Kanal: MIDI-Kanal für den SoundFont-Synthesizer (Standard: OMNI)."
+        },
+        {
+          "type": "item",
+          "text": "Analog-Kanal: MIDI-Kanal für den Analog-Synthesizer (Standard: OMNI)."
+        },
+        {
+          "type": "item",
+          "text": "MIDI Thru: eingehende MIDI-Nachrichten an angeschlossene Ausgabegeräte weiterleiten."
+        },
+        {
+          "type": "item",
+          "text": "Pitch Bend Range: Empfindlichkeit des eingehenden Pitch Bend in Halbtönen."
+        },
+        {
+          "type": "subtitle",
+          "text": "Werkseinstellungen"
+        },
+        {
+          "type": "para",
+          "text": "Löscht alle gespeicherten Einstellungen, Presets und die Cloud-Geräteregistrierung. Die App wird geschlossen und startet beim nächsten Mal frisch."
+        },
+        {
+          "type": "note",
+          "text": "Das Zurücksetzen auf Werkseinstellungen kann nicht rückgängig gemacht werden. Ihr Cloud-Konto und veröffentlichte Presets sind nicht betroffen — nur die lokalen Daten auf diesem Gerät werden gelöscht."
+        }
+      ]
+    },
+    {
       "id": "Privacy",
       "title": "Datenschutz",
       "icon": "privacy_tip_outlined",
@@ -1126,8 +1193,12 @@
           "text": "Tippen Sie auf Alle löschen, um alle Gerätedaten dauerhaft zu entfernen"
         },
         {
+          "type": "item",
+          "text": "Nach dem Löschen ist die Liste leer, bis neue Daten gemeldet werden (wenn die Freigabe aktiviert ist)"
+        },
+        {
           "type": "note",
-          "text": "Beim ersten Anmelden wird ein Zustimmungsdialog angezeigt."
+          "text": "Beim ersten Anmelden wird ein Zustimmungsdialog angezeigt. Ihre Auswahl wird gespeichert, kann aber jederzeit im Datenschutz-Tab geändert werden."
         }
       ]
     }
