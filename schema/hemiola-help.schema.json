@@ -52,6 +52,11 @@
           "items": {
             "$ref": "#/$defs/entry"
           }
+        },
+        "anchor": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional stable slug for deep-linking directly to this section (auto-scroll)."
         }
       }
     },
@@ -69,6 +74,11 @@
           "type": "string",
           "minLength": 1,
           "description": "Localized text content."
+        },
+        "anchor": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional stable slug for deep-linking directly to this entry (auto-scroll)."
         }
       }
     }

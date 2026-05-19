@@ -21,7 +21,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Presets & Scenes"
+          "text": "Presets & Scenes",
+          "anchor": "presets"
         },
         {
           "type": "para",
@@ -97,11 +98,12 @@
         },
         {
           "type": "item",
-          "text": "Equalizer icon (Sound Generator) → accent when the generator is playing; long-tap or shake the device to toggle on/off"
+          "text": "Equalizer icon (Sound Generator) → accent when the generator is playing; long-tap to toggle on/off"
         },
         {
           "type": "subtitle",
-          "text": "Knobs"
+          "text": "Knobs",
+          "anchor": "knobs"
         },
         {
           "type": "item",
@@ -125,7 +127,8 @@
         },
         {
           "type": "subtitle",
-          "text": "App Updates"
+          "text": "App Updates",
+          "anchor": "update"
         },
         {
           "type": "item",
@@ -160,7 +163,7 @@
         },
         {
           "type": "table",
-          "text": "Feature|Free App|Pro App|Cloud Free|Cloud Pro\nPiano & Sound Generator|✓|✓|✓|✓\nPresets per section|3 max|Unlimited|Unlimited|Unlimited\nDownload shared presets|✓|✓|✓|✓\nShare your presets|-|-|-|✓\nConfig Tool & MIDI (mobile)|✓|✓|✓|✓\nConfig Tool & MIDI (desktop)|—|—|-|✓\nSettings backup|—|—|-|✓\nBackup snapshots|—|—|-|✓\nMulti-device sync|—|—|-|✓"
+          "text": "Feature|Free App|Pro App|Cloud Free|Cloud Pro\nPiano Keyboard|✓|✓|✓|✓\nDrum Pads|✓|✓|✓|✓\nAnalog & SoundFont Synths|✓|✓|✓|✓\nStep Sequencer|✓|✓|✓|✓\nPresets per section|3 max|Unlimited|3 max|Unlimited\nPreview Community Presets|✓|✓|✓|✓\nDownload Community Presets|—|✓|—|✓\nShare your presets|-|-|-|✓\nConfig Tool & MIDI (mobile)|✓|✓|✓|✓\nConfig Tool & MIDI (desktop)|—|—|-|✓\nLive Mode (mobile)|—|✓|—|✓\nLive Mode (desktop)|—|—|—|✓\nSettings backup|—|—|Latest only|✓\nBackup snapshots|—|—|-|Up to 10\nMulti-device sync|—|—|Up to 2|Up to 5"
         },
         {
           "type": "note",
@@ -184,7 +187,7 @@
         },
         {
           "type": "item",
-          "text": "Backup tab: view the current backup status, configure the automatic backup interval, back up now, or restore from a previous snapshot. Requires Cloud Pro"
+          "text": "Backup tab: view the current backup status, back up now, or restore from the latest snapshot (Cloud Free) — or configure the automatic backup interval and manage multiple snapshots (Cloud Pro)"
         },
         {
           "type": "item",
@@ -228,7 +231,7 @@
         },
         {
           "type": "para",
-          "text": "Automatic cloud backup of your settings and presets, configurable from the Cloud Account dialog → Backup tab. Requires Cloud Pro."
+          "text": "Cloud backup of your settings and presets, configurable from the Cloud Account dialog → Backup tab. Cloud Free: manual backup, latest snapshot only. Cloud Pro: automatic backup with configurable interval and up to 10 snapshots."
         },
         {
           "type": "item",
@@ -276,7 +279,11 @@
         },
         {
           "type": "item",
-          "text": "Each account can register up to 5 devices across all platforms. If you reach the limit, remove an existing device from My Devices before signing in on a new one"
+          "text": "Cloud Free accounts can register up to 2 devices; Cloud Pro accounts can register up to 5. If you reach the limit, remove an existing device from My Devices before signing in on a new one"
+        },
+        {
+          "type": "note",
+          "text": "Cloud Free users who reach the 2-device limit are prompted to remove a device or upgrade to Cloud Pro (which allows up to 5 registered devices)."
         },
         {
           "type": "subtitle",
@@ -347,7 +354,7 @@
         },
         {
           "type": "item",
-          "text": "Sound Preset: analog synth parameters (oscillators, LFO, LPF, ADSR, noise) plus effects (chorus, delay, reverb)"
+          "text": "Sound Preset: analog synth parameters (oscillators, LFO, LPF, filter envelope, mono/glide/unison, ADSR, noise) plus effects (chorus, delay, reverb)"
         },
         {
           "type": "item",
@@ -406,11 +413,11 @@
         },
         {
           "type": "item",
-          "text": "Pressure toggle: enable or disable touch pressure (velocity) sensitivity"
+          "text": "Pressure toggle: enable or disable touch pressure (velocity) sensitivity. Experimental — may not work on all devices."
         },
         {
           "type": "item",
-          "text": "Haptic toggle: enable or disable vibration feedback on key press"
+          "text": "Haptic toggle: enable or disable vibration feedback on key press. Experimental — may not work on all devices."
         },
         {
           "type": "item",
@@ -427,6 +434,164 @@
         {
           "type": "item",
           "text": "Preset icon: save and recall Piano Keyboard configurations (scale, scroll position, pressure sensitivity, haptic feedback). Applying a preset immediately redraws the keyboard to the saved zoom and scroll position."
+        },
+        {
+          "type": "note",
+          "text": "Windows Tablets: for best playability, disable the system option \"Three- and four-finger touch movement\" in Windows settings to avoid gesture conflicts while playing."
+        }
+      ]
+    },
+    {
+      "id": "uiDrumPad",
+      "title": "Drum Pad",
+      "icon": "grid_view",
+      "entries": [
+        {
+          "type": "para",
+          "text": "The Drum Pad is a 4×4 grid of 16 velocity-sensitive pads that send MIDI notes on channel 10 (GM Percussion). It is available as an alternative to the Piano Keyboard and uses only the SoundFont engine."
+        },
+        {
+          "type": "note",
+          "text": "A SoundFont file must be loaded and active. The selected SoundFont must be General MIDI (GM) compatible — it needs a standard GM Percussion bank on channel 10 to produce drum sounds."
+        },
+        {
+          "type": "subtitle",
+          "text": "How To Use"
+        },
+        {
+          "type": "item",
+          "text": "Tap a pad to trigger the corresponding drum sound. Multi-touch is supported: you can hit multiple pads simultaneously."
+        },
+        {
+          "type": "item",
+          "text": "Each pad has a unique color. When touched, the pad color brightens to give immediate visual feedback."
+        },
+        {
+          "type": "subtitle",
+          "text": "Toolbar Controls"
+        },
+        {
+          "type": "item",
+          "text": "Piano icon (top-left): exit Drum Pad mode and return to the Piano Keyboard."
+        },
+        {
+          "type": "item",
+          "text": "Touch Sensitivity (mobile only): enable or disable touch pressure (velocity) sensitivity. Experimental — may not work on all devices."
+        },
+        {
+          "type": "item",
+          "text": "Haptic Feedback (mobile only): enable or disable vibration on pad hit. Experimental — may not work on all devices."
+        },
+        {
+          "type": "item",
+          "text": "Shake To Play (mobile only): assign a drum pad to the shake gesture. Experimental — may not work on all devices. Tap the icon to enter assignment mode — a message appears asking you to tap a pad. Once assigned, each shake sounds that pad with velocity-sensitive dynamics (monophonic: previous note stops before the new one plays). Tap the icon again to cancel. The icon turns amber while waiting for a pad selection, and accent color when a pad is assigned. Long-press the icon to open Shake Settings: adjust sensitivity (lower = more sensitive), enable Wrist Rejection to automatically filter wrist rebounds, and control velocity sensitivity (higher = wider dynamic range)."
+        },
+        {
+          "type": "item",
+          "text": "Mute / Volume Down / Volume Up: control the master output volume."
+        },
+        {
+          "type": "item",
+          "text": "Help icon (top-right): open this help section."
+        },
+        {
+          "type": "note",
+          "text": "Windows Tablets: for best playability, disable the system option \"Three- and four-finger touch movement\" in Windows settings to avoid gesture conflicts while playing."
+        }
+      ]
+    },
+    {
+      "id": "uiDrumSequencer",
+      "title": "Step Sequencer",
+      "icon": "grid_view",
+      "entries": [
+        {
+          "type": "para",
+          "text": "The Step Sequencer has 16 drum tracks and a Melody / Bass track. It programs up to 32 steps of GM percussion plus a monophonic melodic line. It runs in the background: switching to other tabs does not interrupt playback."
+        },
+        {
+          "type": "note",
+          "text": "A SoundFont file must be loaded and active. The selected SoundFont must be GM-compatible — it needs a standard GM Percussion bank on channel 10."
+        },
+        {
+          "type": "subtitle",
+          "text": "Transport"
+        },
+        {
+          "type": "item",
+          "text": "Play / Stop: tap the play button to start playback from step 1. Tap again to stop. The active playhead column is highlighted."
+        },
+        {
+          "type": "item",
+          "text": "Record: tap the Record button to enter recording mode. A dialog asks whether to record Drums or Melody / Bass. Playback starts automatically if stopped. In Drums mode, note-ons matching a drum row are written to the nearest step; a click track (Claves) sounds every quarter note — louder on beat 1. In Melody / Bass mode, notes played on the keyboard or via external MIDI are recorded as pitched events with velocity and duration. Tap Stop to exit recording."
+        },
+        {
+          "type": "item",
+          "text": "Tap Tempo: tap repeatedly at the desired tempo to set BPM automatically. Hemiola averages the last few intervals to compute BPM. Taps older than 4 seconds are discarded."
+        },
+        {
+          "type": "subtitle",
+          "text": "Grid"
+        },
+        {
+          "type": "item",
+          "text": "The top row (amber) is the Melody / Bass track. Below it are the 16 drum rows, each corresponding to a GM percussion instrument."
+        },
+        {
+          "type": "item",
+          "text": "Tap any drum cell to toggle a step on or off. Long-press a drum cell to toggle it as a silent step (greyed out): silent steps hold the loop position without producing sound."
+        },
+        {
+          "type": "item",
+          "text": "Row labels: tap a label to mute or unmute that entire row (content is preserved, the row turns grey). Long-press a label to delete all steps in that row immediately, with no confirmation."
+        },
+        {
+          "type": "subtitle",
+          "text": "Melody / Bass Track"
+        },
+        {
+          "type": "item",
+          "text": "The melody row displays recorded notes as horizontal bars: vertical position reflects pitch, bar width reflects duration (steps), bar height reflects velocity."
+        },
+        {
+          "type": "item",
+          "text": "Recording is monophonic: a new note overwrites any existing note at the same position and truncates any overlapping predecessor."
+        },
+        {
+          "type": "item",
+          "text": "Long-press the Melody label to clear the melody track instantly, or use Clear Pattern with the Melody / Bass checkbox."
+        },
+        {
+          "type": "subtitle",
+          "text": "Parameters"
+        },
+        {
+          "type": "item",
+          "text": "BPM (40–240): set the tempo with the +/− spinner. Changes take effect immediately."
+        },
+        {
+          "type": "item",
+          "text": "Steps (16 / 32): toggle between 16 and 32 steps. Switching to 32 pads existing steps; switching back to 16 truncates the last 16."
+        },
+        {
+          "type": "item",
+          "text": "Time (4/4 · 3/4 · 6/8 · 5/4): visual grouping indicator only — does not affect playback timing."
+        },
+        {
+          "type": "item",
+          "text": "Swing (50–100): amount of swing on odd steps. 50 = straight; higher values produce a shuffle feel."
+        },
+        {
+          "type": "subtitle",
+          "text": "Pattern Presets"
+        },
+        {
+          "type": "item",
+          "text": "Tap the Pattern chip to open the preset list. Factory patterns cover a variety of styles; you can save your own."
+        },
+        {
+          "type": "item",
+          "text": "Clear Pattern: tap the trash icon to open a dialog with separate checkboxes for Drum Tracks and Melody / Bass. Only the selected tracks are cleared."
         }
       ]
     },
@@ -556,11 +721,24 @@
         },
         {
           "type": "subtitle",
-          "text": "MIDI Mapper"
+          "text": "MIDI Mapper",
+          "anchor": "midiMapper"
         },
         {
           "type": "para",
-          "text": "Lets you control Hemiola parameters via MIDI (UI mode) or forward and transform MIDI messages (Custom mode)."
+          "text": "Lets you control Hemiola parameters via MIDI. Mappings are organised in three categories:"
+        },
+        {
+          "type": "item",
+          "text": "User — custom mappings you create to forward or transform MIDI messages"
+        },
+        {
+          "type": "item",
+          "text": "Synth — built-in mappings for Sound Generator parameters (volume, oscillators, effects, etc.)"
+        },
+        {
+          "type": "item",
+          "text": "UI — built-in mappings for interface controls (show/hide sections, tab switching)"
         },
         {
           "type": "item",
@@ -568,11 +746,35 @@
         },
         {
           "type": "item",
-          "text": "Filter the list by message type; \"activate all visible\" applies to the filtered set"
+          "text": "Use the toggle buttons to filter the list by category; \"activate all visible\" applies to the filtered set"
         },
         {
           "type": "item",
           "text": "Add custom mapping: define name, in/out channel, command, and data; tap the settings icon to edit or delete"
+        },
+        {
+          "type": "item",
+          "text": "Test Mode (ear icon): when enabled, incoming MIDI messages are not executed but instead the matching mappings flash three times and the list scrolls to show them. Useful for verifying your external controller setup."
+        },
+        {
+          "type": "subtitle",
+          "text": "Wildcards & Device Filters"
+        },
+        {
+          "type": "para",
+          "text": "The MIDI Mapper acts as a powerful router and rewriter. You can use 'OMNI' and 'ANY' values to match multiple messages, and 'SAME AS IN' to pass them through unchanged:"
+        },
+        {
+          "type": "item",
+          "text": "Device Filters: restrict a mapping to listen from or send to a specific connected device, or leave as 'ANY DEVICE' / 'ALL DEVICES'."
+        },
+        {
+          "type": "item",
+          "text": "Channel/Command: set the input to 'OMNI' or 'ALL MSGS' to intercept any incoming stream, and set the output to 'SAME AS IN' to preserve the original property."
+        },
+        {
+          "type": "item",
+          "text": "Data 1: enter '-1' to match any note or CC value, passing it through dynamically."
         },
         {
           "type": "note",
@@ -580,11 +782,32 @@
         },
         {
           "type": "subtitle",
-          "text": "MIDI Console"
+          "text": "MIDI Autopilot"
         },
         {
           "type": "para",
-          "text": "Displays a real-time list of recently received MIDI messages. Useful for testing and diagnosing MIDI connections, and for identifying the right channel/command values when creating MIDI Mapper entries."
+          "text": "Two independent autopilot modes can be toggled separately in Settings → General:"
+        },
+        {
+          "type": "item",
+          "text": "Controls Autopilot: the app automatically switches tabs and scrolls to the affected controls when MIDI parameter changes are received through built-in mappings."
+        },
+        {
+          "type": "item",
+          "text": "Keyboard Autopilot: when a MIDI note-on reaches the synth, the app switches to the piano tab and scrolls to show the played note."
+        },
+        {
+          "type": "note",
+          "text": "Built-in mappings for a section that is currently switched off (e.g. Reverb, Analog Synth) are silently ignored."
+        },
+        {
+          "type": "subtitle",
+          "text": "MIDI Console",
+          "anchor": "midiConsole"
+        },
+        {
+          "type": "para",
+          "text": "Displays a real-time list of recently received and sent MIDI messages. Fully supports SysEx payloads (up to 200 recent messages). Features hexagonal views, text decoding, clock omission, and quick log exports."
         },
         {
           "type": "item",
@@ -592,7 +815,32 @@
         },
         {
           "type": "item",
-          "text": "Tap the Clear button at the bottom to erase the current message list"
+          "text": "Use the top toggles to pause scrolling, clear the list, switch to hexadecimal view, decode payload data, filter out clock signals, or export the log for troubleshooting."
+        },
+        {
+          "type": "subtitle",
+          "text": "Wind Controllers",
+          "anchor": "windControllers"
+        },
+        {
+          "type": "para",
+          "text": "Hemiola can detect wind MIDI controllers (EWI, Roland Aerophone, Yamaha WX, Warbl, Sylphyo, etc.) and route their breath CC directly to the audio output volume, bypassing the standard MIDI pipeline for a more responsive feel."
+        },
+        {
+          "type": "item",
+          "text": "When a known wind controller connects for the first time, a detection dialog appears asking which CC carries the breath signal (CC 2, CC 11, CC 7, or Try All)."
+        },
+        {
+          "type": "item",
+          "text": "You can also enable Wind Controller mode manually: tap the settings icon next to any device and check the Wind Controller checkbox at the top of the dialog."
+        },
+        {
+          "type": "item",
+          "text": "Advanced — Response Curve: choose Linear, Exponential, or Logarithmic response and adjust Curvature (-1.0 to +1.0) for precise feel. Changes are applied in real time."
+        },
+        {
+          "type": "note",
+          "text": "The wind controller breath path operates before the MIDI Mapper. CC 7 (Channel Volume), if selected as the breath source, is intercepted and does not reach the SoundFont engine."
         }
       ]
     },
@@ -607,7 +855,8 @@
         },
         {
           "type": "subtitle",
-          "text": "MAIN"
+          "text": "MAIN",
+          "anchor": "uiBoxMain"
         },
         {
           "type": "item",
@@ -631,7 +880,8 @@
         },
         {
           "type": "subtitle",
-          "text": "PITCH"
+          "text": "PITCH",
+          "anchor": "uiBoxTuning"
         },
         {
           "type": "item",
@@ -647,7 +897,8 @@
         },
         {
           "type": "subtitle",
-          "text": "AUDIO OUTPUT"
+          "text": "AUDIO OUTPUT",
+          "anchor": "uiBoxAudio"
         },
         {
           "type": "item",
@@ -658,12 +909,21 @@
           "text": "AUTO: automatic buffer size management (recommended in most cases)"
         },
         {
+          "type": "item",
+          "text": "Windows Exclusive Mode: gives Hemiola direct access to one output device for the lowest latency. While active, other apps on the same device are muted. If the device disconnects or is busy, Hemiola automatically falls back to shared mode. On multi-channel devices (4+ channels), you can select the active stereo pair (0-1, 2-3, 4-5, ...) in real time from the Exclusive panel. Audio is routed only to the selected pair; all other channels stay silent. The Release On Minimise option controls whether Hemiola releases exclusive ownership while in background and automatically reclaims it on resume. If exclusive activation fails, or if exclusive is re-enabled and still silent, tap Send Logs in the Exclusive panel and share the diagnostics report from the dialog."
+        },
+        {
           "type": "note",
           "text": "If the Sound Engine icon turns red, an audio buffer under-run occurred — increase the buffer size or enable AUTO. The section also shows a best-effort estimate of current audio latency and the sampling rate (set automatically by the audio engine)."
         },
         {
+          "type": "note",
+          "text": "On first launch, Hemiola automatically runs an audio engine calibration that measures your device's latency, stability, and CPU performance, then configures the optimal settings. You can re-run calibration at any time by tapping the badge on the home screen."
+        },
+        {
           "type": "subtitle",
-          "text": "SoundFont Synth"
+          "text": "SoundFont Synth",
+          "anchor": "uiBoxSf"
         },
         {
           "type": "para",
@@ -691,7 +951,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Analog Synth"
+          "text": "Analog Synth",
+          "anchor": "groupAnalogsynth"
         },
         {
           "type": "para",
@@ -707,7 +968,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Analog Oscillators"
+          "text": "Analog Oscillators",
+          "anchor": "uiBoxAnalogSynth"
         },
         {
           "type": "para",
@@ -715,7 +977,7 @@
         },
         {
           "type": "item",
-          "text": "Wave: waveform shape — Sine, Square, Sawtooth (×2), Triangle (×2)"
+          "text": "Wave: waveform shape — Sine, Square, Sawtooth (×2), Triangle (×2), Pulse"
         },
         {
           "type": "item",
@@ -734,8 +996,13 @@
           "text": "Volume: individual oscillator output level"
         },
         {
+          "type": "item",
+          "text": "PW: pulse width (duty cycle) — only affects the Pulse waveform. 50% = square wave, lower/higher values produce thinner pulses"
+        },
+        {
           "type": "subtitle",
-          "text": "Low Frequency Oscillator (LFO)"
+          "text": "Low Frequency Oscillator (LFO)",
+          "anchor": "uiBoxLfo"
         },
         {
           "type": "item",
@@ -755,7 +1022,12 @@
         },
         {
           "type": "subtitle",
-          "text": "Low Pass Filter"
+          "text": "Low Pass Filter",
+          "anchor": "uiBoxLpf"
+        },
+        {
+          "type": "para",
+          "text": "A 4-pole (24 dB/oct) Moog Ladder filter applied per voice. At high emphasis the filter self-oscillates, producing a pitched tone."
         },
         {
           "type": "item",
@@ -763,7 +1035,15 @@
         },
         {
           "type": "item",
-          "text": "Emphasis: boosts frequencies around the cutoff frequency (resonance)"
+          "text": "Emphasis: boosts frequencies around the cutoff frequency (resonance) — at maximum the filter self-oscillates"
+        },
+        {
+          "type": "item",
+          "text": "Amount: depth of filter envelope modulation (0 = none, 1000 = full sweep)"
+        },
+        {
+          "type": "item",
+          "text": "Kbd Track: keyboard tracking — how much the cutoff follows the played note (Off, 33%, 67%, 100%)"
         },
         {
           "type": "note",
@@ -771,11 +1051,78 @@
         },
         {
           "type": "subtitle",
-          "text": "Noise Generator"
+          "text": "Filter Envelope",
+          "anchor": "uiBoxFilterAdsr"
+        },
+        {
+          "type": "para",
+          "text": "A dedicated per-voice ADSR envelope that sweeps the filter cutoff over time. The sweep range is controlled by Amount in the LPF section."
         },
         {
           "type": "item",
-          "text": "White noise oscillator — useful for adding breath or air to a sound"
+          "text": "Attack: time (ms) for the filter to open after note-on"
+        },
+        {
+          "type": "item",
+          "text": "Decay: time (ms) to fall from the peak to sustain level"
+        },
+        {
+          "type": "item",
+          "text": "Sustain: cutoff level while key is held (per mille, 0–1000)"
+        },
+        {
+          "type": "item",
+          "text": "Release: time (ms) for the filter to close after note-off"
+        },
+        {
+          "type": "subtitle",
+          "text": "Mono / Glide",
+          "anchor": "uiBoxMono"
+        },
+        {
+          "type": "para",
+          "text": "When Mono is enabled, only one note sounds at a time. Held notes are tracked in a stack — releasing the current note returns to the previous one."
+        },
+        {
+          "type": "item",
+          "text": "Mono: toggle between monophonic (one note) and polyphonic (multiple notes) modes"
+        },
+        {
+          "type": "item",
+          "text": "Priority: which note sounds when multiple keys are held — Low (lowest note wins), High (highest), or Last (most recent)"
+        },
+        {
+          "type": "item",
+          "text": "Retrigger: when on, envelopes restart on each new note; when off, the pitch changes smoothly without retriggering (legato)"
+        },
+        {
+          "type": "item",
+          "text": "Glide: portamento time (ms) — how long the pitch takes to slide between notes. 0 = instant"
+        },
+        {
+          "type": "item",
+          "text": "Drift: analog oscillator drift — adds subtle random pitch instability to each voice, simulating analog VCO behavior (0 = perfectly tuned, 100 = maximum warmth)"
+        },
+        {
+          "type": "item",
+          "text": "Voices: number of unison voices per note (1–8). Multiple voices are detuned symmetrically for a thicker sound. Only works in Mono mode"
+        },
+        {
+          "type": "item",
+          "text": "Detune: spread in cents between unison voices (0–50). Higher values create a wider, more detuned chorus effect"
+        },
+        {
+          "type": "subtitle",
+          "text": "Noise Generator",
+          "anchor": "uiBoxNoise"
+        },
+        {
+          "type": "item",
+          "text": "White or pink noise oscillator — useful for adding breath, air, or texture to a sound. White noise has equal energy at all frequencies; pink noise has more bass energy (−3 dB/octave)"
+        },
+        {
+          "type": "item",
+          "text": "Type: White or Pink noise"
         },
         {
           "type": "item",
@@ -783,11 +1130,12 @@
         },
         {
           "type": "subtitle",
-          "text": "Loudness Envelope (ADSR)"
+          "text": "Loudness Envelope (ADSR)",
+          "anchor": "uiBoxAdsr"
         },
         {
           "type": "para",
-          "text": "Controls the amplitude envelope of the Analog synth:"
+          "text": "Controls the amplitude envelope of the Analog synth. Uses exponential (RC) curves for a natural, analog-like response."
         },
         {
           "type": "item",
@@ -818,7 +1166,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Chorus"
+          "text": "Chorus",
+          "anchor": "uiBoxChorus"
         },
         {
           "type": "item",
@@ -838,7 +1187,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Delay"
+          "text": "Delay",
+          "anchor": "uiBoxDelay"
         },
         {
           "type": "item",
@@ -854,7 +1204,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Reverb"
+          "text": "Reverb",
+          "anchor": "uiBoxReverb"
         },
         {
           "type": "para",
@@ -886,7 +1237,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Limiter"
+          "text": "Limiter",
+          "anchor": "uiBoxLimiter"
         },
         {
           "type": "para",
@@ -929,11 +1281,15 @@
         },
         {
           "type": "item",
+          "text": "Use the sort chips below the search bar to change the order: Trending (default, ranked by the Hemiola Score algorithm), Recent (newest first), or Top (most voted of all time)"
+        },
+        {
+          "type": "item",
           "text": "Scroll down to load more presets automatically (infinite scroll); pull to refresh the list"
         },
         {
           "type": "item",
-          "text": "Each card shows the preset name, hashtags, author name, vote counts, and download count. Tap the card to expand it and see the full description, section chips, and action buttons"
+          "text": "Each card shows the preset name, hashtags, author name (with a tier badge if earned), vote counts, and download count. Tap the card to expand it and see the full description, section chips, and action buttons"
         },
         {
           "type": "item",
@@ -953,7 +1309,7 @@
         },
         {
           "type": "item",
-          "text": "Device settings embedded in a preset are not applied in this version; a notice is shown when a preset contains them"
+          "text": "If a preset contains device settings, Apply is enabled only when that device type is connected; otherwise it is disabled. You can always import the preset to save it locally for later use"
         },
         {
           "type": "subtitle",
@@ -989,7 +1345,31 @@
         },
         {
           "type": "item",
-          "text": "Use the thumbs-up / thumbs-down buttons to vote. Tapping the same vote again removes it. Voting requires a cloud account but not a paid subscription"
+          "text": "Use the thumbs-up / thumbs-down buttons on any preset card or in the Last Used panel to vote. Tapping the same vote again removes it. Voting requires a cloud account but not a paid subscription"
+        },
+        {
+          "type": "subtitle",
+          "text": "Creator Tiers"
+        },
+        {
+          "type": "para",
+          "text": "Active Cloud Pro creators earn tier badges based on the total number of likes their published presets receive. Higher tiers give a small score boost in the Trending ranking."
+        },
+        {
+          "type": "item",
+          "text": "🟢 Sound Designer — 500+ likes"
+        },
+        {
+          "type": "item",
+          "text": "🔥 Master Producer — 2,500+ likes"
+        },
+        {
+          "type": "item",
+          "text": "👑 Hemiola Legend — 10,000+ likes"
+        },
+        {
+          "type": "note",
+          "text": "Tier badges appear next to the author name on preset cards. The badge and its score boost are only active while the creator holds a Cloud Pro subscription."
         },
         {
           "type": "subtitle",
@@ -1110,6 +1490,14 @@
           "text": "Keep Screen On: prevents the device screen from dimming while the app is in use (mobile only)."
         },
         {
+          "type": "item",
+          "text": "Controls Autopilot: automatically navigate to affected controls when MIDI parameters change via built-in mappings."
+        },
+        {
+          "type": "item",
+          "text": "Keyboard Autopilot: show and scroll the keyboard when MIDI notes are received."
+        },
+        {
           "type": "subtitle",
           "text": "Cloud"
         },
@@ -1199,6 +1587,238 @@
         {
           "type": "note",
           "text": "You are shown a consent dialog the first time you sign in. Your choice is saved, but you can always change it in the Privacy tab."
+        }
+      ]
+    },
+    {
+      "id": "Calibration",
+      "title": "Audio Calibration",
+      "icon": "graphic_eq",
+      "anchor": "calibration",
+      "entries": [
+        {
+          "type": "para",
+          "text": "The Audio Calibration Wizard measures the round-trip audio latency of your device and evaluates the quality of your setup for live performance. It runs automatically on first launch and can be re-run at any time from Home → Calibrate."
+        },
+        {
+          "type": "subtitle",
+          "text": "What Is Measured"
+        },
+        {
+          "type": "item",
+          "text": "Latency (ms): the round-trip time between a note trigger and the audible sound. Measured by playing a test tone and detecting its echo via the microphone."
+        },
+        {
+          "type": "item",
+          "text": "Stability: how consistent the latency is across multiple measurements. A stable setup maintains the same latency without spikes."
+        },
+        {
+          "type": "item",
+          "text": "Polyphony: how many simultaneous voices your device can sustain without audio glitches (XRuns). Lower-end devices may be limited to 3–5 voices."
+        },
+        {
+          "type": "item",
+          "text": "Native Sample Rate: the hardware output rate (typically 44.1 kHz or 48 kHz). Hemiola automatically matches this to avoid resampling, which would degrade latency."
+        },
+        {
+          "type": "subtitle",
+          "text": "Latency Grades"
+        },
+        {
+          "type": "item",
+          "text": "Pro Grade (< 12 ms): transparent, suitable for live keyboard playing."
+        },
+        {
+          "type": "item",
+          "text": "Stable (12–25 ms): slightly noticeable at high tempos; acceptable for most users."
+        },
+        {
+          "type": "item",
+          "text": "Risky (> 25 ms): audible delay. Consider using wired headphones, closing background apps, or lowering the audio buffer size in Settings → Audio."
+        },
+        {
+          "type": "subtitle",
+          "text": "Polyphony Grades"
+        },
+        {
+          "type": "item",
+          "text": "Full (8 voices): no restriction; all voices active."
+        },
+        {
+          "type": "item",
+          "text": "Reduced (5 voices): older or thermal-throttled devices. The voice cap is applied automatically."
+        },
+        {
+          "type": "item",
+          "text": "Limited (3 voices): performance-constrained device. Dense polyphony will be capped."
+        },
+        {
+          "type": "subtitle",
+          "text": "Frame Rate Tier"
+        },
+        {
+          "type": "item",
+          "text": "Fast (P90 < 16.67 ms): the GPU/UI pipeline runs at 60 fps. All visual effects are active."
+        },
+        {
+          "type": "item",
+          "text": "Marginal (16.67–33 ms): roughly 30 fps. Some visual effects are automatically suppressed to protect audio performance."
+        },
+        {
+          "type": "item",
+          "text": "Slow (P90 ≥ 33 ms): the device cannot sustain real-time audio and full UI simultaneously. Heavy visual effects are disabled."
+        },
+        {
+          "type": "note",
+          "text": "Frame Rate Fails: if the frame tier is Marginal or Slow, Hemiola automatically reduces visual complexity to keep audio glitch-free. Re-running calibration after a device restart often improves the result. On old and/or slow devices Hemiola might not perform correctly: try with a more recent and/or powerful device."
+        },
+        {
+          "type": "subtitle",
+          "text": "Calibration Report Card"
+        },
+        {
+          "type": "para",
+          "text": "After the wizard completes, a Report Card is shown with device model, platform, all grades, and a 'Ready for Stage' or 'Potential Issues' status. You can re-open this card at any time by tapping the latency tachometer on the Home screen."
+        },
+        {
+          "type": "note",
+          "text": "If Results Are Poor: a link to the online help page is shown when critical issues are detected. Common causes include background apps competing for audio resources, a non-native sample rate, or a device with hardware limitations."
+        },
+        {
+          "type": "subtitle",
+          "anchor": "calibration-poor-results",
+          "text": "Tips for Better Results"
+        },
+        {
+          "type": "item",
+          "text": "Use wired headphones or a USB audio interface — they bypass the internal DAC and typically halve the latency."
+        },
+        {
+          "type": "item",
+          "text": "Close all other apps before calibrating, especially streaming services and communication apps."
+        },
+        {
+          "type": "item",
+          "text": "On Android, grant the RECORD_AUDIO permission. Without it, the latency measurement cannot run."
+        },
+        {
+          "type": "item",
+          "text": "Re-run calibration after connecting or disconnecting audio hardware — the native sample rate may change."
+        }
+      ]
+    },
+    {
+      "id": "Live Mode",
+      "title": "Live Mode",
+      "icon": "my_location",
+      "anchor": "liveMode",
+      "entries": [
+        {
+          "type": "para",
+          "text": "Live Mode prepares your device for a live performance. It checks all the conditions that could disrupt a performance on stage and lets you activate the audio engine protections in one tap."
+        },
+        {
+          "type": "subtitle",
+          "text": "Activating Live Mode"
+        },
+        {
+          "type": "para",
+          "text": "Tap the LIVE button on the Home screen to open the Live Mode dialog. The checklist shows the current status of your setup. When all checks pass (or only warnings are present), tap Activate."
+        },
+        {
+          "type": "item",
+          "text": "On Android, Activate requests exclusive Audio Focus, preventing other apps from playing audio and muting WhatsApp, music players, and similar interruptions."
+        },
+        {
+          "type": "item",
+          "text": "The synth engine starts automatically if it was not already running."
+        },
+        {
+          "type": "item",
+          "text": "The LIVE button turns accent-coloured with a border highlight while Live Mode is active."
+        },
+        {
+          "type": "subtitle",
+          "text": "Checklist Items"
+        },
+        {
+          "type": "item",
+          "text": "Audio Engine: shows the measured latency grade from the last calibration. A Pro Grade result is ideal. If no calibration has been run, this shows '—'."
+        },
+        {
+          "type": "item",
+          "text": "MIDI Device: shows whether a MIDI controller is connected and its name. Orange means no device — you can still perform using the on-screen keyboard."
+        },
+        {
+          "type": "item",
+          "text": "Do Not Disturb: orange if DND is off. Enable DND from your device's notification bar before performing."
+        },
+        {
+          "type": "item",
+          "text": "Battery: orange if below 30%. Charge before a performance to avoid audio drop-outs caused by power management throttling."
+        },
+        {
+          "type": "item",
+          "text": "Charging: orange if a charger is connected. Chargers can introduce ground hum into the audio path — unplug before performing if you hear noise."
+        },
+        {
+          "type": "item",
+          "text": "Thermal State: orange (warning) or red (critical) if the device is hot. Thermal throttling degrades audio performance."
+        },
+        {
+          "type": "subtitle",
+          "text": "Deactivating Live Mode"
+        },
+        {
+          "type": "para",
+          "text": "Tap the ACTIVE button to reopen the dialog, then tap Deactivate. On Android this releases the Audio Focus, allowing other apps to play audio again."
+        },
+        {
+          "type": "subtitle",
+          "text": "Audio Interruptions"
+        },
+        {
+          "type": "para",
+          "text": "Even with Live Mode active, certain system events can interrupt audio on Android. Hemiola handles these gracefully: all active notes are silenced immediately (MIDI Panic Soft) and a non-blocking banner appears."
+        },
+        {
+          "type": "note",
+          "text": "Best practice for live performance: activate Airplane Mode or Do Not Disturb before going on stage, unplug the charger, and ensure the device is sufficiently charged (>50%)."
+        }
+      ]
+    },
+    {
+      "id": "quickStart",
+      "title": "Let's Play!",
+      "icon": "rocket_launch",
+      "entries": [
+        {
+          "type": "para",
+          "text": "The Let's Play! popup appears every time Hemiola launches and lets you jump straight into playing with a single tap."
+        },
+        {
+          "type": "item",
+          "text": "The Piano — opens the Piano Keyboard tab ready to play."
+        },
+        {
+          "type": "item",
+          "text": "The Drums — opens the Piano Keyboard tab in drum-pad mode."
+        },
+        {
+          "type": "item",
+          "text": "A Midi Keyboard — opens the Devices tab and starts a 10-second auto-connect window that automatically connects the first new MIDI device found."
+        },
+        {
+          "type": "item",
+          "text": "A Wind Controller — same as Midi Keyboard; ideal for breath controllers and wind MIDI devices."
+        },
+        {
+          "type": "subtitle",
+          "text": "Don't Ask Again"
+        },
+        {
+          "type": "para",
+          "text": "Check the Don't Ask Again box before tapping a choice or Cancel to permanently suppress the popup. You can re-enable it at any time via Preferences → Factory Reset → Reset Quick Start."
         }
       ]
     }

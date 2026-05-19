@@ -21,7 +21,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Presets & Escenas"
+          "text": "Presets & Escenas",
+          "anchor": "presets"
         },
         {
           "type": "para",
@@ -101,7 +102,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Perillas Giratorias"
+          "text": "Perillas Giratorias",
+          "anchor": "knobs"
         },
         {
           "type": "item",
@@ -125,7 +127,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Actualizaciones de la App"
+          "text": "Actualizaciones de la App",
+          "anchor": "update"
         },
         {
           "type": "item",
@@ -160,7 +163,7 @@
         },
         {
           "type": "table",
-          "text": "Función|App Gratuita|App Pro|Cloud Gratuito|Cloud Pro\nPiano & Sound Generator|✓|✓|✓|✓\nPresets por sección|3 máx|Ilimitados|Ilimitados|Ilimitados\nDescargar presets compartidos|✓|✓|✓|✓\nCompartir tus presets|-|-|-|✓\nConfig Tool & MIDI (móvil)|✓|✓|✓|✓\nConfig Tool & MIDI (escritorio)|—|—|-|✓\nCopia de seguridad de ajustes|—|—|-|✓\nInstantáneas de seguridad|—|—|-|✓\nSincronización multidispositivo|—|—|-|✓"
+          "text": "Función|App Gratuita|App Pro|Cloud Gratuito|Cloud Pro\nTeclado Piano|✓|✓|✓|✓\nPads de Batería|✓|✓|✓|✓\nSintetizadores Analog & SoundFont|✓|✓|✓|✓\nSecuenciador de Pasos|✓|✓|✓|✓\nPresets por sección|3 máx|Ilimitados|3 máx|Ilimitados\nVista previa de la Comunidad|✓|✓|✓|✓\nDescargar presets de la Comunidad|—|✓|—|✓\nCompartir tus presets|-|-|-|✓\nConfig Tool & MIDI (móvil)|✓|✓|✓|✓\nConfig Tool & MIDI (escritorio)|—|—|-|✓\nModo Live (móvil)|—|✓|—|✓\nModo Live (escritorio)|—|—|—|✓\nCopia de seguridad de ajustes|—|—|Solo la última|✓\nInstantáneas de seguridad|—|—|-|hasta 10\nSincronización multidispositivo|—|—|hasta 2|hasta 5"
         },
         {
           "type": "note",
@@ -184,7 +187,7 @@
         },
         {
           "type": "item",
-          "text": "Pestaña Copia de Seguridad: ver el estado actual de la copia de seguridad, configurar el intervalo de copia automática, realizar una copia manual o restaurar desde un instantáneo."
+          "text": "Pestaña Copia de Seguridad: ver el estado actual, realizar una copia manual o restaurar el último instantáneo (Cloud Gratuito) — o configurar el intervalo automático y gestionar varios instantáneos (Cloud Pro)"
         },
         {
           "type": "item",
@@ -228,7 +231,7 @@
         },
         {
           "type": "para",
-          "text": "Copia de seguridad automática en la nube de tus ajustes y presets, configurable desde la ventana Cuenta Cloud → pestaña Copia de Seguridad. Requiere Cloud Pro."
+          "text": "Copia de seguridad en la nube de tus ajustes y presets, configurable desde la ventana Cuenta Cloud → pestaña Copia de Seguridad. Cloud Gratuito: copia manual, solo el último instantáneo. Cloud Pro: copia automática con intervalo configurable y hasta 10 instantáneos."
         },
         {
           "type": "item",
@@ -276,7 +279,11 @@
         },
         {
           "type": "item",
-          "text": "Cada cuenta puede registrar hasta 5 dispositivos en todas las plataformas. Si alcanzas el límite, elimina un dispositivo existente en Mis dispositivos antes de iniciar sesión en uno nuevo"
+          "text": "Las cuentas Cloud Free pueden registrar hasta 2 dispositivos; las cuentas Cloud Pro hasta 5. Si alcanzas el límite, elimina un dispositivo existente en Mis Dispositivos antes de iniciar sesión en uno nuevo"
+        },
+        {
+          "type": "note",
+          "text": "Los usuarios de Cloud Free que alcanzan el límite de 2 dispositivos reciben un aviso para eliminar un dispositivo o actualizar a Cloud Pro (hasta 5 dispositivos registrados)."
         },
         {
           "type": "subtitle",
@@ -347,7 +354,7 @@
         },
         {
           "type": "item",
-          "text": "Preset de Sound: parámetros del sintetizador analógico (osciladores, LFO, LPF, ADSR, ruido) más efectos (chorus, delay, reverb)"
+          "text": "Preset de Sound: parámetros del sintetizador analógico (osciladores, LFO, LPF, envolvente de filtro, mono/glide/unísono, ADSR, ruido) más efectos (chorus, delay, reverb)"
         },
         {
           "type": "item",
@@ -406,11 +413,11 @@
         },
         {
           "type": "item",
-          "text": "Interruptor de presión: activar o desactivar la sensibilidad de presión táctil (velocidad)"
+          "text": "Interruptor de presión: activar o desactivar la sensibilidad de presión táctil (velocidad). Experimental — puede no funcionar en todos los dispositivos."
         },
         {
           "type": "item",
-          "text": "Interruptor háptico: activar o desactivar la retroalimentación vibratoria al presionar una tecla"
+          "text": "Interruptor háptico: activar o desactivar la retroalimentación vibratoria al presionar una tecla. Experimental — puede no funcionar en todos los dispositivos."
         },
         {
           "type": "item",
@@ -427,6 +434,148 @@
         {
           "type": "item",
           "text": "Icono de preset: guardar y recuperar configuraciones del Teclado Piano (escala, posición de desplazamiento, sensibilidad de presión, retroalimentación háptica). Aplicar un preset redibuja inmediatamente el teclado con el nivel de zoom y la posición de desplazamiento guardados."
+        },
+        {
+          "type": "note",
+          "text": "Tabletas Windows: para una mejor ejecución, desactiva la opción del sistema \"Movimiento táctil con tres y cuatro dedos\" en la configuración de Windows para evitar conflictos de gestos mientras tocas."
+        }
+      ]
+    },
+    {
+      "id": "uiDrumPad",
+      "title": "Drum Pad",
+      "icon": "grid_view",
+      "entries": [
+        {
+          "type": "para",
+          "text": "El Drum Pad es una cuadrícula de 4×4 con 16 pads que envían notas MIDI en el canal 10 (Percusión GM). Está disponible como alternativa al Teclado Piano y utiliza exclusivamente el motor SoundFont."
+        },
+        {
+          "type": "note",
+          "text": "Es necesario tener un archivo SoundFont cargado y activo. El SoundFont seleccionado debe ser compatible con el estándar General MIDI (GM) — debe incluir un banco de percusión GM estándar en el canal 10 para producir sonidos de batería."
+        },
+        {
+          "type": "subtitle",
+          "text": "Cómo Usarlo"
+        },
+        {
+          "type": "item",
+          "text": "Toca un pad para activar el sonido de batería correspondiente. El multi-touch es compatible: puedes golpear varios pads simultáneamente."
+        },
+        {
+          "type": "item",
+          "text": "Cada pad tiene un color único. Al tocarlo, el color del pad se ilumina para ofrecer una respuesta visual inmediata."
+        },
+        {
+          "type": "subtitle",
+          "text": "Controles De La Barra"
+        },
+        {
+          "type": "item",
+          "text": "Icono de piano (arriba a la izquierda): salir del modo Drum Pad y volver al Teclado Piano."
+        },
+        {
+          "type": "item",
+          "text": "Sensibilidad táctil (solo móvil): activar o desactivar la sensibilidad de presión táctil (velocity). Experimental — puede no funcionar en todos los dispositivos."
+        },
+        {
+          "type": "item",
+          "text": "Retroalimentación háptica (solo móvil): activar o desactivar la vibración al golpear un pad. Experimental — puede no funcionar en todos los dispositivos."
+        },
+        {
+          "type": "item",
+          "text": "Agitar Para Tocar (solo móvil): asigna un pad de batería al gesto de agitado. Experimental — puede no funcionar en todos los dispositivos. Toca el icono para entrar en modo asignación — aparece un mensaje pidiendo que toques un pad. Una vez asignado, cada agitado suena ese pad con dinámica sensible a la velocidad (monofónico: la nota anterior se detiene antes de la nueva). Toca el icono de nuevo para cancelar. El icono se vuelve ámbar mientras espera la selección del pad, y color acento cuando hay un pad asignado. Mantén pulsado el icono para abrir los Ajustes de Agitado: ajustar la sensibilidad (más bajo = más sensible), activar el Rechazo de Rebote para filtrar automáticamente los rebotes de muñeca, y controlar la sensibilidad de velocidad (más alto = rango dinámico más amplio)."
+        },
+        {
+          "type": "item",
+          "text": "Silenciar / Bajar volumen / Subir volumen: controlar el volumen de salida principal."
+        },
+        {
+          "type": "item",
+          "text": "Icono de ayuda (arriba a la derecha): abrir esta sección de ayuda."
+        },
+        {
+          "type": "note",
+          "text": "Tabletas Windows: para una mejor ejecución, desactiva la opción del sistema \"Movimiento táctil con tres y cuatro dedos\" en la configuración de Windows para evitar conflictos de gestos mientras tocas."
+        }
+      ]
+    },
+    {
+      "id": "uiDrumSequencer",
+      "title": "Secuenciador de Pasos",
+      "icon": "grid_view",
+      "entries": [
+        {
+          "type": "para",
+          "text": "El Secuenciador de Pasos tiene 16 pistas de percusión y una pista de Melodía / Bajo. Programa hasta 32 pasos de percusión GM y una línea melódica monofónica. Funciona en segundo plano."
+        },
+        {
+          "type": "note",
+          "text": "Se necesita un archivo SoundFont GM con banco de percusión en el canal 10."
+        },
+        {
+          "type": "subtitle",
+          "text": "Transporte"
+        },
+        {
+          "type": "item",
+          "text": "Play / Stop: toca el botón de reproducción para iniciar desde el paso 1 o detener."
+        },
+        {
+          "type": "item",
+          "text": "Grabar: toca el botón de grabación para activar el modo de grabación. Un diálogo pregunta si grabar Batería o Melodía / Bajo. La reproducción comienza automáticamente si estaba detenida. En modo Batería, las notas que coincidan con una fila se escriben en el paso más cercano; un click track (Claves) suena cada tiempo — más fuerte en el primero. En modo Melodía / Bajo, las notas tocadas en el teclado o mediante MIDI externo se graban como eventos melódicos con velocidad y duración. Pulsar Stop también sale del modo de grabación."
+        },
+        {
+          "type": "item",
+          "text": "Tap Tempo: toca varias veces al ritmo deseado para ajustar el BPM automáticamente."
+        },
+        {
+          "type": "subtitle",
+          "text": "Cuadrícula"
+        },
+        {
+          "type": "item",
+          "text": "La fila superior (ámbar) es la pista Melodía / Bajo. Las 16 filas de batería están debajo, cada una correspondiente a un instrumento de percusión GM."
+        },
+        {
+          "type": "item",
+          "text": "Toca una celda para activar o desactivar un paso. Mantén pulsado para activar/desactivar el silencio (gris): los pasos silenciosos mantienen la posición sin producir sonido."
+        },
+        {
+          "type": "item",
+          "text": "Etiquetas de fila: toca una etiqueta para silenciar o activar toda la fila (el contenido se conserva). Mantén pulsada una etiqueta para borrar todos los pasos de esa fila inmediatamente, sin confirmación."
+        },
+        {
+          "type": "subtitle",
+          "text": "Pista Melodía / Bajo"
+        },
+        {
+          "type": "item",
+          "text": "La fila de melodía muestra las notas grabadas como barras horizontales: la posición vertical indica la altura, el ancho indica la duración (pasos), la altura de la barra indica la velocidad."
+        },
+        {
+          "type": "item",
+          "text": "La grabación es monofónica: una nota nueva sobrescribe cualquier nota existente en la misma posición y trunca cualquier predecesora que se superponga."
+        },
+        {
+          "type": "item",
+          "text": "Mantén pulsada la etiqueta Melodía para borrar la pista de melodía, o usa Borrar Cuadrícula con la casilla Melodía / Bajo."
+        },
+        {
+          "type": "subtitle",
+          "text": "Parámetros"
+        },
+        {
+          "type": "item",
+          "text": "BPM (40–240), Pasos (16/32), Compás (4/4·3/4·6/8·5/4), Swing (50–100): cambios con efecto inmediato."
+        },
+        {
+          "type": "subtitle",
+          "text": "Preajustes De Patrón"
+        },
+        {
+          "type": "item",
+          "text": "Toca el chip de Patrón para abrir la lista de presets. Borrar Cuadrícula: icono de papelera abre un diálogo con casillas separadas para Pistas de Batería y Melodía / Bajo."
         }
       ]
     },
@@ -556,11 +705,24 @@
         },
         {
           "type": "subtitle",
-          "text": "MIDI Mapper"
+          "text": "MIDI Mapper",
+          "anchor": "midiMapper"
         },
         {
           "type": "para",
-          "text": "Permite controlar los parámetros de Hemiola vía MIDI (modo UI) o reenviar y transformar mensajes MIDI (modo Custom)."
+          "text": "Permite controlar los parámetros de Hemiola a través de MIDI. Las asignaciones están organizadas en tres categorías:"
+        },
+        {
+          "type": "item",
+          "text": "Usuario — asignaciones personalizadas para reenviar o transformar mensajes MIDI"
+        },
+        {
+          "type": "item",
+          "text": "Synth — asignaciones integradas para los parámetros del Sound Generator (volumen, osciladores, efectos, etc.)"
+        },
+        {
+          "type": "item",
+          "text": "UI — asignaciones integradas para los controles de la interfaz (mostrar/ocultar secciones, cambio de pestaña)"
         },
         {
           "type": "item",
@@ -568,19 +730,44 @@
         },
         {
           "type": "item",
-          "text": "Filtra la lista por tipo de mensaje; \"activar todo lo visible\" se aplica al conjunto filtrado"
+          "text": "Usa los botones de alternancia para filtrar la lista por categoría; «activar todos los visibles» se aplica al conjunto filtrado"
         },
         {
           "type": "item",
-          "text": "Agregar mapeo personalizado: define nombre, canal de entrada/salida, comando y datos; toca el icono de ajustes para editar o eliminar"
+          "text": "Agregar asignación personalizada: define nombre, canal de entrada/salida, comando y datos; toca el icono de ajustes para editar o eliminar"
+        },
+        {
+          "type": "item",
+          "text": "Modo Test (icono de oreja): cuando está activado, los mensajes MIDI recibidos no se ejecutan sino que los mapeos correspondientes parpadean tres veces y la lista se desplaza para mostrarlos. Útil para verificar la configuración del controlador externo."
         },
         {
           "type": "note",
-          "text": "Mantén presionado el botón Agregar para restablecer todos los mapeos a los valores predeterminados y eliminar todas las entradas personalizadas."
+          "text": "Mantén presionado el botón Agregar para restablecer todas las asignaciones a los valores predeterminados y eliminar todas las entradas personalizadas."
         },
         {
           "type": "subtitle",
-          "text": "Consola MIDI"
+          "text": "Piloto automático MIDI"
+        },
+        {
+          "type": "para",
+          "text": "Dos modos de piloto automático independientes pueden activarse por separado en Ajustes → General:"
+        },
+        {
+          "type": "item",
+          "text": "Piloto Automático Controles: la app cambia automáticamente de pestaña y se desplaza a los controles afectados cuando se reciben cambios de parámetros MIDI a través de los mapeos integrados."
+        },
+        {
+          "type": "item",
+          "text": "Piloto Automático Teclado: cuando una nota MIDI llega al sintetizador, la app cambia a la pestaña del teclado y se desplaza para mostrar la nota tocada."
+        },
+        {
+          "type": "note",
+          "text": "Los mapeos integrados para una sección actualmente apagada (ej. Reverb, Sintetizador Analógico) se ignoran silenciosamente."
+        },
+        {
+          "type": "subtitle",
+          "text": "Consola MIDI",
+          "anchor": "midiConsole"
         },
         {
           "type": "para",
@@ -593,6 +780,51 @@
         {
           "type": "item",
           "text": "Toca el botón Limpiar en la parte inferior para borrar la lista de mensajes actual"
+        },
+        {
+          "type": "subtitle",
+          "text": "Wildcards & Device Filters"
+        },
+        {
+          "type": "para",
+          "text": "The MIDI Mapper acts as a powerful router and rewriter. You can use 'OMNI' and 'ANY' values to match multiple messages, and 'SAME AS IN' to pass them through unchanged:"
+        },
+        {
+          "type": "item",
+          "text": "Device Filters: restrict a mapping to listen from or send to a specific connected device, or leave as 'ANY DEVICE' / 'ALL DEVICES'."
+        },
+        {
+          "type": "item",
+          "text": "Channel/Command: set the input to 'OMNI' or 'ALL MSGS' to intercept any incoming stream, and set the output to 'SAME AS IN' to preserve the original property."
+        },
+        {
+          "type": "item",
+          "text": "Data 1: enter '-1' to match any note or CC value, passing it through dynamically."
+        },
+        {
+          "type": "subtitle",
+          "text": "Wind Controller",
+          "anchor": "windControllers"
+        },
+        {
+          "type": "para",
+          "text": "Hemiola puede detectar wind MIDI controllers (EWI, Roland Aerophone, Yamaha WX, Warbl, Sylphyo, etc.) y enrutar su CC de aliento directamente al volumen de salida de audio, omitiendo la canalización MIDI estándar para una respuesta más inmediata."
+        },
+        {
+          "type": "item",
+          "text": "Cuando un wind controller conocido se conecta por primera vez, aparece un diálogo de detección que pregunta qué CC transporta la señal de aliento (CC 2, CC 11, CC 7 o Probar todos)."
+        },
+        {
+          "type": "item",
+          "text": "También puede habilitar el modo Wind Controller manualmente: toque el icono de configuración junto a cualquier dispositivo y marque la casilla Wind Controller en la parte superior del diálogo."
+        },
+        {
+          "type": "item",
+          "text": "Avanzado — Curva de Respuesta: elija Linear, Exponencial o Logarítmica y ajuste la Curvatura (-1.0 a +1.0) para un control preciso. Los cambios se aplican en tiempo real."
+        },
+        {
+          "type": "note",
+          "text": "La ruta de aliento del wind controller opera antes del MIDI Mapper. CC 7 (Channel Volume), si se selecciona como fuente de aliento, es interceptado y no llega al motor SoundFont."
         }
       ]
     },
@@ -607,7 +839,8 @@
         },
         {
           "type": "subtitle",
-          "text": "MAIN"
+          "text": "MAIN",
+          "anchor": "uiBoxMain"
         },
         {
           "type": "item",
@@ -631,7 +864,8 @@
         },
         {
           "type": "subtitle",
-          "text": "ALTURA"
+          "text": "ALTURA",
+          "anchor": "uiBoxTuning"
         },
         {
           "type": "item",
@@ -647,7 +881,8 @@
         },
         {
           "type": "subtitle",
-          "text": "SALIDA DE AUDIO"
+          "text": "SALIDA DE AUDIO",
+          "anchor": "uiBoxAudio"
         },
         {
           "type": "item",
@@ -658,12 +893,21 @@
           "text": "AUTO: gestión automática del tamaño del buffer (recomendado en la mayoría de los casos)"
         },
         {
+          "type": "item",
+          "text": "Modo Exclusivo de Windows: da a Hemiola acceso directo a un único dispositivo de salida para la menor latencia posible. Mientras está activo, las demás apps en ese mismo dispositivo quedan en silencio. Si el dispositivo se desconecta o está ocupado, Hemiola vuelve automáticamente al modo compartido. La opción \"Liberar Al Minimizar\" controla si Hemiola libera la exclusividad en segundo plano y la recupera automáticamente al volver. Si la activación de Exclusive falla o Exclusive sigue en silencio tras reactivarlo, pulsa Send Logs en el panel Exclusive y comparte el informe de diagnóstico desde el diálogo."
+        },
+        {
           "type": "note",
           "text": "Si el icono del Motor de Sonido se vuelve rojo, se produjo una interrupción del buffer de audio — aumenta el tamaño del buffer o activa AUTO. La sección también muestra una estimación aproximada de la latencia de audio actual y la frecuencia de muestreo (establecida automáticamente por el motor de audio)."
         },
         {
+          "type": "note",
+          "text": "En el primer inicio, Hemiola ejecuta automáticamente una calibración del motor de audio que mide la latencia, estabilidad y rendimiento de CPU de tu dispositivo, y configura los ajustes óptimos. Puedes volver a ejecutar la calibración en cualquier momento tocando el indicador en la pantalla de inicio."
+        },
+        {
           "type": "subtitle",
-          "text": "SoundFont Synth"
+          "text": "SoundFont Synth",
+          "anchor": "uiBoxSf"
         },
         {
           "type": "para",
@@ -691,7 +935,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Analog Synth"
+          "text": "Analog Synth",
+          "anchor": "groupAnalogsynth"
         },
         {
           "type": "para",
@@ -707,7 +952,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Osciladores Analog"
+          "text": "Osciladores Analog",
+          "anchor": "uiBoxAnalogSynth"
         },
         {
           "type": "para",
@@ -715,7 +961,7 @@
         },
         {
           "type": "item",
-          "text": "Onda: forma de onda — Seno, Cuadrada, Diente de sierra (×2), Triángulo (×2)"
+          "text": "Onda: forma de onda — Seno, Cuadrada, Diente de sierra (×2), Triángulo (×2), Pulse"
         },
         {
           "type": "item",
@@ -734,8 +980,13 @@
           "text": "Volumen: nivel de salida del oscilador individual"
         },
         {
+          "type": "item",
+          "text": "PW: ancho de pulso (ciclo de trabajo) — solo afecta a la forma de onda Pulse. 50% = onda cuadrada, valores más bajos/altos producen pulsos más estrechos"
+        },
+        {
           "type": "subtitle",
-          "text": "Oscilador de Baja Frecuencia (LFO)"
+          "text": "Oscilador de Baja Frecuencia (LFO)",
+          "anchor": "uiBoxLfo"
         },
         {
           "type": "item",
@@ -755,7 +1006,12 @@
         },
         {
           "type": "subtitle",
-          "text": "Filtro de Paso Bajo (LPF)"
+          "text": "Filtro de Paso Bajo (LPF)",
+          "anchor": "uiBoxLpf"
+        },
+        {
+          "type": "para",
+          "text": "Un filtro Moog Ladder de 4 polos (24 dB/oct) aplicado por voz. Con alta resonancia el filtro auto-oscila, produciendo un tono."
         },
         {
           "type": "item",
@@ -763,7 +1019,15 @@
         },
         {
           "type": "item",
-          "text": "Énfasis: amplifica las frecuencias alrededor de la frecuencia de corte (resonancia)"
+          "text": "Énfasis: amplifica las frecuencias alrededor de la frecuencia de corte (resonancia) — al máximo el filtro auto-oscila"
+        },
+        {
+          "type": "item",
+          "text": "Amount: profundidad de la modulación de la envolvente del filtro (0 = ninguna, 1000 = excursión completa)"
+        },
+        {
+          "type": "item",
+          "text": "Kbd Track: seguimiento del teclado — cuánto el corte sigue la nota tocada (Off, 33%, 67%, 100%)"
         },
         {
           "type": "note",
@@ -771,11 +1035,78 @@
         },
         {
           "type": "subtitle",
-          "text": "Generador de Ruido"
+          "text": "Envolvente de Filtro",
+          "anchor": "uiBoxFilterAdsr"
+        },
+        {
+          "type": "para",
+          "text": "Una envolvente ADSR dedicada por voz que modula el corte del filtro en el tiempo. La excursión se controla con Amount en la sección LPF."
         },
         {
           "type": "item",
-          "text": "Oscilador de ruido blanco — útil para agregar soplo o aire a un sonido"
+          "text": "Attack: tiempo (ms) para la apertura del filtro tras nota-on"
+        },
+        {
+          "type": "item",
+          "text": "Decay: tiempo (ms) para descender del pico al nivel de sustain"
+        },
+        {
+          "type": "item",
+          "text": "Sustain: nivel de corte mientras la tecla está pulsada (por mil, 0–1000)"
+        },
+        {
+          "type": "item",
+          "text": "Release: tiempo (ms) para cerrar el filtro tras nota-off"
+        },
+        {
+          "type": "subtitle",
+          "text": "Mono / Glide",
+          "anchor": "uiBoxMono"
+        },
+        {
+          "type": "para",
+          "text": "Cuando Mono está activado, solo suena una nota a la vez. Las notas mantenidas se rastrean en una pila — al soltar la nota actual se vuelve a la anterior."
+        },
+        {
+          "type": "item",
+          "text": "Mono: alterna entre modo monofónico (una nota) y polifónico (múltiples notas)"
+        },
+        {
+          "type": "item",
+          "text": "Priority: qué nota suena cuando hay varias teclas pulsadas — Low (la más baja), High (la más alta) o Last (la más reciente)"
+        },
+        {
+          "type": "item",
+          "text": "Retrigger: cuando está activo, las envolventes reinician con cada nueva nota; cuando está apagado, el tono cambia suavemente sin reinicio (legato)"
+        },
+        {
+          "type": "item",
+          "text": "Glide: tiempo de portamento (ms) — cuánto tarda el tono en deslizarse entre notas. 0 = instantáneo"
+        },
+        {
+          "type": "item",
+          "text": "Drift: deriva del oscilador analógico — añade una sutil inestabilidad aleatoria al tono de cada voz, simulando comportamiento VCO analógico (0 = perfectamente afinado, 100 = máxima calidez)"
+        },
+        {
+          "type": "item",
+          "text": "Voces: número de voces unísono por nota (1–8). Múltiples voces se desafinan simétricamente para un sonido más grueso. Solo funciona en modo Mono"
+        },
+        {
+          "type": "item",
+          "text": "Detune: dispersión en cents entre las voces unísono (0–50). Valores más altos crean un efecto chorus más amplio y desafinado"
+        },
+        {
+          "type": "subtitle",
+          "text": "Generador de Ruido",
+          "anchor": "uiBoxNoise"
+        },
+        {
+          "type": "item",
+          "text": "Oscilador de ruido blanco o rosa — útil para añadir aliento, aire o textura a un sonido. El ruido blanco tiene igual energía en todas las frecuencias; el ruido rosa tiene más energía en graves (−3 dB/octava)"
+        },
+        {
+          "type": "item",
+          "text": "Tipo: Ruido Blanco o Rosa"
         },
         {
           "type": "item",
@@ -783,11 +1114,12 @@
         },
         {
           "type": "subtitle",
-          "text": "Envolvente de Volumen (ADSR)"
+          "text": "Envolvente de Volumen (ADSR)",
+          "anchor": "uiBoxAdsr"
         },
         {
           "type": "para",
-          "text": "Controla la envolvente de amplitud del sintetizador Analog:"
+          "text": "Controla la envolvente de amplitud del sintetizador Analog. Usa curvas exponenciales (RC) para una respuesta natural y analógica."
         },
         {
           "type": "item",
@@ -818,7 +1150,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Chorus"
+          "text": "Chorus",
+          "anchor": "uiBoxChorus"
         },
         {
           "type": "item",
@@ -838,7 +1171,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Delay"
+          "text": "Delay",
+          "anchor": "uiBoxDelay"
         },
         {
           "type": "item",
@@ -854,7 +1188,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Reverb"
+          "text": "Reverb",
+          "anchor": "uiBoxReverb"
         },
         {
           "type": "para",
@@ -886,7 +1221,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Limiter"
+          "text": "Limiter",
+          "anchor": "uiBoxLimiter"
         },
         {
           "type": "para",
@@ -929,11 +1265,15 @@
         },
         {
           "type": "item",
+          "text": "Usa los chips de ordenación debajo de la barra de búsqueda para cambiar el orden: Tendencias (predeterminado, clasificado por el algoritmo Hemiola Score), Recientes (más nuevos primero) o Mejores (más votados de todos los tiempos)"
+        },
+        {
+          "type": "item",
           "text": "Desplázate hacia abajo para cargar automáticamente más presets (desplazamiento infinito); desplaza hacia arriba para actualizar la lista"
         },
         {
           "type": "item",
-          "text": "Cada tarjeta muestra el nombre del preset, hashtags, nombre del autor, contadores de votos y número de descargas. Toca la tarjeta para expandirla y ver la descripción completa, chips de sección y botones de acción"
+          "text": "Cada tarjeta muestra el nombre del preset, hashtags, nombre del autor (con insignia de nivel si la tiene), contadores de votos y número de descargas. Toca la tarjeta para expandirla y ver la descripción completa, chips de sección y botones de acción"
         },
         {
           "type": "item",
@@ -953,7 +1293,7 @@
         },
         {
           "type": "item",
-          "text": "Los ajustes de dispositivo integrados en un preset no se aplican en esta versión; se muestra una advertencia cuando un preset los contiene"
+          "text": "Si un preset contiene ajustes de dispositivo, Aplicar solo está habilitado cuando ese tipo de dispositivo está conectado; de lo contrario está deshabilitado. Siempre puedes importar el preset para guardarlo localmente para uso futuro"
         },
         {
           "type": "subtitle",
@@ -989,7 +1329,31 @@
         },
         {
           "type": "item",
-          "text": "Usa los botones de pulgar arriba / pulgar abajo para votar. Volver a tocar el mismo voto lo elimina. Votar requiere una cuenta cloud pero no una suscripción de pago"
+          "text": "Usa los botones de pulgar arriba / pulgar abajo en cualquier tarjeta de preset o en el panel Último Usado para votar. Volver a tocar el mismo voto lo elimina. Votar requiere una cuenta cloud pero no una suscripción de pago"
+        },
+        {
+          "type": "subtitle",
+          "text": "Niveles de Creador"
+        },
+        {
+          "type": "para",
+          "text": "Los creadores Cloud Pro activos obtienen insignias de nivel según el número total de likes que reciben sus presets publicados. Los niveles más altos dan un pequeño impulso en el ranking de Tendencias."
+        },
+        {
+          "type": "item",
+          "text": "🟢 Sound Designer — 500+ likes"
+        },
+        {
+          "type": "item",
+          "text": "🔥 Master Producer — 2.500+ likes"
+        },
+        {
+          "type": "item",
+          "text": "👑 Hemiola Legend — 10.000+ likes"
+        },
+        {
+          "type": "note",
+          "text": "Las insignias de nivel aparecen junto al nombre del autor en las tarjetas de preset. La insignia y su bonificación de puntuación solo están activas mientras el creador tiene una suscripción Cloud Pro."
         },
         {
           "type": "subtitle",
@@ -1110,6 +1474,14 @@
           "text": "Mantener pantalla encendida: evita que la pantalla se atenúe mientras la app está en uso (solo móvil)."
         },
         {
+          "type": "item",
+          "text": "Piloto Automático Controles: navegar automáticamente a los controles afectados cuando los parámetros MIDI cambian a través de los mapeos integrados."
+        },
+        {
+          "type": "item",
+          "text": "Piloto Automático Teclado: mostrar y desplazar el teclado cuando se reciben notas MIDI."
+        },
+        {
           "type": "subtitle",
           "text": "Cloud"
         },
@@ -1199,6 +1571,170 @@
         {
           "type": "note",
           "text": "Se muestra un diálogo de consentimiento la primera vez que inicias sesión. Tu elección se guarda, pero siempre puedes cambiarla en la pestaña Privacidad."
+        }
+      ]
+    },
+    {
+      "id": "Calibration",
+      "title": "Calibración de Audio",
+      "icon": "graphic_eq",
+      "anchor": "calibration",
+      "entries": [
+        {
+          "type": "para",
+          "text": "El Asistente de Calibración de Audio mide la latencia de ida y vuelta de tu dispositivo y evalúa la calidad de tu configuración para actuaciones en directo. Se ejecuta automáticamente en el primer inicio y puede relanzarse desde Inicio → Calibrar."
+        },
+        {
+          "type": "subtitle",
+          "text": "Qué Se Mide"
+        },
+        {
+          "type": "item",
+          "text": "Latencia (ms): el tiempo de ida y vuelta entre el disparo de una nota y el sonido audible."
+        },
+        {
+          "type": "item",
+          "text": "Estabilidad: la consistencia de la latencia entre mediciones sucesivas."
+        },
+        {
+          "type": "item",
+          "text": "Polifonía: el número de voces simultáneas que el dispositivo puede gestionar sin artefactos."
+        },
+        {
+          "type": "item",
+          "text": "Frecuencia de muestreo nativa: la tasa de hardware (normalmente 44,1 kHz o 48 kHz). Hemiola se adapta automáticamente."
+        },
+        {
+          "type": "subtitle",
+          "text": "Niveles de Latencia"
+        },
+        {
+          "type": "item",
+          "text": "Pro Grade (< 12 ms): transparente, ideal para tocar en directo."
+        },
+        {
+          "type": "item",
+          "text": "Estable (12–25 ms): ligeramente perceptible a BPM altos; aceptable para la mayoría."
+        },
+        {
+          "type": "item",
+          "text": "Arriesgado (> 25 ms): retraso audible. Usar auriculares con cable y cerrar apps en segundo plano."
+        },
+        {
+          "type": "subtitle",
+          "text": "Nivel de Fotogramas"
+        },
+        {
+          "type": "item",
+          "text": "Rápido (P90 < 16,67 ms): pipeline GPU a 60 fps. Todos los efectos visuales están activos."
+        },
+        {
+          "type": "item",
+          "text": "Marginal (16,67–33 ms): aproximadamente 30 fps. Algunos efectos visuales se suprimen automáticamente para proteger el rendimiento de audio."
+        },
+        {
+          "type": "item",
+          "text": "Lento (P90 ≥ 33 ms): el dispositivo no puede mantener audio en tiempo real e interfaz completa simultáneamente. Efectos visuales pesados desactivados."
+        },
+        {
+          "type": "note",
+          "text": "Fotogramas Insuficientes: si el nivel es Marginal o Lento, Hemiola reduce la complejidad visual automáticamente. Recalibrar tras reiniciar suele mejorar el resultado. En dispositivos antiguos y/o lentos, Hemiola podría no funcionar correctamente: prueba con un dispositivo más reciente y/o potente."
+        },
+        {
+          "type": "note",
+          "text": "Si los resultados son críticos, se muestra un enlace a la página de ayuda en línea."
+        },
+        {
+          "type": "subtitle",
+          "anchor": "calibration-poor-results",
+          "text": "Consejos para Mejores Resultados"
+        },
+        {
+          "type": "item",
+          "text": "Usar auriculares con cable o una interfaz de audio USB."
+        },
+        {
+          "type": "item",
+          "text": "Cerrar todas las demás apps antes de calibrar."
+        },
+        {
+          "type": "item",
+          "text": "Volver a calibrar después de conectar o desconectar hardware de audio."
+        }
+      ]
+    },
+    {
+      "id": "Live Mode",
+      "title": "Modo En Directo",
+      "icon": "my_location",
+      "anchor": "liveMode",
+      "entries": [
+        {
+          "type": "para",
+          "text": "El Modo En Directo prepara tu dispositivo para una actuación en vivo. Verifica todas las condiciones que podrían interrumpir una performance en el escenario."
+        },
+        {
+          "type": "subtitle",
+          "text": "Activar el Modo En Directo"
+        },
+        {
+          "type": "para",
+          "text": "Pulsa el botón LIVE en la pantalla de inicio. Cuando todas las comprobaciones estén en verde, pulsa Activar."
+        },
+        {
+          "type": "item",
+          "text": "En Android, Activar solicita el Audio Focus exclusivo, impidiendo que otras apps reproduzcan audio."
+        },
+        {
+          "type": "item",
+          "text": "No Molestar: naranja si DND está desactivado. Actívalo desde la barra de notificaciones antes de actuar."
+        },
+        {
+          "type": "item",
+          "text": "Cargando: naranja si hay un cargador conectado. Los cargadores pueden introducir zumbido en la señal de audio."
+        },
+        {
+          "type": "item",
+          "text": "Estado Térmico: naranja/rojo si el dispositivo está caliente. El throttling térmico degrada el rendimiento de audio."
+        },
+        {
+          "type": "note",
+          "text": "Buena práctica: activar Modo Avión o No Molestar, desconectar el cargador y asegurarse de tener la batería suficiente (>50%) antes de subir al escenario."
+        }
+      ]
+    },
+    {
+      "id": "quickStart",
+      "title": "¡A Tocar!",
+      "icon": "rocket_launch",
+      "entries": [
+        {
+          "type": "para",
+          "text": "El popup ¡A Tocar! aparece cada vez que se inicia Hemiola y te permite empezar a tocar con un solo toque."
+        },
+        {
+          "type": "item",
+          "text": "El Piano — abre la pestaña Teclado Piano listo para tocar."
+        },
+        {
+          "type": "item",
+          "text": "La Batería — abre la pestaña Teclado Piano en modo drum pad."
+        },
+        {
+          "type": "item",
+          "text": "Un Teclado Midi — abre la pestaña Dispositivos e inicia una ventana de conexión automática de 10 segundos que conecta automáticamente el primer nuevo dispositivo MIDI encontrado."
+        },
+        {
+          "type": "item",
+          "text": "Un Wind Controller — igual que Teclado Midi; ideal para controladores de aliento e instrumentos MIDI de viento."
+        },
+        {
+          "type": "subtitle",
+          "text": "No Preguntar de Nuevo"
+        },
+        {
+          "type": "para",
+          "text": "Marca la casilla No Preguntar de Nuevo antes de pulsar una opción o Cancelar para desactivar permanentemente el popup. Puedes reactivarlo en cualquier momento en Preferencias → Restablecer → Restablecer Inicio Rápido."
         }
       ]
     }

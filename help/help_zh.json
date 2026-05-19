@@ -21,7 +21,8 @@
         },
         {
           "type": "subtitle",
-          "text": "预设 & 场景"
+          "text": "预设 & 场景",
+          "anchor": "presets"
         },
         {
           "type": "para",
@@ -101,7 +102,8 @@
         },
         {
           "type": "subtitle",
-          "text": "旋转旋钮"
+          "text": "旋转旋钮",
+          "anchor": "knobs"
         },
         {
           "type": "item",
@@ -125,7 +127,8 @@
         },
         {
           "type": "subtitle",
-          "text": "应用更新"
+          "text": "应用更新",
+          "anchor": "update"
         },
         {
           "type": "item",
@@ -160,7 +163,7 @@
         },
         {
           "type": "table",
-          "text": "功能|免费版|Pro版|Cloud免费|Cloud Pro\n钢琴 & Sound Generator|✓|✓|✓|✓\n每分区预设数|最多3个|无限制|无限制|无限制\n下载共享预设|✓|✓|✓|✓\n分享你的预设|-|-|-|✓\nConfig Tool & MIDI（移动端）|✓|✓|✓|✓\nConfig Tool & MIDI（桌面端）|—|—|-|✓\n设置备份|—|—|-|✓\n备份快照|—|—|-|✓\n多设备同步|—|—|-|✓"
+          "text": "功能|免费版|Pro版|Cloud免费|Cloud Pro\n钢琴键盘|✓|✓|✓|✓\n鼓垫|✓|✓|✓|✓\nAnalog & SoundFont 合成器|✓|✓|✓|✓\n步进音序器|✓|✓|✓|✓\n每分区预设数|最多3个|无限制|最多3个|无限制\n预览社区预设|✓|✓|✓|✓\n下载社区预设|—|✓|—|✓\n分享你的预设|-|-|-|✓\nConfig Tool & MIDI（移动端）|✓|✓|✓|✓\nConfig Tool & MIDI（桌面端）|—|—|-|✓\nLive Mode（移动端）|—|✓|—|✓\nLive Mode（桌面端）|—|—|—|✓\n设置备份|—|—|仅最新|✓\n备份快照|—|—|-|最多10个\n多设备同步|—|—|最多2台|最多5台"
         },
         {
           "type": "note",
@@ -184,7 +187,7 @@
         },
         {
           "type": "item",
-          "text": "备份标签：查看当前备份状态，配置自动备份间隔，执行手动备份或从快照恢复。"
+          "text": "备份标签：查看当前备份状态、执行手动备份或从最新快照恢复（Cloud 免费）—或配置自动间隔并管理多个快照（Cloud Pro）。"
         },
         {
           "type": "item",
@@ -228,7 +231,7 @@
         },
         {
           "type": "para",
-          "text": "自动将设置和预设备份到云端，可从 Cloud Account 窗口 → 备份标签进行配置。需要 Cloud Pro。"
+          "text": "将设置和预设备份到云端，可从 Cloud Account 窗口 → 备份标签进行配置。Cloud 免费：手动备份，仅保留最新快照。Cloud Pro：可配置间隔的自动备份，最多 10 个快照。"
         },
         {
           "type": "item",
@@ -276,7 +279,11 @@
         },
         {
           "type": "item",
-          "text": "每个账户最多可在所有平台注册5台设备。达到上限后，请先在\"我的设备\"中删除一台现有设备，再在新设备上登录"
+          "text": "Cloud Free账户最多可注册2台设备；Cloud Pro账户最多可注册5台。达到上限后，请先在“我的设备”中删除一台现有设备，再在新设备上登录"
+        },
+        {
+          "type": "note",
+          "text": "达到2台上限的Cloud Free用户将收到提示，可移除一台设备或升级到Cloud Pro（最多注册5台设备）。"
         },
         {
           "type": "subtitle",
@@ -347,7 +354,7 @@
         },
         {
           "type": "item",
-          "text": "Sound 预设：模拟合成器参数（振荡器、LFO、LPF、ADSR、噪声）加效果（Chorus、Delay、Reverb）"
+          "text": "Sound 预设：模拟合成器参数（振荡器、LFO、LPF、滤波器包络、单音/滑音/齐奏、ADSR、噪声）加效果（Chorus、Delay、Reverb）"
         },
         {
           "type": "item",
@@ -406,11 +413,11 @@
         },
         {
           "type": "item",
-          "text": "压力切换：启用或禁用触摸压力灵敏度（力度）"
+          "text": "压力切换：启用或禁用触摸压力灵敏度（力度）。实验性功能 — 可能无法在所有设备上正常工作。"
         },
         {
           "type": "item",
-          "text": "触觉切换：启用或禁用按键时的振动反馈"
+          "text": "触觉切换：启用或禁用按键时的振动反馈。实验性功能 — 可能无法在所有设备上正常工作。"
         },
         {
           "type": "item",
@@ -427,6 +434,148 @@
         {
           "type": "item",
           "text": "预设图标：保存和调用钢琴键盘配置（音阶、滚动位置、压力灵敏度、触觉反馈）。应用预设后，键盘立即以保存的缩放级别和滚动位置重新绘制。"
+        },
+        {
+          "type": "note",
+          "text": "Windows 平板：为获得最佳演奏体验，建议在 Windows 设置中关闭系统选项“使用三指和四指触摸移动”，以避免演奏时手势冲突。"
+        }
+      ]
+    },
+    {
+      "id": "uiDrumPad",
+      "title": "鼓垫",
+      "icon": "grid_view",
+      "entries": [
+        {
+          "type": "para",
+          "text": "鼓垫是一个 4×4 的 16 个打击垫网格，在通道 10（GM 打击乐）上发送 MIDI 音符。它可作为钢琴键盘的替代选项，仅使用 SoundFont 引擎。"
+        },
+        {
+          "type": "note",
+          "text": "必须加载并激活一个 SoundFont 文件。所选 SoundFont 必须兼容 General MIDI（GM）标准——它需要在通道 10 上包含标准 GM 打击乐音色库，才能产生鼓声。"
+        },
+        {
+          "type": "subtitle",
+          "text": "使用方法"
+        },
+        {
+          "type": "item",
+          "text": "点击垫片可触发对应的鼓声。支持多点触控，可同时演奏多个垫片。"
+        },
+        {
+          "type": "item",
+          "text": "每个垫片都有独特的颜色。触摸时，垫片颜色变亮，提供即时视觉反馈。"
+        },
+        {
+          "type": "subtitle",
+          "text": "工具栏控件"
+        },
+        {
+          "type": "item",
+          "text": "钢琴图标（左上角）：退出鼓垫模式，返回钢琴键盘。"
+        },
+        {
+          "type": "item",
+          "text": "触摸灵敏度（仅限移动设备）：启用或禁用触摸压力（力度）灵敏度。实验性功能 — 可能无法在所有设备上正常工作。"
+        },
+        {
+          "type": "item",
+          "text": "触觉反馈（仅限移动设备）：启用或禁用击打垫片时的振动反馈。实验性功能 — 可能无法在所有设备上正常工作。"
+        },
+        {
+          "type": "item",
+          "text": "摇动演奏（仅限移动设备）：将摇动手势分配给打击垫。实验性功能 — 可能无法在所有设备上正常工作。点击图标进入分配模式——显示消息要求您点击一个打击垫。分配后，每次摇动都会以力度感应动态单音演奏该打击垫（单声部：新音符响起前上一个音符会先停止）。再次点击可取消。等待选择时图标变为琥珀色，分配完成后变为强调色。长按图标可打开摇动设置：调整灵敏度（越低越灵敏）、启用手腕拒绝以自动过滤手腕反弹、以及控制力度灵敏度（越高动态范围越宽）。"
+        },
+        {
+          "type": "item",
+          "text": "静音 / 音量减小 / 音量增大：控制主输出音量。"
+        },
+        {
+          "type": "item",
+          "text": "帮助图标（右上角）：打开此帮助部分。"
+        },
+        {
+          "type": "note",
+          "text": "Windows 平板：为获得最佳演奏体验，建议在 Windows 设置中关闭系统选项“使用三指和四指触摸移动”，以避免演奏时手势冲突。"
+        }
+      ]
+    },
+    {
+      "id": "uiDrumSequencer",
+      "title": "步进音序器",
+      "icon": "grid_view",
+      "entries": [
+        {
+          "type": "para",
+          "text": "步进音序器拥有16个鼓声轨道和一个旋律 / 低音轨道。它可对最多32步的GM打击乐及单声部旋律线进行编程，在后台运行。"
+        },
+        {
+          "type": "note",
+          "text": "需要加载一个在通道10上具有GM打击乐音色库的GM兼容SoundFont文件。"
+        },
+        {
+          "type": "subtitle",
+          "text": "传输控制"
+        },
+        {
+          "type": "item",
+          "text": "播放/停止：点击播放按钮从第1步开始播放，再次点击停止。"
+        },
+        {
+          "type": "item",
+          "text": "录音：点击录音按钮进入录音模式。弹出对话框询问录制鼓声还是旋律 / 低音。如播放已停止，将自动开始播放。鼓声模式下，匹配鼓垫行的音符写入最近的步骤，节拍器（响板）每四分音符响一次。旋律 / 低音模式下，从键盘或外部MIDI输入的音符将作为带力度和时值的音乐事件被记录。点击停止退出录音模式。"
+        },
+        {
+          "type": "item",
+          "text": "点击速度：反复点击以自动设置BPM。"
+        },
+        {
+          "type": "subtitle",
+          "text": "网格"
+        },
+        {
+          "type": "item",
+          "text": "顶行（琥珀色）是旋律 / 低音轨道。其下为16行鼓声轨道，每行对应一个GM打击乐器。"
+        },
+        {
+          "type": "item",
+          "text": "点击单元格可切换步骤的开/关状态。长按可切换静音步骤（灰色显示）：静音步骤保留循环位置但不发声。"
+        },
+        {
+          "type": "item",
+          "text": "行标签：点击标签可静音或取消静音整行（内容保留，行变灰）。长按标签可立即删除该行所有步骤，无需确认。"
+        },
+        {
+          "type": "subtitle",
+          "text": "旋律 / 低音轨道"
+        },
+        {
+          "type": "item",
+          "text": "旋律行以横条形式显示已录制的音符：纵向位置代表音高，横条宽度代表时值（步数），横条高度代表力度。"
+        },
+        {
+          "type": "item",
+          "text": "录音为单声部：新音符会覆盖同一位置的现有音符，并截断与之重叠的前置音符。"
+        },
+        {
+          "type": "item",
+          "text": "长按旋律标签可立即清除旋律轨道，或在清除网格对话框中勾选旋律 / 低音选项。"
+        },
+        {
+          "type": "subtitle",
+          "text": "参数"
+        },
+        {
+          "type": "item",
+          "text": "BPM（40–240）、步数（16/32）、拍号（4/4·3/4·6/8·5/4）、Swing（50–100）：更改即时生效。"
+        },
+        {
+          "type": "subtitle",
+          "text": "节奏预设"
+        },
+        {
+          "type": "item",
+          "text": "点击Pattern标签打开预设列表。清除网格：点击垃圾桶图标打开对话框，其中包含鼓声轨道和旋律 / 低音的独立复选框，仅清除所选轨道。"
         }
       ]
     },
@@ -556,23 +705,40 @@
         },
         {
           "type": "subtitle",
-          "text": "MIDI Mapper"
+          "text": "MIDI映射器",
+          "anchor": "midiMapper"
         },
         {
           "type": "para",
-          "text": "允许通过 MIDI 控制 Hemiola 参数（UI 模式）或转发和转换 MIDI 消息（Custom 模式）。"
+          "text": "允许通过MIDI控制Hemiola参数。映射分为三个类别："
         },
         {
           "type": "item",
-          "text": "点击条目启用或禁用"
+          "text": "用户 — 用于转发或转换MIDI消息的自定义映射"
         },
         {
           "type": "item",
-          "text": "按消息类型过滤列表；'启用所有可见'适用于过滤后的集合"
+          "text": "合成器 — 声音生成器参数（音量、振荡器、效果等）的内置映射"
         },
         {
           "type": "item",
-          "text": "添加自定义映射：定义名称、输入/输出通道、命令和数据；点击设置图标编辑或删除"
+          "text": "UI — 界面控件（显示/隐藏部分、标签切换）的内置映射"
+        },
+        {
+          "type": "item",
+          "text": "点击条目以激活或停用"
+        },
+        {
+          "type": "item",
+          "text": "使用切换按钮按类别筛选列表；「激活所有可见项」应用于已筛选的集合"
+        },
+        {
+          "type": "item",
+          "text": "添加自定义映射：定义名称、输入/输出通道、命令和数据；点击设置图标以编辑或删除"
+        },
+        {
+          "type": "item",
+          "text": "测试模式（耳朵图标）：启用后，收到的MIDI消息不会被执行，而是匹配的映射会闪烁三次并滚动显示。用于验证外部控制器配置。"
         },
         {
           "type": "note",
@@ -580,7 +746,28 @@
         },
         {
           "type": "subtitle",
-          "text": "MIDI 控制台"
+          "text": "MIDI自动导航"
+        },
+        {
+          "type": "para",
+          "text": "两个独立的自动导航模式可以在设置→通用中分别开关："
+        },
+        {
+          "type": "item",
+          "text": "控件自动导航：当通过内置映射接收到MIDI参数变更时，应用自动切换标签页并滚动到受影响的控件。"
+        },
+        {
+          "type": "item",
+          "text": "键盘自动导航：当MIDI音符到达合成器时，应用切换到钢琴标签页并滚动以显示演奏的音符。"
+        },
+        {
+          "type": "note",
+          "text": "当前关闭的部分（如混响、模拟合成器）的内置映射将被静默忽略。"
+        },
+        {
+          "type": "subtitle",
+          "text": "MIDI 控制台",
+          "anchor": "midiConsole"
         },
         {
           "type": "para",
@@ -593,6 +780,51 @@
         {
           "type": "item",
           "text": "点击底部的清除按钮清除当前消息列表"
+        },
+        {
+          "type": "subtitle",
+          "text": "Wildcards & Device Filters"
+        },
+        {
+          "type": "para",
+          "text": "The MIDI Mapper acts as a powerful router and rewriter. You can use 'OMNI' and 'ANY' values to match multiple messages, and 'SAME AS IN' to pass them through unchanged:"
+        },
+        {
+          "type": "item",
+          "text": "Device Filters: restrict a mapping to listen from or send to a specific connected device, or leave as 'ANY DEVICE' / 'ALL DEVICES'."
+        },
+        {
+          "type": "item",
+          "text": "Channel/Command: set the input to 'OMNI' or 'ALL MSGS' to intercept any incoming stream, and set the output to 'SAME AS IN' to preserve the original property."
+        },
+        {
+          "type": "item",
+          "text": "Data 1: enter '-1' to match any note or CC value, passing it through dynamically."
+        },
+        {
+          "type": "subtitle",
+          "text": "Wind Controller",
+          "anchor": "windControllers"
+        },
+        {
+          "type": "para",
+          "text": "Hemiola 可以检测吹奏 MIDI 控制器（EWI、Roland Aerophone、Yamaha WX、Warbl、Sylphyo 等），并将其气息 CC 直接路由到音频输出音量，绕过标准 MIDI 管道，实现更灵敏的响应。"
+        },
+        {
+          "type": "item",
+          "text": "当已知的吹奏控制器首次连接时，会弹出检测对话框，询问哪个 CC 传输气息信号（CC 2、CC 11、CC 7 或全部尝试）。"
+        },
+        {
+          "type": "item",
+          "text": "您也可以手动启用 Wind Controller 模式：点击设备旁的设置图标，勾选对话框顶部的 Wind Controller 复选框。"
+        },
+        {
+          "type": "item",
+          "text": "高级 — 响应曲线：选择线性、指数或对数响应，并调整曲率（-1.0 至 +1.0）以获得精确的控制感。更改实时生效。"
+        },
+        {
+          "type": "note",
+          "text": "吹奏控制器的气息路径在 MIDI Mapper 之前运行。如果选择 CC 7（声道音量）作为气息源，它将被拦截，不会到达 SoundFont 引擎。"
         }
       ]
     },
@@ -607,7 +839,8 @@
         },
         {
           "type": "subtitle",
-          "text": "MAIN"
+          "text": "MAIN",
+          "anchor": "uiBoxMain"
         },
         {
           "type": "item",
@@ -631,7 +864,8 @@
         },
         {
           "type": "subtitle",
-          "text": "音高"
+          "text": "音高",
+          "anchor": "uiBoxTuning"
         },
         {
           "type": "item",
@@ -647,7 +881,8 @@
         },
         {
           "type": "subtitle",
-          "text": "音频输出"
+          "text": "音频输出",
+          "anchor": "uiBoxAudio"
         },
         {
           "type": "item",
@@ -658,12 +893,21 @@
           "text": "AUTO：自动缓冲区大小管理（大多数情况下推荐）"
         },
         {
+          "type": "item",
+          "text": "Windows 独占模式：启用后 Hemiola 会直接占用一个输出设备以获得最低延迟。启用期间，该设备上的其他应用会被静音。若设备断开或被占用，Hemiola 会自动回退到共享模式。\"最小化时释放\" 选项用于控制 Hemiola 是否在后台释放独占占用，并在恢复时自动重新占用。如果 Exclusive 激活失败，或重新启用后仍无声音，请在 Exclusive 面板点击“Send Logs”，并从对话框分享诊断报告给支持团队。"
+        },
+        {
           "type": "note",
           "text": "如果声音引擎图标变红，说明发生了音频缓冲区欠播——增加缓冲区大小或启用 AUTO。该部分还显示当前音频延迟的近似估算和采样率（由音频引擎自动设置）。"
         },
         {
+          "type": "note",
+          "text": "首次启动时，Hemiola 会自动运行音频引擎校准，测量设备的延迟、稳定性和 CPU 性能，并配置最优设置。您可以随时通过点击主屏幕上的标记重新运行校准。"
+        },
+        {
           "type": "subtitle",
-          "text": "SoundFont Synth"
+          "text": "SoundFont Synth",
+          "anchor": "uiBoxSf"
         },
         {
           "type": "para",
@@ -691,7 +935,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Analog Synth"
+          "text": "Analog Synth",
+          "anchor": "groupAnalogsynth"
         },
         {
           "type": "para",
@@ -707,7 +952,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Analog 振荡器"
+          "text": "Analog 振荡器",
+          "anchor": "uiBoxAnalogSynth"
         },
         {
           "type": "para",
@@ -715,7 +961,7 @@
         },
         {
           "type": "item",
-          "text": "波形：波形 — 正弦、方波、锯齿波（×2）、三角波（×2）"
+          "text": "波形：波形 — 正弦、方波、锯齿波（×2）、三角波（×2）、Pulse"
         },
         {
           "type": "item",
@@ -734,8 +980,13 @@
           "text": "音量：单个振荡器的输出电平"
         },
         {
+          "type": "item",
+          "text": "PW：脉冲宽度（占空比）——仅影响Pulse波形。50% = 方波，更低/更高的值产生更窄的脉冲"
+        },
+        {
           "type": "subtitle",
-          "text": "低频振荡器（LFO）"
+          "text": "低频振荡器（LFO）",
+          "anchor": "uiBoxLfo"
         },
         {
           "type": "item",
@@ -755,7 +1006,12 @@
         },
         {
           "type": "subtitle",
-          "text": "低通滤波器（LPF）"
+          "text": "低通滤波器（LPF）",
+          "anchor": "uiBoxLpf"
+        },
+        {
+          "type": "para",
+          "text": "每声部应用的4极（24 dB/oct）Moog Ladder滤波器。在高强调时滤波器自振，产生有音高的声音。"
         },
         {
           "type": "item",
@@ -763,7 +1019,15 @@
         },
         {
           "type": "item",
-          "text": "强调：放大截止频率附近的频率（共振）"
+          "text": "强调：放大截止频率附近的频率（共振）— 最大时滤波器自振"
+        },
+        {
+          "type": "item",
+          "text": "Amount：滤波器包络调制深度（0 = 无，1000 = 全范围）"
+        },
+        {
+          "type": "item",
+          "text": "Kbd Track：键盘跟踪 — 截止频率跟随演奏音符的程度（Off、33%、67%、100%）"
         },
         {
           "type": "note",
@@ -771,11 +1035,78 @@
         },
         {
           "type": "subtitle",
-          "text": "噪声发生器"
+          "text": "滤波器包络",
+          "anchor": "uiBoxFilterAdsr"
+        },
+        {
+          "type": "para",
+          "text": "每声部专用的ADSR包络，随时间调制滤波器截止频率。调制范围由LPF部分的Amount控制。"
         },
         {
           "type": "item",
-          "text": "白噪声振荡器——用于为音色添加气息或空气感"
+          "text": "起音：音符触发后滤波器打开的时间（ms）"
+        },
+        {
+          "type": "item",
+          "text": "衰减：从峰值降至延音电平的时间（ms）"
+        },
+        {
+          "type": "item",
+          "text": "延音：按住键时的截止电平（千分比，0–1000）"
+        },
+        {
+          "type": "item",
+          "text": "释音：音符释放后滤波器关闭的时间（ms）"
+        },
+        {
+          "type": "subtitle",
+          "text": "单音 / 滑音",
+          "anchor": "uiBoxMono"
+        },
+        {
+          "type": "para",
+          "text": "当单音启用时，同时只发一个音。按住的音符在堆栈中跟踪 — 释放当前音符会回到前一个。"
+        },
+        {
+          "type": "item",
+          "text": "Mono：在单音（一个音）和复音（多个音）模式之间切换"
+        },
+        {
+          "type": "item",
+          "text": "Priority：当多个键被按下时哪个音发声 — Low（最低音）、High（最高音）或 Last（最新）"
+        },
+        {
+          "type": "item",
+          "text": "Retrigger：开启时，每个新音符重新触发包络；关闭时，音高平滑变化而不重新触发（连奏）"
+        },
+        {
+          "type": "item",
+          "text": "Glide：滑音时间（ms）— 音高在音符之间滑动的时间。0 = 即时"
+        },
+        {
+          "type": "item",
+          "text": "Drift：模拟振荡器漂移——为每个声部的音高添加微妙的随机不稳定性，模拟模拟VCO特性（0 = 完美调音，100 = 最大温暖感）"
+        },
+        {
+          "type": "item",
+          "text": "Voices：每个音符的齐奏声部数（1–8）。多个声部对称失谐以获得更厚的声音。仅在单音模式下有效"
+        },
+        {
+          "type": "item",
+          "text": "Detune：齐奏声部之间的音分展宽（0–50）。更高的值产生更宽、更失谐的合唱效果"
+        },
+        {
+          "type": "subtitle",
+          "text": "噪声发生器",
+          "anchor": "uiBoxNoise"
+        },
+        {
+          "type": "item",
+          "text": "白器声或粉红噪声振荡器 — 用于为声音添加气息、空气感或纹理。白噪声在所有频率上具有相同的能量；粉红噪声在低频有更多能量（−3 dB/八度）"
+        },
+        {
+          "type": "item",
+          "text": "类型：白噪声或粉红噪声"
         },
         {
           "type": "item",
@@ -783,11 +1114,12 @@
         },
         {
           "type": "subtitle",
-          "text": "音量包络（ADSR）"
+          "text": "音量包络（ADSR）",
+          "anchor": "uiBoxAdsr"
         },
         {
           "type": "para",
-          "text": "控制 Analog 合成器的幅度包络："
+          "text": "控制 Analog 合成器的幅度包络。使用指数（RC）曲线实现自然的模拟响应。"
         },
         {
           "type": "item",
@@ -818,7 +1150,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Chorus"
+          "text": "Chorus",
+          "anchor": "uiBoxChorus"
         },
         {
           "type": "item",
@@ -838,7 +1171,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Delay"
+          "text": "Delay",
+          "anchor": "uiBoxDelay"
         },
         {
           "type": "item",
@@ -854,7 +1188,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Reverb"
+          "text": "Reverb",
+          "anchor": "uiBoxReverb"
         },
         {
           "type": "para",
@@ -886,7 +1221,8 @@
         },
         {
           "type": "subtitle",
-          "text": "Limiter"
+          "text": "Limiter",
+          "anchor": "uiBoxLimiter"
         },
         {
           "type": "para",
@@ -929,11 +1265,15 @@
         },
         {
           "type": "item",
+          "text": "使用搜索栏下方的排序标签更改顺序：热门趋势（默认，按Hemiola Score算法排名）、最新（最新优先）或最佳（历史最高投票）"
+        },
+        {
+          "type": "item",
           "text": "向下滚动自动加载更多预设（无限滚动）；下拉刷新列表"
         },
         {
           "type": "item",
-          "text": "每张卡片显示预设名称、标签、作者名、投票计数和下载次数。点击卡片展开查看完整描述、分区标签和操作按钮"
+          "text": "每张卡片显示预设名称、标签、作者名（如已获得则带等级徽章）、投票计数和下载次数。点击卡片展开查看完整描述、分区标签和操作按钮"
         },
         {
           "type": "item",
@@ -953,7 +1293,7 @@
         },
         {
           "type": "item",
-          "text": "预设中嵌入的设备设置在此版本中不会被应用；当预设包含设备设置时会显示提示"
+          "text": "如果预设包含设备设置，只有当该设备类型已连接时才能应用；否则应用按钮将被禁用。您可以随时导入预设，将其保存到本地以供日后使用"
         },
         {
           "type": "subtitle",
@@ -989,7 +1329,31 @@
         },
         {
           "type": "item",
-          "text": "使用拇指向上/拇指向下按钮投票。再次点击同一投票取消投票。投票需要云账户，但不需要付费订阅"
+          "text": "在任何预设卡片或最近使用面板上使用拇指向上/拇指向下按钮投票。再次点击同一投票取消投票。投票需要云账户，但不需要付费订阅"
+        },
+        {
+          "type": "subtitle",
+          "text": "创作者等级"
+        },
+        {
+          "type": "para",
+          "text": "活跃的Cloud Pro创作者根据其发布的预设获得的总点赞数获得等级徽章。较高等级在热门趋势排名中提供小幅分数加成。"
+        },
+        {
+          "type": "item",
+          "text": "🟢 Sound Designer — 500+ 点赞"
+        },
+        {
+          "type": "item",
+          "text": "🔥 Master Producer — 2,500+ 点赞"
+        },
+        {
+          "type": "item",
+          "text": "👑 Hemiola Legend — 10,000+ 点赞"
+        },
+        {
+          "type": "note",
+          "text": "等级徽章显示在预设卡片的作者名旁边。徽章及其分数加成仅在创作者持有Cloud Pro订阅时有效。"
         },
         {
           "type": "subtitle",
@@ -1110,6 +1474,14 @@
           "text": "保持屏幕常亮：防止应用使用时屏幕变暗（仅移动端）。"
         },
         {
+          "type": "item",
+          "text": "控件自动导航：当MIDI参数通过内置映射变更时，自动导航到相关控件。"
+        },
+        {
+          "type": "item",
+          "text": "键盘自动导航：收到MIDI音符时显示并滚动键盘。"
+        },
+        {
           "type": "subtitle",
           "text": "Cloud"
         },
@@ -1199,6 +1571,170 @@
         {
           "type": "note",
           "text": "首次登录时会显示同意对话框。. 你的选择会被保存，但你可以随时在隐私标签页中更改。"
+        }
+      ]
+    },
+    {
+      "id": "Calibration",
+      "title": "音频校准",
+      "icon": "graphic_eq",
+      "anchor": "calibration",
+      "entries": [
+        {
+          "type": "para",
+          "text": "音频校准向导测量设备的往返音频延迟，并评估您的配置用于现场演出的质量。首次启动时自动运行，也可随时从主页→校准重新运行。"
+        },
+        {
+          "type": "subtitle",
+          "text": "测量内容"
+        },
+        {
+          "type": "item",
+          "text": "延迟（毫秒）：音符触发到声音可听到的往返时间。"
+        },
+        {
+          "type": "item",
+          "text": "稳定性：多次测量之间延迟的一致性。"
+        },
+        {
+          "type": "item",
+          "text": "复音数：设备在不产生音频伪影的情况下可处理的同时发音数量。"
+        },
+        {
+          "type": "item",
+          "text": "原生采样率：硬件输出率（通常为44.1 kHz或48 kHz）。Hemiola自动匹配以避免重采样。"
+        },
+        {
+          "type": "subtitle",
+          "text": "延迟等级"
+        },
+        {
+          "type": "item",
+          "text": "专业级（< 12毫秒）：透明，适合现场键盘演奏。"
+        },
+        {
+          "type": "item",
+          "text": "稳定（12–25毫秒）：高BPM时略有感知；对大多数用户可接受。"
+        },
+        {
+          "type": "item",
+          "text": "风险（> 25毫秒）：可听到延迟。建议使用有线耳机并关闭后台应用。"
+        },
+        {
+          "type": "subtitle",
+          "text": "帧率等级"
+        },
+        {
+          "type": "item",
+          "text": "快速（P90 < 16.67 ms）：GPU 达到 60fps，所有视觉效果均可用。"
+        },
+        {
+          "type": "item",
+          "text": "中等（16.67–33 ms）：约 30fps。部分视觉效果自动关闭以保护音频性能。"
+        },
+        {
+          "type": "item",
+          "text": "慢速（P90 ≥ 33 ms）：设备无法同时维持实时音频和完整UI，高负载视觉效果已禁用。"
+        },
+        {
+          "type": "note",
+          "text": "帧率不足：如果帧率等级为中等或慢速，Hemiola 自动降低视觉复杂度以防止音频故障。重启设备后重新校准通常可以改善结果。在旧款或低性能设备上，Hemiola 可能无法正常运行：请尝试使用更新或更高性能的设备。"
+        },
+        {
+          "type": "note",
+          "text": "如果结果有严重问题，将显示在线帮助页面的链接。"
+        },
+        {
+          "type": "subtitle",
+          "anchor": "calibration-poor-results",
+          "text": "获得更好结果的技巧"
+        },
+        {
+          "type": "item",
+          "text": "使用有线耳机或USB音频接口。"
+        },
+        {
+          "type": "item",
+          "text": "校准前关闭所有其他应用程序。"
+        },
+        {
+          "type": "item",
+          "text": "连接或断开音频硬件后重新运行校准。"
+        }
+      ]
+    },
+    {
+      "id": "Live Mode",
+      "title": "现场演奏模式",
+      "icon": "my_location",
+      "anchor": "liveMode",
+      "entries": [
+        {
+          "type": "para",
+          "text": "现场演奏模式为您的设备准备现场演出。它检查所有可能中断舞台演出的条件，并一键激活音频引擎保护。"
+        },
+        {
+          "type": "subtitle",
+          "text": "激活现场演奏模式"
+        },
+        {
+          "type": "para",
+          "text": "在主页点击LIVE按钮打开现场演奏模式对话框。当所有检查通过后，点击激活。"
+        },
+        {
+          "type": "item",
+          "text": "在Android上，激活请求独占音频焦点，防止其他应用播放音频。"
+        },
+        {
+          "type": "item",
+          "text": "勿扰模式：如果DND未启用则显示橙色。演出前从通知栏启用。"
+        },
+        {
+          "type": "item",
+          "text": "充电中：如果充电器已连接则显示橙色。充电器可能会引入嗡嗡声。"
+        },
+        {
+          "type": "item",
+          "text": "热状态：设备过热时显示橙色/红色。热限速会降低音频性能。"
+        },
+        {
+          "type": "note",
+          "text": "最佳实践：上台前启用飞行模式或勿扰模式，拔掉充电器，确保电池充足（>50%）。"
+        }
+      ]
+    },
+    {
+      "id": "quickStart",
+      "title": "开始演奏！",
+      "icon": "rocket_launch",
+      "entries": [
+        {
+          "type": "para",
+          "text": "开始演奏！弹窗在每次启动 Hemiola 时出现，让您只需轻点一下就能开始演奏。"
+        },
+        {
+          "type": "item",
+          "text": "钢琴 — 打开钢琴键盘页面，即刻就绪。"
+        },
+        {
+          "type": "item",
+          "text": "鼓 — 以鼓垫模式打开钢琴键盘页面。"
+        },
+        {
+          "type": "item",
+          "text": "Midi 键盘 — 打开设备页面，并启动 10 秒自动连接窗口，自动连接找到的第一个新 MIDI 设备。"
+        },
+        {
+          "type": "item",
+          "text": "Wind Controller — 与 Midi 键盘相同；适用于气息控制器和管乐器 MIDI 设备。"
+        },
+        {
+          "type": "subtitle",
+          "text": "不再询问"
+        },
+        {
+          "type": "para",
+          "text": "在选择项目或取消前勾选「不再询问」可永久关闭弹窗。您可随时通过设置 → 重置 → 重置快速开始重新开启。"
         }
       ]
     }
